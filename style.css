@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(49, 51, 56);
+    color: rgb(221, 221, 221); 
+    
+}
+button{
+    background-color: rgb(150, 97, 255);
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    padding: 9px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(189, 119, 255);
+}
+button:active{
+    background-color: rgb(215, 171, 255);
+}
