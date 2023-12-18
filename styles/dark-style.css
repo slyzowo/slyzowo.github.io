@@ -43,30 +43,52 @@ body{
 }
 
 #display{
-width: 100%;
-padding: 20px;
-font-size: 5rem;
-text-align: center;
-border: none;
-background-color: #3f3f3f;
-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: center;
+    border: none;
+    background-color: #3f3f3f;
+    color: #ffffff;
 }
 
 #number_buttons{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 10px;
-padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10%;
 }
 
 .operator{
-background-color: #ce8600;
+    background-color: #ce8600;
+    border: none;
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+    font-size: xx-large;
+    font-display: bold;
 }
 
 .operator:hover{
-background-color: #ffa600;
+    background-color: #ffa600;
 }
 
 .operator:active{
-background-color: #c58f2a;
+    background-color: #c58f2a;
+}
+
+.number{
+    background-color: #5100ff;
+    border: none;
+    border-radius: 15px;
+    font-size: xx-large;
+    font-display: bold;
+}
+
+.number:hover{
+    background-color: #7f43ff;
+}
+
+.number:active{
+    background-color: #3900b4;
 }
