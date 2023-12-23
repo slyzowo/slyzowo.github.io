@@ -1,7 +1,6 @@
 /* on every page */
 body{
     background-color: #000000;
-    text-align: center;
     color: #ffffff; 
 }
 
@@ -106,4 +105,32 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+}
+
+/* neodroid*/
+div.Terms_of_Service{
+    text-align: center;
+}
+
+.ToS_list{
+    display: inline-block;
+    text-align: left;
+}
+
+div.Privacy_Policy{
+    text-align: center;
+}
+
+.Privacy_Policy_list{
+    display: inline-block;
+    text-align: left;
+}
+
+div.Commands{
+    text-align: center;
+}
+
+.Commands_list{
+    display: inline-block;
+    text-align: left;
 }
