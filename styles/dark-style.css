@@ -4,12 +4,12 @@ body{
     color: #ffffff; 
 }
 
-#nav_bar{
+.nav_bar{
     list-style: none;
     text-align: center;
 }
 
-#nav_bar button{
+.nav_bar button{
     background-color: #5100ff;
     height: 45px;
     border: none;
@@ -17,19 +17,19 @@ body{
     cursor: pointer;
 }
 
-#nav_bar button:active{
-    background-color: #3600aa;
+.nav_bar button:hover{
+    background-color: #7637ff;
 }
 
-#nav_bar button:hover{
-    background-color: #7637ff;
+.nav_bar button:active{
+    background-color: #3600aa;
 }
 
 #body_text{
     text-align: center;
 }
 
-#socials {
+.socials {
     text-align: center;
 }
 
