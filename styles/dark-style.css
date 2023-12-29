@@ -33,6 +33,44 @@ body{
     text-align: center;
 }
 
+/* dropdown */
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: #5100ff;
+    color: #000000;
+    padding: 14px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+.dropdown .dropdown_content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: #7637ff;
+}
+
+.dropdown a:hover{
+    background-color: #7637ff;
+}
+
 /* calculator */
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
