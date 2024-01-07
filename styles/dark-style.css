@@ -2,6 +2,7 @@
 body{
     background-color: #000000;
     color: #ffffff; 
+    text-align: center;
 }
 
 .nav_bar{
@@ -25,16 +26,7 @@ body{
     background-color: #3600aa;
 }
 
-#body_text{
-    text-align: center;
-}
-
-.socials {
-    text-align: center;
-}
-
 /* dropdown */
-
 .dropdown{
     display: inline-block;
 }
@@ -176,4 +168,49 @@ div.Commands{
 .Commands_list{
     display: inline-block;
     text-align: left;
+}
+
+/* gemini lore */
+#messenger-of-the-void{
+    color: #ff6060;
+}
+
+#Kamflame{
+    color: #6060ff;
+}
+
+#mangrove-man{
+    color: #e7a54f;
+}
+
+#intro{
+    color: #f0f8ff;
+}
+
+#lore{
+    color: #f0f8ff;
+}
+
+#server-owner{
+    color: #e91e63;
+}
+
+#staff{
+    color: #f1c40f;
+}
+
+#donator{
+    color: #e67e22;
+}
+
+#member{
+    color: #3498db;
+}
+
+#gemini-lore-link{
+    background-color: #5100ff;
+    height: 45px;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
 }
