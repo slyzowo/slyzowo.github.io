@@ -67,8 +67,9 @@ body{
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #202020;
-    border-radius: 15px;
-    max-width: 900px;
+    border-radius: 100px;
+    max-width: 1900px;
+    max-height: 900px;
     overflow: hidden;
 }
 
@@ -76,7 +77,7 @@ body{
     width: 100%;
     padding: 20px;
     font-size: 5rem;
-    text-align: center;
+    text-align: left;
     border: none;
     background-color: #3f3f3f;
     color: #ffffff;
@@ -84,7 +85,7 @@ body{
 
 #number_buttons{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 3fr);
     gap: 10px;
     padding: 10%;
 }
@@ -121,6 +122,22 @@ body{
 
 .number:active{
     background-color: #3900b4;
+}
+
+.specials{
+    background-color: #2f78ff;
+    border: none;
+    border-radius: 15px;
+    font-size: xx-large;
+    font-display: bold;
+}
+
+.specials:hover{
+    background-color: #649bff;
+}
+
+.specials:active{
+    background-color: #225dca;
 }
 
 /* cypher */

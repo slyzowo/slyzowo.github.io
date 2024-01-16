@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="/styles/dark-style.css">
-    <link rel="icon" type="image" href="favicons/calculate.png">
+    <link rel="icon" type="image" href="../images/favicons/calculate.png">
     
 <body>
     <div class="nav_bar">
@@ -102,22 +102,30 @@
         <input id="display" readonly>
         <div id="number_buttons">
             <button class="operator" onclick="appendToDisplay('+')" >+</button>
-            <button class="number" onclick="appendToDisplay('7')">7</button>
-            <button class="number" onclick="appendToDisplay('8')">8</button>
-            <button class="number" onclick="appendToDisplay('9')">9</button>
-            <button class="operator" onclick="appendToDisplay('-')">-</button>
-            <button class="number" onclick="appendToDisplay('4')">4</button>
-            <button class="number" onclick="appendToDisplay('5')">5</button>
-            <button class="number" onclick="appendToDisplay('6')">6</button>
-            <button class="operator" onclick="appendToDisplay('*')">*</button>
             <button class="number" onclick="appendToDisplay('1')">1</button>
             <button class="number" onclick="appendToDisplay('2')">2</button>
             <button class="number" onclick="appendToDisplay('3')">3</button>
-            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button class="specials" onclick="appendToDisplay('%')">%</button>
+            <button class="specials" onclick="appendToDisplay('^')">^</button>
+            <button class="operator" onclick="appendToDisplay('-')">−</button>
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="specials" onclick="appendToDisplay('tan')">tan</button>
+            <button class="specials" onclick="appendToDisplay('cos')">cos</button>
+            <button class="operator" onclick="appendToDisplay('*')">×</button>
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="specials" onclick="appendToDisplay('sin')">sin</button>
+            <button class="specials" onclick="appendToDisplay('√')">√</button>
+            <button class="operator" onclick="appendToDisplay('÷')">÷</button>
+            <button class="specials" onclick="appendToDisplay('.')">.</button>
             <button class="number" onclick="appendToDisplay('0')">0</button>
-            <button class="number" onclick="appendToDisplay('.')">.</button>
-            <button class="number" onclick="calculate()">=</button>
+            <button class="specials" onclick="appendToDisplay('&lpar;')">(</button>
+            <button class="specials" onclick="appendToDisplay('&rpar;')">)</button>
             <button class="operator" onclick="clearDisplay()" >Clear</button>
+            <button class="operator" onclick="calculate()">=</button>
         </div>
     </div>
 
