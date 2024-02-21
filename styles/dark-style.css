@@ -1,17 +1,33 @@
-/* on every page */
-body{
-    background-color: #000000;
-    color: #ffffff; 
-    text-align: center;
+/* The side navigation menu */
+.nav_bar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.nav_bar{
-    list-style: none;
+  /* The "main" content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* on every page */
+body{
+    background-color: #121212;
+    color: #dfdfdf; 
     text-align: center;
 }
 
 .nav_bar button{
-    background-color: #5100ff;
+    background-color: #6e45c7;
     height: 45px;
     border: none;
     padding: 9px;
@@ -19,7 +35,7 @@ body{
 }
 
 .nav_bar button:hover{
-    background-color: #7637ff;
+    background-color: #4d308b;
 }
 
 .nav_bar button:active{
@@ -32,7 +48,7 @@ body{
 }
 
 .dropdown button{
-    background-color: #5100ff;
+    background-color: #6e45c7;
     color: #000000;
     padding: 14px 15px;
     border: none;
@@ -56,11 +72,12 @@ body{
 }
 
 .dropdown:hover button{
-    background-color: #7637ff;
+    background-color: #543599;
 }
 
 .dropdown a:hover{
-    background-color: #7637ff;
+    color:#a3a3a3
+    
 }
 
 /* calculator */
