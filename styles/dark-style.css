@@ -19,7 +19,7 @@
     padding: 0px 10px;
 }
 
-/* on every page */
+/* On every page */
 body{
     background-color: #121212;
     color: #dfdfdf; 
@@ -35,64 +35,28 @@ body{
 }
 
 .nav_bar button:hover{
-    background-color: #4d308b;
+    background-color: #7f43ff;
 }
 
 .nav_bar button:active{
     background-color: #3600aa;
 }
 
-/* dropdown */
-.dropdown{
-    display: inline-block;
-}
-
-.dropdown button{
-    background-color: #6e45c7;
-    color: #000000;
-    padding: 14px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown a{
-    display: block;
-    text-decoration: none;
-    padding: 2px 10px;
-}
-
-.dropdown .dropdown_content{
-    display: none;
-    position: absolute;
-    min-width: 100px;
-}
-
-.dropdown:hover .dropdown_content{
-    display: block;
-}
-
-.dropdown:hover button{
-    background-color: #543599;
-}
-
-.dropdown a:hover{
-    color:#a3a3a3
-    
-}
-
-/* calculator */
+/* The calculator */
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #202020;
     border-radius: 100px;
-    max-width: 1900px;
-    max-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    max-height: 800px;
     overflow: hidden;
 }
 
 #display{
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     font-size: 5rem;
     text-align: left;
     border: none;
@@ -108,7 +72,7 @@ body{
 }
 
 .operator{
-    background-color: #ce8600;
+    background-color: #b97900;
     border: none;
     border-radius: 15px;
     height: 100px;
@@ -126,7 +90,7 @@ body{
 }
 
 .number{
-    background-color: #5100ff;
+    background-color: #6345a5;
     border: none;
     border-radius: 15px;
     font-size: xx-large;
@@ -142,7 +106,7 @@ body{
 }
 
 .specials{
-    background-color: #2f78ff;
+    background-color: #3b6cc5;
     border: none;
     border-radius: 15px;
     font-size: xx-large;
@@ -157,12 +121,12 @@ body{
     background-color: #225dca;
 }
 
-/* cypher */
+/* Cypher */
 .cypher{
     text-align: center;
 }
 
-/* rgb cypher */
+/* Red, Green, Blue cypher */
 .color-box {
     width: 50px;
     height: 50px;
@@ -176,7 +140,7 @@ body{
     margin-top: 20px;
 }
 
-/* neodroid*/
+/* Neodroid*/
 div.Terms_of_Service{
     text-align: center;
 }
@@ -204,7 +168,7 @@ div.Commands{
     text-align: left;
 }
 
-/* gemini lore */
+/* Gemini lore */
 #messenger-of-the-void{
     color: #ff6060;
 }
