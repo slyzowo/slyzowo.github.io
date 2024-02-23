@@ -13,11 +13,6 @@
     bottom: 0; 
 }
 
-.content {
-    margin-bottom: 100px; 
-}
-
-
   /* The "main" content */
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
