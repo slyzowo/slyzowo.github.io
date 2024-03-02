@@ -1,3 +1,17 @@
+
+/* The "main" content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* On every page */
+body{
+    background-color: #121212;
+    color: #dfdfdf; 
+    text-align: center;
+}
+
 /* The side navigation menu */
 .nav_bar {
     height: 100%;
@@ -13,19 +27,6 @@
     bottom: 0; 
 }
 
-  /* The "main" content */
-.main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-}
-
-/* On every page */
-body{
-    background-color: #121212;
-    color: #dfdfdf; 
-    text-align: center;
-}
-
 .nav_bar button{
     background-color: #6e45c7;
     height: 60px;
@@ -33,6 +34,10 @@ body{
     border: none;
     padding: 9px;
     cursor: pointer;
+}
+
+#cobalt button:hover{
+    background-color: #0047AB;
 }
 
 .nav_bar button:hover{
