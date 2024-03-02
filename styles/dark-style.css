@@ -1,7 +1,7 @@
 /* The side navigation menu */
 .nav_bar {
     height: 100%;
-    width: 200px;
+    width: 100px;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -28,7 +28,8 @@ body{
 
 .nav_bar button{
     background-color: #6e45c7;
-    height: 45px;
+    height: 60px;
+    width: 70px;
     border: none;
     padding: 9px;
     cursor: pointer;
