@@ -13,7 +13,7 @@ body{
 }
 
 /* The side navigation menu */
-.nav_bar {
+.NavigationBar {
     height: 100%;
     width: 100px;
     position: fixed;
@@ -27,7 +27,7 @@ body{
     bottom: 0; 
 }
 
-.nav_bar button{
+.NavigationBar button{
     background-color: #6e45c7;
     height: 60px;
     width: 70px;
@@ -36,15 +36,19 @@ body{
     cursor: pointer;
 }
 
-#cobalt button:hover{
+#Cobalt button:hover{
     background-color: #0047AB;
 }
 
-.nav_bar button:hover{
+#ProjectMagenta button:hover{
+    background-color: #FF00FF;
+}
+
+.NavigationBar button:hover{
     background-color: #7f43ff;
 }
 
-.nav_bar button:active{
+.NavigationBar button:active{
     background-color: #3600aa;
 }
 
