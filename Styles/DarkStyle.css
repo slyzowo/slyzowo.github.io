@@ -44,6 +44,10 @@ body{
     background-color: #FF00FF;
 }
 
+#RedGreenBlueTranslator button:hover{
+    background: linear-gradient(90deg, #ff0000, #008000, #0000ff );
+}
+
 .NavigationBar button:hover{
     background-color: #7f43ff;
 }
