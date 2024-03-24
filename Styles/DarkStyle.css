@@ -14,34 +14,29 @@ body{
 
 /* The side navigation menu */
 .NavigationBar {
-    height: 100%;
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    background-color: #1f1f1f;
     overflow-x: hidden;
-    padding-top: 20px;
     display: flex;
-    flex-direction: column;
-    bottom: 0; 
-}
-
-.NavigationBarIcons{
-    height: 30px;
-    width: 30px;
-    padding-top: 10px;
-
+    flex-direction: row;
+    background-color: #1f1f1f;
+    height: 52px;
 }
 
 .NavigationBar button{
     background-color:  #ffa0f9;
-    height: 60px;
-    width: 70px;
+    height: 50px;
+    width: 100px;
     border: none;
-    padding: 9px;
+    padding: 10px;
+    margin-right: 2px;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+.NavigationBarDropDown{
+    float: left;
+    overflow: hidden;
+}
+
 
 #Cobalt button:hover{
     background-color: #0047AB;
@@ -234,18 +229,28 @@ div.Commands{
     color: #3498db;
 }
 
+.geminiNavigationBar {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #1f1f1f;
+    height: 50px;
+}
+
+
 #gemini-lore-link{
-    background-color: #ffa0f9;
+    background-color: #9266cc;
     height: 45px;
     border: none;
     padding: 9px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #gemini-lore-link:hover{
-    background-color: #e48dde;
+    background-color: #845cb9;
 }
 
 #gemini-lore-link:active{
-    background-color: #c473be;
+    background-color: #7a55aa;
 }
