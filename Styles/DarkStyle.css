@@ -19,6 +19,7 @@ body{
     flex-direction: row;
     background-color: #1f1f1f;
     height: 52px;
+    overflow: auto;
 }
 
 .NavigationBar button{
@@ -26,10 +27,11 @@ body{
     height: 50px;
     width: 100px;
     border: none;
-    padding: 10px;
+    padding: 5px;
     margin-right: 2px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.5s ease;
 }
 
 .NavigationBarDropDown{
@@ -59,11 +61,11 @@ body{
 }
 
 .NavigationBar button:hover{
-    background-color: #e48dde;
+    background-color: #ce81c9;
 }
 
 .NavigationBar button:active{
-    background-color: #c473be;
+    background-color: #b471b0;
 }
 
 /* The calculator */
@@ -253,4 +255,65 @@ div.Commands{
 
 #gemini-lore-link:active{
     background-color: #7a55aa;
+}
+
+#StopwatchTitle{
+    font-size: 4rem;
+}
+
+#StopwatchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgb(70, 70, 70)
+}
+
+#StopwatchDisplay{
+    font-size: 5rem;
+    font-family: monospace;
+    color: #242424;
+    text-shadow: 2px 2px 2px #000000;
+    margin-bottom: 20px;
+}
+
+#StopwatchControls button{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#StopwatchStart{
+    background-color: #4ab450;
+    border: none;
+    border-radius: 30px;
+}
+
+#StopwatchStart:hover{
+    background-color: #3d8f41;
+}
+
+#StopwatchStop{
+    background-color: #be3636;
+    border: none;
+    border-radius: 30px;
+}
+
+#StopwatchStop:hover{
+    background-color: #a03131;
+}
+
+#StopwatchReset{
+    background-color: #4e6694;
+    border: none;
+    border-radius: 30px;
+}
+
+#StopwatchReset:hover{
+    background-color: #405477;
 }
