@@ -39,7 +39,6 @@ body{
     overflow: hidden;
 }
 
-
 #Cobalt button:hover{
     background-color: #0047AB;
 }
@@ -58,6 +57,10 @@ body{
 
 #RedGreenBlueTranslator button:hover{
     background: linear-gradient(90deg, #ff0000, #008000, #0000ff );
+}
+
+#RedGreenBlueTranslator button:active{
+    background: linear-gradient(90deg, #d80000, #005800, #0000c2 );
 }
 
 .NavigationBar button:hover{
