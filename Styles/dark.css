@@ -265,6 +265,7 @@ div.Commands{
     font-size: 4rem;
 }
 
+/* Stopwatch */
 #StopwatchContainer{
     display: flex;
     flex-direction: column;
@@ -320,4 +321,17 @@ div.Commands{
 
 #StopwatchReset:hover{
     background-color: #405477;
+}
+
+/* Campaign stuffs (in discord) */
+.campaignStatment{
+    text-align: left;
+    width: 50%;
+    float:left;
+}
+
+.campaignPromises{
+    text-align: left;
+    width: 50%;
+    float:right;
 }
