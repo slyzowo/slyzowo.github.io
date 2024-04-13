@@ -20,6 +20,7 @@ body{
     background-color: #1f1f1f;
     height: 52px;
     overflow: auto;
+    border-radius: 5px;
 }
 
 .NavigationBar button{
