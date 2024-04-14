@@ -7,23 +7,24 @@
 
 /* On every page */
 body{
-    background-color: #e9e9e9;
-    color: #1f1f1f; 
+    background-color: #121212;
+    color: #dfdfdf; 
     text-align: center;
 }
 
 /* The side navigation menu */
-.NavigationBar {
+.navigation-bar {
     overflow-x: hidden;
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
     height: 52px;
     overflow: auto;
+    border-radius: 5px;
 }
 
-.NavigationBar button{
-    background-color:  #e44d4d;
+.navigation-bar button{
+    background-color:  #ffa0f9;
     height: 50px;
     width: 100px;
     border: none;
@@ -34,16 +35,16 @@ body{
     transition: background-color .5s ease;
 }
 
-.NavigationBarDropDown{
+.navigation-bar-dropdown{
     float: left;
     overflow: hidden;
 }
 
-#Cobalt button:hover{
+#cobalt button:hover{
     background-color: #0047AB;
 }
 
-#Cobalt button:active{
+#cobalt button:active{
     background-color: #003a8b;
 }
 
@@ -264,6 +265,7 @@ div.Commands{
     font-size: 4rem;
 }
 
+/* Stopwatch */
 #StopwatchContainer{
     display: flex;
     flex-direction: column;
@@ -319,4 +321,17 @@ div.Commands{
 
 #StopwatchReset:hover{
     background-color: #405477;
+}
+
+/* Campaign stuffs (in discord) */
+.campaignStatment{
+    text-align: left;
+    width: 50%;
+    float:left;
+}
+
+.campaignPromises{
+    text-align: left;
+    width: 50%;
+    float:right;
 }
