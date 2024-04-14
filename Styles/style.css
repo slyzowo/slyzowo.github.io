@@ -143,11 +143,11 @@ body{
     font-display: bold;
 }
 
-.specials:hover{
+.calculator-special-button:hover{
     background-color: #d4d4d4;
 }
 
-.specials:active{
+.calculator-special-button:active{
     background-color: #acacac;
 }
 
@@ -171,67 +171,63 @@ body{
 }
 
 /* Neodroid*/
-div.Terms_of_Service{
+div.neodroid-terms-of-service{
     text-align: center;
 }
 
-.ToS_list{
+.neodroid-terms-of-service-list{
     display: inline-block;
     text-align: left;
 }
 
-div.Privacy_Policy{
+div.neodroid-privacy-policy{
     text-align: center;
 }
 
-.Privacy_Policy_list{
+.neodroid-privacy-policy-list{
     display: inline-block;
     text-align: left;
 }
 
-div.Commands{
+div.neodroid-commands{
     text-align: center;
 }
 
-.Commands_list{
+.neodroid-commands-list{
     display: inline-block;
     text-align: left;
 }
 
 /* Gemini lore */
-#messenger-of-the-void{
+#gemini-minecraft-lore-messenger-of-the-void{
     color: #ff6060;
 }
 
-#Kamflame{
+#gemini-minecraft-lore-Kamflame{
     color: #6060ff;
 }
 
-#mangrove-man{
+#gemini-minecraft-lore-mangrove-man{
     color: #e7a54f;
 }
 
-#intro{
+#gemini-minecraft-lore-intro{
     color: #f0f8ff;
 }
 
-#lore{
-    color: #f0f8ff;
-}
-
-#server-owner{
+#gemini-minecraft-lore-server-owner{
     color: #e91e63;
 }
 
-#staff{
+#gemini-minecraft-lore-staff{
     color: #f1c40f;
 }
 
-#donator{
+#gemini-minecraft-lore-donator{
     color: #e67e22;
 }
 
-#member{
+#gemini-minecraft-lore-member{
     color: #3498db;
 }
 
@@ -324,13 +320,13 @@ div.Commands{
 }
 
 /* Campaign stuffs (in discord) */
-.campaignStatment{
+.campaign-statment{
     text-align: left;
     width: 50%;
     float:left;
 }
 
-.campaignPromises{
+.campaign-promises{
     text-align: left;
     width: 50%;
     float:right;
