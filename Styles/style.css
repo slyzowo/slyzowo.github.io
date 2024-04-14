@@ -35,6 +35,14 @@ body{
     transition: background-color .5s ease;
 }
 
+.navigation-bar button:hover{
+    background-color: #ce81c9;
+}
+
+.navigation-bar button:active{
+    background-color: #b471b0;
+}
+
 .navigation-bar-dropdown{
     float: left;
     overflow: hidden;
@@ -48,28 +56,20 @@ body{
     background-color: #003a8b;
 }
 
-#ProjectMagenta button:hover{
+#project-magenta button:hover{
     background-color: #FF00FF;
 }
 
-#ProjectMagenta button:active{
+#project-magenta button:active{
     background-color: #d100d1;
 }
 
-#RedGreenBlueTranslator button:hover{
+#rgb button:hover{
     background: linear-gradient(90deg, #ff0000, #008000, #0000ff );
 }
 
-#RedGreenBlueTranslator button:active{
+#rgb button:active{
     background: linear-gradient(90deg, #d80000, #005800, #0000c2 );
-}
-
-.NavigationBar button:hover{
-    background-color: #ce81c9;
-}
-
-.NavigationBar button:active{
-    background-color: #b471b0;
 }
 
 /* The calculator */
@@ -84,7 +84,7 @@ body{
     overflow: hidden;
 }
 
-#display{
+#calculator-display{
     width: 100%;
     padding: 30px;
     font-size: 5rem;
@@ -94,14 +94,14 @@ body{
     color: #ffffff;
 }
 
-#number_buttons{
+#calculator-number-buttons{
     display: grid;
     grid-template-columns: repeat(6, 3fr);
     gap: 10px;
     padding: 10%;
 }
 
-.operator{
+.calculator-operator-button{
     background-color: #48a7ff;
     border: none;
     border-radius: 15px;
@@ -111,15 +111,15 @@ body{
     font-display: bold;
 }
 
-.operator:hover{
+.calculator-operator-button:hover{
     background-color: #4196e6;
 }
 
-.operator:active{
+.calculator-operator-button:active{
     background-color: #3a83c7;
 }
 
-.number{
+.calculator-number-button{
     background-color: #ffa0f9;
     border: none;
     border-radius: 15px;
@@ -127,15 +127,15 @@ body{
     font-display: bold;
 }
 
-.number:hover{
+.calculator-number-button:hover{
     background-color: #e48dde;
 }
 
-.number:active{
+.calculator-number-button:active{
     background-color: #c473be;
 }
 
-.specials{
+.calculator-special-button{
     background-color: #e9e9e9;
     border: none;
     border-radius: 15px;

@@ -1,4 +1,4 @@
-const display = document.getElementById("display");
+const display = document.getElementById("calculator-display");
 
 function appendToDisplay(input) {
     display.value += input;
