@@ -94,6 +94,10 @@ body{
     background: linear-gradient(90deg, #d80000, #005800, #0000c2 );
 }
 
+footer {
+    
+}
+
 /* The calculator */
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
