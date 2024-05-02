@@ -400,18 +400,25 @@ div.neodroid-commands{
 }
 
 #snake-game-container{
-
+    padding: 100px;
 }
 
 #snake-game-board{
     border:3px solid
 }
 
+
 #snake-game-score{
     font-size: 100px;
+    position: absolute;
+    right: 200px;
+    top: 100px;
 }
 
 #snake-reset-button{
+    position: absolute;
+    right: 120px;
+    top: 700px;
     font-size: 25px;
     width: 200px;
     height: 50px;
