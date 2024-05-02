@@ -12,7 +12,7 @@ const gameHeight = snakeGameBoard.height;
 
 // Colours :3
 //      the background colours
-const snakeGameBoardBackground = "white";
+const snakeGameBoardBackground = "#242424";
 
 //      the snake colours
 const snakeColour = "green";
