@@ -96,17 +96,20 @@ function drawFood(){
 
 // move snake
 function moveSnake(){
+//      the head of the snake is the first square for the *people* who didnt know
     const head = {
         x: snake[0].x + Xvelocity,
         y: snake[0].y + Yvelocity
     };
-
+//      
     snake.unshift(head);
     if(snake[0].x == Xfood && snake[0].y == Yfood){
+//      the score goes up one everytime a food was eaten & makes a new food
         score+=1;
         scoreText.textContent = score;
         createFood();
     }
+//      kills the last part of the snake
     else{
         snake.pop();
     }
@@ -137,21 +140,22 @@ function changeDirection(event){
     const goingDown = (Yvelocity == unitSize);
 
     switch(true){
+//      if you're going left that means you cant go right
         case(keyPressed == LEFT && !goingRight):
         Xvelocity = -unitSize;
         Yvelocity = 0;
         break;
-
+//      if you're going right that means you cant go left
         case(keyPressed == RIGHT && !goingLeft):
         Xvelocity = unitSize;
         Yvelocity = 0;
         break;
-
+//      if you're going up that means you cant go down
         case(keyPressed == UP && !goingDown):
         Xvelocity = 0;
         Yvelocity = -unitSize;
         break;
-
+//      if you're going down that means you cant go up
         case(keyPressed == DOWN && !goingUp):
         Xvelocity = 0;
         Yvelocity = unitSize;
@@ -162,6 +166,7 @@ function changeDirection(event){
 // checks to see if the game is over yet 
 function checkGameOver(){
     switch(true){
+//      makes sure the snake cant go out of the screen and survive
         case(snake[0].x < 0):
         gameRunning = false;
         break
