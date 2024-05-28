@@ -15,10 +15,10 @@ const gameHeight = snakeGameBoard.height;
 const snakeGameBoardBackground = "#242424";
 
 //      the snake colours
-const snakeColour = "green";
-const snakeBorderColour = "black";
+const snakeColour = "#48a7ff";
+const snakeBorderColour = "white";
 //      the food colours
-const foodColour = "red";
+const foodColour = "#ffa0f9";
 
 // game rules
 //      Unit Size is how big the squares are
