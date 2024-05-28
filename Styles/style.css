@@ -297,14 +297,13 @@ div.neodroid-commands{
     border: 10px solid;
     padding: 20px;
     border-radius: 50px;
-    background-color: rgb(70, 70, 70)
+    background-color: #242424;
 }
 
 #StopwatchDisplay{
     font-size: 5rem;
     font-family: monospace;
-    color: #242424;
-    text-shadow: 2px 2px 2px #000000;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -428,7 +427,7 @@ div.neodroid-commands{
     border: 3px solid;
     border-radius: 25px;
     padding: 10px;
-    background-color: #1f1f1f;
+    background-color: #242424;
 }
 
 #playerText{
@@ -442,10 +441,20 @@ div.neodroid-commands{
 .choiceButton{
     line-height: 30px;
     width: 170px;
-    background-color: #3f3f3f;
     border: none;
     border-radius: 5px;
-    color: #48a7ff;
     font-size: xx-large;
     cursor: pointer;
+}
+
+#ROCK{
+    background-color: #48a7ff;
+}
+
+#PAPER{
+    background-color: #ffa0f9;
+}
+
+#SCISSORS{
+    background-color: #e9e9e9;
 }
