@@ -318,33 +318,33 @@ div.neodroid-commands{
 }
 
 #StopwatchStart{
-    background-color: #4ab450;
+    background-color: #48a7ff;
     border: none;
     border-radius: 30px;
 }
 
 #StopwatchStart:hover{
-    background-color: #3d8f41;
+    background-color: #4196e6;
 }
 
 #StopwatchStop{
-    background-color: #be3636;
+    background-color: #ffa0f9;
     border: none;
     border-radius: 30px;
 }
 
 #StopwatchStop:hover{
-    background-color: #a03131;
+    background-color: #e48dde;
 }
 
 #StopwatchReset{
-    background-color: #4e6694;
+    background-color: #e9e9e9;
     border: none;
     border-radius: 30px;
 }
 
 #StopwatchReset:hover{
-    background-color: #405477;
+    background-color: #d4d4d4;
 }
 
 /* Campaign stuffs (in discord) */
