@@ -14,7 +14,7 @@ body{
 
 /* The side navigation menu */
 .navigation-bar {
-    overflow-x: hidden;
+    
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
