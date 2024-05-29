@@ -14,17 +14,18 @@ body{
 
 /* The side navigation menu */
 .navigation-bar {
-    
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
+    justify-content: center; /* Center buttons horizontally */
     height: 52px;
-    overflow: auto;
     border-radius: 5px;
+    margin: auto;
+    padding: 2px;
 }
 
-.navigation-bar button{
-    background-color:  #ffa0f9;
+.navigation-bar button {
+    background-color: #ffa0f9;
     height: 50px;
     width: 100px;
     border: none;
@@ -32,8 +33,13 @@ body{
     margin-right: 2px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color .5s ease;
+    transition: background-color 0.5s ease;
 }
+
+.navigation-bar button:hover {
+    background-color: #ff80e6; /* Optional: Add a hover effect for buttons */
+}
+
 
 .dropdown {
     float: left;
