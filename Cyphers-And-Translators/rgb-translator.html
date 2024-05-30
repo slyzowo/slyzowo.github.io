@@ -92,14 +92,16 @@
         </div>
     </header>
 
-<br>
-
 <div class="cypher">
-    <h1>Text to RGB Translator</h1>
-    <label for="inputText">Enter text:</label>
-    <input type="text" id="inputText" placeholder="Hello World">
-    <button onclick="translateToRGB()">Translate</button>
-    <div id="output"></div>
+    <h1>RGB Translator</h1>
+    <textarea class="ascii-translator-textarea" id="inputText" placeholder="Enter your input here"></textarea>
+    <div class="ascii-translator-buttons">
+        <button id="ascii-encoder-button" onclick="translateToRGB()">Encode</button>
+        <button id="ascii-decoder-button" onclick="decodeFromHex()">Decode</button>
+        <button id="ascii-copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+    <textarea class="ascii-translator-textarea" id="outputText" readonly placeholder="Output will appear here"></textarea>
+</div>
 </div>
 <div id="footer"><footer>
     <a href="https://www.youtube.com/@slyzoo4995" target="_blank"><img src="/images/socials/youtube.png" height="30"></a>
