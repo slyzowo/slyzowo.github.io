@@ -93,18 +93,15 @@
 
 
 <div class="cypher">
-    <h1>ASCII Encoder</h1>
-    <label for="inputText">Enter text:</label>
-    <textarea id="inputText" rows="4" cols="50"></textarea>
-    <button onclick="translateToASCII()">Encoder</button>
-    <div id="output"></div>
-    
-    
-    <h1>ASCII Decoder</h1>
-    <label for="encoded_text">Enter ASCII-encoded text:</label>
-    <textarea id="encoded_text" rows="4" cols="50" required></textarea>
-    <button onclick="decode()">Decode</button>
-    <p id="decoded_text"></p>
+    <div class="container">
+        <h1>ASCII Translator</h1>
+        <textarea id="inputText" placeholder="Enter your input here"></textarea>
+        <div class="ascii-translator-buttons">
+            <button id="ascii-encoder-button" onclick="encodeToASCII()">Encode</button>
+            <button id="ascii-decoder-button" onclick="decodeFromASCII()">Decode</button>
+        </div>
+        <textarea id="outputText" readonly placeholder="Output will appear here"></textarea>
+    </div>
 </div>
 
 <div id="footer"><footer>

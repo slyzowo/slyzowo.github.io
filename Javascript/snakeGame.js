@@ -16,7 +16,7 @@ const snakeGameBoardBackground = "#242424";
 
 //      the snake colours
 const snakeColour = "#48a7ff";
-const snakeBorderColour = "white";
+const snakeBorderColour = "#48a7ff";
 //      the food colours
 const foodColour = "#ffa0f9";
 
@@ -193,8 +193,8 @@ function checkGameOver(){
 
 // if the game is over a "game over" screen will appear, this is the "game over" screen
 function displayGameOver(){
-    context.font = "50px";
-    context.fillStyle = "black";
+    context.font = "100px";
+    context.fillStyle = "white";
     context.textAlign = "center";
     context.fillText("Game Over", gameWidth / 2, gameHeight / 2);
     gameRunning = false

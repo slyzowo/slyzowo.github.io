@@ -198,12 +198,57 @@ body{
     height: 50px;
     margin: 5px;
 }
+textarea {
+    width: 60%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #dfdfdf;
+    background-color: #1f1f1f;
+}
 
-#output {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+.ascii-translator-buttons{
+    padding: 2%;
+}
+
+#ascii-encoder-button{
+    background-color: #48a7ff;
+    border: none;
+    border-radius: 30px;
+    border: none;
+    height: 80px;
+    width: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#ascii-encoder-button:hover{
+    background-color: #4196e6;
+}
+
+#ascii-encoder-button:active{
+    background-color: #3a83c7;
+}
+
+#ascii-decoder-button{
+    background-color: #ffa0f9;
+    border: none;
+    border-radius: 30px;
+    border: none;
+    height: 80px;
+    width: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#ascii-decoder-button:hover{
+    background-color: #e48dde;
+}
+
+#ascii-decoder-button:active{
+    background-color: #c473be;
 }
 
 /* Neodroid*/
@@ -408,9 +453,9 @@ div.neodroid-commands{
 }
 
 #snake-game-board{
-    border:3px solid
+    border:none;
+    border-radius: 3%;
 }
-
 
 #snake-game-score{
     font-size: 100px;
@@ -427,8 +472,9 @@ div.neodroid-commands{
     width: 200px;
     height: 50px;
     border-radius: 10px;
-    border: 4px solid;
+    border: none;
     cursor: pointer;
+    background-color: #e9e9e9;
 }
 
 #rockPaperScissorsgame{

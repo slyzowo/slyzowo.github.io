@@ -1,35 +1,15 @@
-function translateToASCII() {
-    var inputText = document.getElementById('inputText').value;
-    var outputDiv = document.getElementById('output');
-
-    // Convert each character to its ASCII equivalent
-    var asciiText = '';
-    for (var i = 0; i < inputText.length; i++) {
-        var charCode = inputText.charCodeAt(i);
-        asciiText += charCode + ' ';
+// scripts.js
+function encodeToASCII() {
+    const inputText = document.getElementById('inputText').value;
+    let asciiCodes = [];
+    for (let i = 0; i < inputText.length; i++) {
+        asciiCodes.push(inputText.charCodeAt(i));
     }
-
-    outputDiv.textContent = 'ASCII Translation:\n' + asciiText;
+    document.getElementById('outputText').value = asciiCodes.join(' ');
 }
 
-function asciiDecoder(encodedText) {
-    let decodedText = "";
-    const encodedValues = encodedText.split(' ');
-
-    encodedValues.forEach(value => {
-        try {
-            const character = String.fromCharCode(parseInt(value));
-            decodedText += character;
-        } catch (error) {
-            decodedText += "[Invalid ASCII]";
-        }
-    });
-
-    return decodedText;
-}
-
-function decode() {
-    const encodedText = document.getElementById('encoded_text').value;
-    const decodedText = asciiDecoder(encodedText);
-    document.getElementById('decoded_text').textContent = "Decoded Text: " + decodedText;
+function decodeFromASCII() {
+    const inputText = document.getElementById('inputText').value;
+    let chars = inputText.split(' ').map(code => String.fromCharCode(code));
+    document.getElementById('outputText').value = chars.join('');
 }
