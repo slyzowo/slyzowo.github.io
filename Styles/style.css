@@ -233,7 +233,7 @@ textarea {
 }
 
 #ascii-decoder-button{
-    background-color: #ffa0f9;
+    background-color: #e9e9e9;
     border: none;
     border-radius: 30px;
     border: none;
@@ -244,10 +244,29 @@ textarea {
 }
 
 #ascii-decoder-button:hover{
-    background-color: #e48dde;
+    background-color: #d4d4d4;
 }
 
 #ascii-decoder-button:active{
+    background-color: #acacac;
+}
+
+#ascii-copy-button{
+    background-color: #ffa0f9;
+    border: none;
+    border-radius: 30px;
+    border: none;
+    height: 80px;
+    width: 150px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#ascii-copy-button:hover{
+    background-color: #e48dde;
+}
+
+#ascii-copy-button:active{
     background-color: #c473be;
 }
 
