@@ -298,64 +298,77 @@ div.neodroid-commands{
     text-align: left;
 }
 
-/* Gemini lore */
-#gemini-minecraft-lore-messenger-of-the-void{
-    color: #ff6060;
-}
+            /* Gemini lore */
+            .gemini-navigation-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 52px;
+                margin: auto;
+            }
+    
+            .gemini-tabs {
+                background-color: #9266cc;
+                height: 50px;
+                width: 100px;
+                border: none;
+                padding: 5px;
+                margin-right: 2px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.5s ease;
+            }
+    
+            .gemini-tabs:hover {
+                background-color: #845cb9;
+            }
+    
+            .gemini-tabs:active {
+                background-color: #7a55aa;
+            }
+    
+            .gemini-tabs.active {
+                background-color: #7a55aa;
+            }
+    
+            .gemini-tab-content {
+                display: none;
+                padding: 6px 12px;
+                border-top: none;
+            }
+    
+            #messenger-of-the-void {
+                color: #ff6060;
+            }
+    
+            #Kamflame {
+                color: #6060ff;
+            }
+    
+            #mangrove-man {
+                color: #e7a54f;
+            }
+    
+            #gemini-intro {
+                color: #f0f8ff;
+            }
+    
+            #gemini-server-owner {
+                color: #e91e63;
+            }
+    
+            #gemini-staff {
+                color: #f1c40f;
+            }
+    
+            #gemini-donator {
+                color: #e67e22;
+            }
+    
+            #gemini-member {
+                color: #3498db;
+            }
 
-#gemini-minecraft-lore-Kamflame{
-    color: #6060ff;
-}
-
-#gemini-minecraft-lore-mangrove-man{
-    color: #e7a54f;
-}
-
-#gemini-minecraft-lore-intro{
-    color: #f0f8ff;
-}
-
-#gemini-minecraft-lore-server-owner{
-    color: #e91e63;
-}
-
-#gemini-minecraft-lore-staff{
-    color: #f1c40f;
-}
-
-#gemini-minecraft-lore-donator{
-    color: #e67e22;
-}
-
-#gemini-minecraft-lore-member{
-    color: #3498db;
-}
-
-.geminiNavigationBar {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    background-color: #1f1f1f;
-    height: 50px;
-}
-
-
-#gemini-lore-link{
-    background-color: #9266cc;
-    height: 45px;
-    border: none;
-    padding: 9px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#gemini-lore-link:hover{
-    background-color: #845cb9;
-}
-
-#gemini-lore-link:active{
-    background-color: #7a55aa;
-}
 
 #StopwatchTitle{
     font-size: 4rem;
