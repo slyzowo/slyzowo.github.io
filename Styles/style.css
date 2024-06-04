@@ -1,17 +1,17 @@
 
 /* The "main" content */
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
+    margin-left: 200px;
     padding: 0px 10px;
 }
 
 /* On every page */
 body{
     background-color: #121212;
-    color: #dfdfdf; 
+    color: #dfdfdf;
     text-align: center;
 
-    background-image: url('starred_backgroundV2.png'); /* Add the path to your image */
+    background-image: url('starred_backgroundV2.png');
 }
 
 /* The side navigation menu */
@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
-    justify-content: center; /* Center buttons horizontally */
+    justify-content: center;
     height: 52px;
     border-radius: 5px;
     margin: auto;
@@ -39,9 +39,8 @@ body{
 }
 
 .navigation-bar button:hover {
-    background-color: #ff80e6; /* Optional: Add a hover effect for buttons */
+    background-color: #ff80e6;
 }
-
 
 .dropdown {
     float: left;
@@ -198,6 +197,8 @@ body{
     height: 50px;
     margin: 5px;
 }
+
+/* ASCII translator */
 .ascii-translator-textarea {
     width: 60%;
     height: 100px;
@@ -298,83 +299,83 @@ div.neodroid-commands{
     text-align: left;
 }
 
-            /* Gemini lore */
-            .gemini-navigation-bar {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                height: 52px;
-                margin: auto;
-            }
-    
-            .gemini-tabs {
-                background-color: #9266cc;
-                height: 50px;
-                width: 100px;
-                border: none;
-                padding: 5px;
-                margin-right: 2px;
-                cursor: pointer;
-                border-radius: 5px;
-                transition: background-color 0.5s ease;
-            }
-    
-            .gemini-tabs:hover {
-                background-color: #845cb9;
-            }
-    
-            .gemini-tabs:active {
-                background-color: #7a55aa;
-            }
-    
-            .gemini-tabs.active {
-                background-color: #7a55aa;
-            }
-    
-            .gemini-tab-content {
-                display: none;
-                padding: 6px 12px;
-                border-top: none;
-            }
-    
-            #messenger-of-the-void {
-                color: #ff6060;
-            }
-    
-            #Kamflame {
-                color: #6060ff;
-            }
-    
-            #mangrove-man {
-                color: #e7a54f;
-            }
-    
-            #gemini-intro {
-                color: #f0f8ff;
-            }
-    
-            #gemini-server-owner {
-                color: #e91e63;
-            }
-    
-            #gemini-staff {
-                color: #f1c40f;
-            }
-    
-            #gemini-donator {
-                color: #e67e22;
-            }
-    
-            #gemini-member {
-                color: #3498db;
-            }
+/* Gemini lore */
+.gemini-navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 52px;
+    margin: auto;
+}
+
+.gemini-tabs {
+    background-color: #9266cc;
+    height: 50px;
+    width: 100px;
+    border: none;
+    padding: 5px;
+    margin-right: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.gemini-tabs:hover {
+    background-color: #845cb9;
+}
+
+.gemini-tabs:active {
+    background-color: #7a55aa;
+}
+
+.gemini-tabs.active {
+    background-color: #7a55aa;
+}
+
+.gemini-tab-content {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+#messenger-of-the-void {
+    color: #ff6060;
+}
+
+#Kamflame {
+    color: #6060ff;
+}
+
+#mangrove-man {
+    color: #e7a54f;
+}
+
+#gemini-intro {
+    color: #f0f8ff;
+}
+
+#gemini-server-owner {
+    color: #e91e63;
+}
+
+#gemini-staff {
+    color: #f1c40f;
+}
+
+#gemini-donator {
+    color: #e67e22;
+}
+
+#gemini-member {
+    color: #3498db;
+}
 
 
+/* Stopwatch */
 #StopwatchTitle{
     font-size: 4rem;
 }
 
-/* Stopwatch */
 #StopwatchContainer{
     display: flex;
     flex-direction: column;
@@ -444,6 +445,7 @@ div.neodroid-commands{
     float:right;
 }
 
+/* Thekichensink wiki */
 .thekitchenSink-wiki-gems{
     text-align: left;
     width: 50%;
@@ -480,6 +482,7 @@ div.neodroid-commands{
     float:right;
 }
 
+/* snek */
 #snake-game-container{
     padding: 100px;
 }
@@ -509,6 +512,7 @@ div.neodroid-commands{
     background-color: #e9e9e9;
 }
 
+/* rock, paper, scissors */
 #rockPaperScissorsgame{
     border: none;
     border-radius: 25px;
@@ -543,4 +547,12 @@ div.neodroid-commands{
 
 #SCISSORS{
     background-color: #e9e9e9;
+}
+
+.new-badge{
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
 }
