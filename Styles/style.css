@@ -10,8 +10,23 @@ body{
     background-color: #121212;
     color: #dfdfdf;
     text-align: center;
-
     background-image: url('starred_backgroundV2.png');
+}
+
+#settings{
+    float: left;
+
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+#settings:hover{
+    background: #1a1a1a;
+}
+
+#settings:active{
+    background: #141414;
 }
 
 /* The side navigation menu */
