@@ -12,6 +12,8 @@ body{
     background-image: url('starred_backgroundV2.png');
 }
 
+
+
 .openSettingsButton{
     float: left;
 
@@ -32,15 +34,6 @@ body{
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-}
-
 .openSettingsButton {
     background: none;
     border: none;
@@ -52,9 +45,8 @@ body{
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    height: 80%;
-    max-width: 60%;
+    width: 100%;
+    height: 90%;
     padding: 20px;
     border: none;
     background-color: #1f1f1f;
@@ -201,7 +193,9 @@ body{
 
 #footer{
     background-color: #1f1f1f;
+    text-align: center;
     position: fixed;
+    width: 100%;
     bottom: 0;
     left: 0;
     right: 0;

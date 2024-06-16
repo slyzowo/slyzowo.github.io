@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASCII Translator</title>
+    <title>RGB Translator</title>
     <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="icon" type="image" href="favicons/color-wheel.png">
 </head>
 <body>
     <header>
@@ -39,22 +40,22 @@
     
     
     
-        <!-- Cyphers -->
-        <div class="dropdown">
-            <button class="dropbtn">Cyphers and Translators</button>
-            <div class="dropdown-content">
-    
-            <a href="https://slyzoo.net/Cyphers-And-Translators/ascii-translator">
-                <button id="button">ASCII translator</button>
+    <!-- (Trans)lators -->
+    <div class="dropdown">
+        <button class="dropbtn">Translators</button>
+        <div class="dropdown-content">
+
+        <a href="https://slyzoo.net/Translators/ascii">
+            <button id="button">ASCII translator</button>
+        </a>
+
+        <div id="rgb">
+            <a href="https://slyzoo.net/Translators/rgb">
+                <button id="button">RGB translator</button>
             </a>
-    
-            <div id="rgb">
-                <a href="https://slyzoo.net/Cyphers-And-Translators/rgb-translator">
-                    <button id="button">RGB translator</button>
-                </a>
-            </div>
-            </div> 
         </div>
+        </div> 
+    </div>
     
         <!-- Games -->
         <div class="dropdown">
@@ -91,20 +92,17 @@
         </div>
     </header>
 
-
 <div class="cypher">
-    <div class="container">
-        <h1>ASCII Translator</h1>
-        <textarea class="ascii-translator-textarea" id="inputText" placeholder="Enter your input here"></textarea>
-        <div class="ascii-translator-buttons">
-            <button id="ascii-encoder-button" onclick="encodeToASCII()">Encode</button>
-            <button id="ascii-decoder-button" onclick="decodeFromASCII()">Decode</button>
-            <button id="ascii-copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
-        </div>
-        <textarea class="ascii-translator-textarea" id="outputText" readonly placeholder="Output will appear here"></textarea>
+    <h1>RGB Translator</h1>
+    <textarea class="ascii-translator-textarea" id="inputText" placeholder="Enter your input here"></textarea>
+    <div class="ascii-translator-buttons">
+        <button id="ascii-encoder-button" onclick="translateToRGB()">Encode</button>
+        <button id="ascii-decoder-button" onclick="decodeFromHex()">Decode</button>
+        <button id="ascii-copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
     </div>
+    <textarea class="ascii-translator-textarea" id="outputText" readonly placeholder="Output will appear here"></textarea>
 </div>
-
+</div>
 <div id="footer"><footer>
 
     <button class="openSettingsButton">
@@ -141,7 +139,7 @@
     <a href="https://www.twitch.tv/slyzoo4995"  target="blank"><img src="/images/socials/twitch.png" height="30"></a>
     <a href="https://www.linkedin.com/in/jade-himes-14a982252/" target="_blank"><img src="/images/socials/linkedin.png" height="30"></a>
 </footer></div>
-<script src="Javascript/settings.js"></script>
-<script src="../Javascript/asciiTranslator.js"></script>
+    <script src="Javascript/settings.js"></script>
+    <script src="../Javascript/rgbTranslator.js"></script>
 </body>
 </html>
