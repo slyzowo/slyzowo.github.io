@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Translator</title>
+    <title>Cyphers Translator</title>
     <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="icon" type="image" href="favicons/color-wheel.png">
 </head>
 <body>
     <header>
@@ -41,21 +40,9 @@
     
     
     <!-- (Trans)lators -->
-    <div class="dropdown">
-        <button class="dropbtn">Translators</button>
-        <div class="dropdown-content">
-
-        <a href="https://slyzoo.net/Translators/ascii">
-            <button id="button">ASCII translator</button>
+        <a href="https://slyzoo.net/translator">
+            <button id="button">Multi-translator</button>
         </a>
-
-        <div id="rgb">
-            <a href="https://slyzoo.net/Translators/rgb">
-                <button id="button">RGB translator</button>
-            </a>
-        </div>
-        </div> 
-    </div>
     
         <!-- Games -->
         <div class="dropdown">
@@ -92,17 +79,43 @@
         </div>
     </header>
 
-<div class="cypher">
-    <h1>RGB Translator</h1>
-    <textarea class="ascii-translator-textarea" id="inputText" placeholder="Enter your input here"></textarea>
-    <div class="ascii-translator-buttons">
-        <button id="ascii-encoder-button" onclick="translateToRGB()">Encode</button>
-        <button id="ascii-decoder-button" onclick="decodeFromHex()">Decode</button>
-        <button id="ascii-copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+
+
+
+    <div class="cypher">
+        <div class="container">
+            <h1>Cipher Translator</h1>
+            <textarea class="cypher-textarea" id="inputText" placeholder="Enter text here..."></textarea>
+            <div class="cypher-buttons">
+                <div>
+                    <label><input class="cypher-encoder-radio" type="radio" name="mode" value="encode" checked> Encode</label>
+                    <label><input class="cypher-decoder-radio" type="radio" name="mode" value="decode"> Decode</label>
+                </div>
+                <div>
+                    <select id="cipherSelect">
+                        <option value="ascii">ASCII</option>
+                        <option value="binary">Binary</option>
+                        <option value="hex-colour">Hex Colour</option>
+                        <option value="morse">Morse</option>
+
+                    </select>
+                    <div id="binarySegmentContainer" style="display: none;">
+                        <label for="binarySegmentSelect">Segment Length:</label>
+                        <select id="binarySegmentSelect">
+                            <option value="8" selected>8</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output will appear here..."></textarea>
+            <button id="cypher-copy-button" onclick="copyToClipboard()">Copy Output</button>
+        </div>
     </div>
-    <textarea class="ascii-translator-textarea" id="outputText" readonly placeholder="Output will appear here"></textarea>
-</div>
-</div>
+
+
+
 <div id="footer"><footer>
 
     <button class="openSettingsButton">
@@ -139,7 +152,7 @@
     <a href="https://www.twitch.tv/slyzoo4995"  target="blank"><img src="/images/socials/twitch.png" height="30"></a>
     <a href="https://www.linkedin.com/in/jade-himes-14a982252/" target="_blank"><img src="/images/socials/linkedin.png" height="30"></a>
 </footer></div>
-    <script src="Javascript/settings.js"></script>
-    <script src="../Javascript/rgbTranslator.js"></script>
+<script src="Javascript/settings.js"></script>
+<script src="Javascript/cypher.js"></script>
 </body>
 </html>
