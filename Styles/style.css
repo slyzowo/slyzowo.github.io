@@ -310,35 +310,15 @@ body{
     padding: 2%;
 }
 
-.cypher-encoder-radio{
+.cypher-radio{
     font-size: 1rem;
     cursor: pointer;
     width: 20px;
     height: 20px;
-    border: 2px solid #48a7ff;
     border-radius: 50%;
     position: relative;
     margin-right: 10px;
     transition: background-color 0.2s, border-color 0.2s;
-}
-
-.cypher-encoder-radio input:checked{
-    background: #3a83c7;
-}
-
-.cypher-decoder-radio{
-    background: #e9e9e9;
-    border: none;
-    border-radius: 30px;
-    border: none;
-    height: 80px;
-    width: 100px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.cypher-decoder-radio:checked{
-    background: #acacac;
 }
 
 #cypher-copy-button{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyphers Translator</title>
+    <title>Multi-Translator</title>
     <link rel="stylesheet" href="/Styles/style.css">
 </head>
 <body>
@@ -62,12 +62,12 @@
 
     <div class="cypher">
         <div class="container">
-            <h1>Cipher Translator</h1>
-            <textarea class="cypher-textarea" id="inputText" placeholder="Enter text here..."></textarea>
+            <h1>Multi-Translator</h1>
+            <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
             <div class="cypher-buttons">
                 <div>
-                    <label><input class="cypher-encoder-radio" type="radio" name="mode" value="encode" checked> Encode</label>
-                    <label><input class="cypher-decoder-radio" type="radio" name="mode" value="decode"> Decode</label>
+                    <label><input class="cypher-radio" type="radio" name="mode" value="encode" checked> Encode</label>
+                    <label><input class="cypher-radio" type="radio" name="mode" value="decode"> Decode</label>
                 </div>
                 <div>
                     <select id="cipherSelect">
@@ -86,7 +86,8 @@
                     </div>
                 </div>
             </div>
-            <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output will appear here..."></textarea>
+            <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
+            <br>
             <button id="cypher-copy-button" onclick="copyToClipboard()">Copy Output</button>
         </div>
     </div>
