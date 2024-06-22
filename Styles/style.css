@@ -169,11 +169,11 @@ body{
     overflow: hidden;
 }
 
-#cobalt button:hover{
+#pyc button:hover{
     background-color: #0047AB;
 }
 
-#cobalt button:active{
+#pyc button:active{
     background-color: #003a8b;
 }
 
