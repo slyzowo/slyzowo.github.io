@@ -112,12 +112,10 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #1f1f1f;
-    justify-content: center;
     height: 52px;
     border-radius: 5px;
-    margin: auto;
     padding: 2px;
-    max-width: 556px;
+    max-width: 460px;
 }
 
 .navigation-bar button{
@@ -198,16 +196,14 @@ body{
     flex-direction: row;
     background-color: #1f1f1f;
     align-items: center;
-    justify-content: center;
     height: 40px;
     border-radius: 5px;
     margin: auto;
-    max-width: 556px;
+    min-width: 250px;
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
     padding: 5px;
 }
 
