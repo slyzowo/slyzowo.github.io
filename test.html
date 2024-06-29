@@ -1,3 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Translator</title>
+    <style>
+        .cypher {
+            text-align: center;
+        }
+
+        .cypher-textarea {
+            width: 60%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            color: #dfdfdf;
+            background-color: #1f1f1f;
+        }
+
+        .cypher-buttons {
+            padding: 2%;
+        }
+
+        .cypher-radio {
+            font-size: 1rem;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 10px;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        #cypher-copy-button {
+            background-color: #ffa0f9;
+            border: none;
+            border-radius: 30px;
+            border: none;
+            height: 80px;
+            width: 150px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #cypher-copy-button:hover {
+            background-color: #e48dde;
+        }
+
+        #cypher-copy-button:active {
+            background-color: #c473be;
+        }
+
+        .base-options {
+            display: none;
+        }
+
+        #binarySegmentContainer {
+            display: none;
+        }
+
+        #caesarShiftContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cypher">
+        <div class="container">
+            <h1>Multi-Translator</h1>
+            <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
+            <div class="cypher-buttons">
+                <div>
+                    <label><input class="cypher-radio" type="radio" name="mode" value="encode" checked> Encode</label>
+                    <label><input class="cypher-radio" type="radio" name="mode" value="decode"> Decode</label>
+                </div>
+                <div>
+                    <select id="cipherSelect">
+                        <option value="ascii">ASCII</option>
+                        <option value="base">Base</option>
+                        <option value="binary">Binary</option>
+                        <option value="caesar">Caesar</option>
+                        <option value="hex-colour">Hex Colour</option>
+                        <option value="morse">Morse</option>
+                    </select>
+                    <div class="base-options" id="baseOptions">
+                        <select id="baseSelect">
+                            <option value="binary">Binary</option>
+                            <option value="base8">Base 8</option>
+                            <option value="base16">Base 16</option>
+                            <option value="base32">Base 32</option>
+                            <option value="base36">Base 36</option>
+                            <option value="base58">Base 58</option>
+                            <option value="base85">Base 85</option>
+                            <option value="base91">Base 91</option>
+                        </select>
+                    </div>
+                    <div id="binarySegmentContainer" style="display: none;">
+                        <label for="binarySegmentSelect">Segment Length:</label>
+                        <select id="binarySegmentSelect">
+                            <option value="8" selected>8</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div id="caesarShiftContainer" style="display: none;">
+                        <label for="caesarShift">Shift:</label>
+                        <input type="number" id="caesarShift" value="1">
+                    </div>
+                </div>
+            </div>
+            <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
+            <br>
+            <button id="cypher-copy-button" onclick="copyToClipboard()">Copy Output</button>
+        </div>
+    </div>
+
+<script>
 function asciiEncode(text) {
     return text.split('').map(char => char.charCodeAt(0)).join(' ');
 }
@@ -351,3 +471,7 @@ function toggleBaseOptions() {
 
         // Initialize visibility of base-specific options
         toggleBaseOptions();
+
+</script>
+</body>
+</html>

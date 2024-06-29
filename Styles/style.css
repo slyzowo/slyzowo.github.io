@@ -337,6 +337,18 @@ body{
     background-color: #c473be;
 }
 
+.base-options {
+    display: none;
+}
+
+#binarySegmentContainer {
+    display: none;
+}
+
+#caesarShiftContainer {
+    display: none;
+}
+
 /* Neodroid*/
 div.neodroid-terms-of-service{
     text-align: center;

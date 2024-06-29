@@ -15,10 +15,6 @@
         <button id="button"><img height="30px" src="/Images/home.png"></button>
     </a>
     
-    <a href="https://slyzoo.net/Big-Projects/pisces"  id="pyc">
-        <button id="button"><img height="30px" src="/Images/PYC_logo.png"></button>
-    </a>
-    
     <a href="https://slyzoo.net/Big-Projects/neodroid">
         <button id="button"><img height="30px" src="/Images/neodroid.png"></button>
     </a>
@@ -78,14 +74,29 @@
                         <option value="caesar">Caesar</option>
                         <option value="hex-colour">Hex Colour</option>
                         <option value="morse">Morse</option>
-
                     </select>
+                    <div class="base-options" id="baseOptions">
+                        <select id="baseSelect">
+                            <option value="binary">Binary</option>
+                            <option value="base8">Base 8</option>
+                            <option value="base16">Base 16</option>
+                            <option value="base32">Base 32</option>
+                            <option value="base36">Base 36</option>
+                            <option value="base58">Base 58</option>
+                            <option value="base85">Base 85</option>
+                            <option value="base91">Base 91</option>
+                        </select>
+                    </div>
                     <div id="binarySegmentContainer" style="display: none;">
                         <label for="binarySegmentSelect">Segment Length:</label>
                         <select id="binarySegmentSelect">
                             <option value="8" selected>8</option>
                             <option value="7">7</option>
                         </select>
+                    </div>
+                    <div id="caesarShiftContainer" style="display: none;">
+                        <label for="caesarShift">Shift:</label>
+                        <input type="number" id="caesarShift" value="1">
                     </div>
                 </div>
             </div>
