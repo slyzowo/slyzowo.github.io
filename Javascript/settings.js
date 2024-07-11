@@ -19,13 +19,13 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-// Open the settings container and default tab when the button is clicked
+// Toggle the settings container and open the default tab when the button is clicked
 document.querySelector(".openSettingsButton").addEventListener("click", function() {
-    document.getElementById("settingsContainer").style.display = "block";
-    document.querySelector(".tab-button").click(); // Open the default tab (General)
-});
-
-// Close the settings container when the close button is clicked
-document.getElementById("closeSettingsButton").addEventListener("click", function() {
-    document.getElementById("settingsContainer").style.display = "none";
+    var settingsContainer = document.getElementById("settingsContainer");
+    if (settingsContainer.style.display === "none" || settingsContainer.style.display === "") {
+        settingsContainer.style.display = "block";
+        document.querySelector(".tab-button").click(); // Open the default tab (General)
+    } else {
+        settingsContainer.style.display = "none";
+    }
 });
