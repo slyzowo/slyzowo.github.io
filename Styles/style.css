@@ -199,7 +199,7 @@ body{
     height: 40px;
     border-radius: 5px;
     margin: auto;
-    min-width: 250px;
+    min-width: 40px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -307,7 +307,12 @@ body{
     padding: 2%;
 }
 
+input[type=radio].cypher-radio {
+    accent-color: #ffa0f9;
+}
+
 .cypher-radio{
+    
     font-size: 1rem;
     cursor: pointer;
     width: 20px;
@@ -319,7 +324,7 @@ body{
 }
 
 #cypher-copy-button{
-    background-color: #ffa0f9;
+    background-color: #48a7ff;
     border: none;
     border-radius: 30px;
     border: none;
