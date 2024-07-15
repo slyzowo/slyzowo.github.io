@@ -114,8 +114,8 @@ body{
     background-color: #1f1f1f;
     height: 52px;
     border-radius: 5px;
+    width: 420px;
     padding: 2px;
-    max-width: 460px;
 }
 
 .navigation-bar button{
@@ -386,8 +386,11 @@ div.neodroid-commands{
 .gemini-navigation-bar {
     display: flex;
     flex-direction: row;
+    background-color: #1f1f1f;
     height: 52px;
-    margin: auto;
+    border-radius: 5px;
+    width: 420px;
+    padding: 2px;
 }
 
 .gemini-tabs {
