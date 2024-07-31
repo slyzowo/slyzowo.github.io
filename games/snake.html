@@ -1,74 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="icon" type="image" href="../Images/snake.png">
-
+<!--basic stuffs-->
+  <title>Snake</title>
+  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="icon" type="image" href="../Images/snake.png">
+<!-- not sure? -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- embed support part-1 -->
+  <meta name="description" content="The classic game Snake">
+  <meta name="keywords" content="snake, game, classic, slyzoo, slyzoo4995">
+  <meta name="author" content="slyzoo4995">
+<!-- embed support part-2 -->
+  <meta property="og:title" content="Snake">
+  <meta property="og:description" content="The classic game Snake">
+  <meta property="og:image" content="https://slyzoo.net/Images/snake.png">
+<!-- TODO : Fix settings button, it wont open settings tab -->
 </head>
 <body>
-    <header>
-        <div class="navigation-bar">
-    <!-- redoing nav bar-->
-    <a href="https://slyzoo.net">
-        <button id="button"><img height="30px" src="/Images/home.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Big-Projects/neodroid">
-        <button id="button"><img height="30px" src="/Images/neodroid.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta">
-        <button id="button"><img height="30px" src="/Images/keyboard.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/multi-translator">
-        <button id="button"><img height="30px" src="/Images/translate.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/games/snake">
-        <button id="button"><img height="30px" src="/Images/snake.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/games/rock-paper-scissors">
-        <button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Small-Projects/calculator">
-        <button id="button"><img height="30px" src="/Images/calculator.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Small-Projects/stopwatch">
-        <button id="button"><img height="30px" src="/Images/stopwatch.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Minecraft/gemini"  id="gemini">
-        <button id="button"><img height="30px" src="/Images/gemini-smp.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Fabric-Mods/the-kitchen-sink-wiki">
-        <button id="button"><img height="30px" src="/Images/book.png"></button>
-    </a>
-    </div>
-    </header>
-
+<header>
+  <div class="navigation-bar">
+<!-- Home -->
+  <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.png"></button></a>
+<!-- NeoDroid -->
+  <a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
+<!-- Project Magenta -->
+  <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/keyboard.png"></button></a>
+<!-- Multi-translator -->
+  <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
+<!-- snek -->
+  <a href="https://slyzoo.net/games/snake"><button id="button"><img height="30px" src="/Images/snake.png"></button></a>
+<!-- Rock, Paper, Scissors -->
+  <a href="https://slyzoo.net/games/rock-paper-scissors"><button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button></a>
+<!-- Calculator -->
+  <a href="https://slyzoo.net/Small-Projects/calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
+<!-- Stopwatch -->
+  <a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.png"></button></a>
+<!-- Gemini -->
+  <a href="https://slyzoo.net/Minecraft/gemini"  id="gemini"><button id="button"><img height="30px" src="/Images/gemini-smp.png"></button></a>
+  </div>
+  </header>
 <div id="snake-game-container">
-        <div id="reset-and-score">
-        <div id="snake-game-score">0</div>
-        <button id="snake-reset-button">Reset Game</button>
-        </div>
-        <canvas id="snake-game-board" width="625vw" height="625vh"></canvas>
+  <div id="reset-and-score">
+    <div id="snake-game-score">0</div>
+      <button id="snake-reset-button">Reset Game</button>
     </div>
-<br>
-
+      <canvas id="snake-game-board" width="625vw" height="625vh"></canvas>
+  </div>
 <div id="footer">
-    <footer>
-      <button class="openSettingsButton">
-        <img src="../Images/settings-96x96px-pink.png" height="30" class="">
-      </button>
+  <footer>
+    <button class="openSettingsButton">
+      <img src="../Images/settings-96x96px-pink.png" height="30" class="">
+    </button>
     <div id="settingsContainer" class="settings-container" style="display: none;">
       <div class="tabs">
         <button class="tab-button" onclick="openTab(event, 'General')">General</button>
@@ -99,9 +84,10 @@
         <a href="https://www.linkedin.com/in/jade-himes-14a982252/" target="_blank"><img src="/images/socials/linkedin.png" height="30"></a>
       </div>
     </div>
-    </footer>
-  </div>
-  <script src="Javascript/settings.js"></script>
+  </footer>
+</div>
+</body>
+<script src="Javascript/settings.js"></script>
 <script src="../Javascript/snakeGame.js"></script>
 </body>
 </html>
