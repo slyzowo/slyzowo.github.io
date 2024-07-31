@@ -1,3 +1,27 @@
+:root{ /* i feel so stupid, i just learned the existance of css vars */
+
+/* magenta's*/
+--transparent: rgba(0,0,0,0);
+
+/* magenta's*/
+--magenta-0: #FF00FF;
+--magenta-1: #d100d1;
+
+/* pink's*/
+--pink-0: #ff80e6;
+--pink-1: #ce81c9;
+--pink-3: #b471b0;
+
+/* blacks's*/
+--black-0: #000000;
+--black-1: #242424;
+--black-2: #202020;
+--black-3: #1f1f1f;
+--black-4: #1a1a1a;
+--black-5: #141414;
+
+}
+
 .new-badge{
     background-color: red;
     color: white;
@@ -27,11 +51,11 @@ body{
 }
 
 .openSettingsButton:hover{
-    background: #1a1a1a;
+    background: var(--black-4);
 }
 
 .openSettingsButton:active{
-    background: #141414;
+    background: var(--black-5);
 }
 
 .settings-tab-content{
@@ -53,14 +77,14 @@ body{
     height: 90%;
     padding: 20px;
     border: none;
-    background-color: #1f1f1f;
+    background-color: var(--black-3);
     border-radius: 5px;
 }
 
 .close-button {
     float: right;
     background-color: #d4352a;
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -111,7 +135,7 @@ body{
 .navigation-bar{
     display: flex;
     flex-direction: row;
-    background-color: #1f1f1f;
+    background-color:var(--black-3);
     height: 52px;
     border-radius: 5px;
     width: 420px;
@@ -119,7 +143,7 @@ body{
 }
 
 .navigation-bar button{
-    background-color: rgba(0,0,0,0);
+    background-color: var(--transparent);
     border: none;
     padding: 5px;
     margin-right: 2px;
@@ -176,25 +200,25 @@ body{
 }
 
 #project-magenta button:hover{
-    background-color: #FF00FF;
+    background-color: var(--magenta-0);
 }
 
 #project-magenta button:active{
-    background-color: #d100d1;
+    background-color: var(--magenta-1);
 }
 
 #gemini button:hover{
-    background-color: #7e43cc;
+    background-color: #7e43cc; /*#7e43cc*/
 }
 
 #gemini button:active{
-    background-color: #743ebb;
+    background-color: #743ebb; /*#743ebb*/
 }
 
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #1f1f1f;
+    background-color: var(--black-3);
     align-items: center;
     height: 40px;
     border-radius: 5px;
@@ -210,7 +234,7 @@ body{
 /* The calculator */
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #202020;
+    background-color: var(--black-2);
     margin-left: auto;
     margin-right: auto;
     max-width: 762px;
@@ -300,7 +324,7 @@ body{
     border: none;
     border-radius: 10px;
     color: #dfdfdf;
-    background-color: #1f1f1f;
+    background-color:var(--black-3);
 }
 
 .cypher-buttons{
@@ -386,7 +410,7 @@ div.neodroid-commands{
 .gemini-navigation-bar {
     display: flex;
     flex-direction: row;
-    background-color: #1f1f1f;
+    background-color: var(--black-3);
     height: 52px;
     border-radius: 5px;
     width: 420px;
@@ -464,13 +488,13 @@ div.neodroid-commands{
     border: 10px solid;
     padding: 20px;
     border-radius: 50px;
-    background-color: #242424;
+    background-color: var(--black-1);
 }
 
 #StopwatchDisplay{
     font-size: 5rem;
     font-family: monospace;
-    color: #000000;
+    color: var(--black-0);
     margin-bottom: 20px;
 }
 
@@ -570,7 +594,7 @@ div.neodroid-commands{
     border: none;
     border-radius: 25px;
     padding: 10px;
-    background-color: #1f1f1f;
+    background-color: var(--black-3);
 }
 
 #playerText{
