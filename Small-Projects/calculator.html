@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Calculator</title>
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="icon" type="image" href="../Images/calculator.png">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- embed support -->
-    <meta property="og:title" content="Calculator">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://slyzoo.net/Images/favicons\calculate.png">
-
+<!--basic stuffs-->
+  <title>slyzoo.net</title>
+  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="icon" type="image" href="../Images/calculator.png">
+<!-- not sure? -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- embed support part-1 -->
+  <meta name="description" content="Calculator">
+  <meta name="keywords" content="calculator, maths, math, slyzoo, slyzoo4995">
+  <meta name="author" content="slyzoo4995">
+<!-- embed support part-2 -->
+  <meta property="og:title" content="Calculator">
+  <meta property="og:description" content="basic calculator">
+  <meta property="og:image" content="https://slyzoo.net/Images/Images/calculator.png">
+</head>
+<header>
+  <div class="navigation-bar">
+<!-- Home -->
+  <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.png"></button></a>
+<!-- NeoDroid -->
+  <a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
+<!-- Project Magenta -->
+  <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/keyboard.png"></button></a>
+<!-- Multi-translator -->
+  <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
+<!-- snek -->
+  <a href="https://slyzoo.net/games/snake"><button id="button"><img height="30px" src="/Images/snake.png"></button></a>
+<!-- Rock, Paper, Scissors -->
+  <a href="https://slyzoo.net/games/rock-paper-scissors"><button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button></a>
+<!-- Calculator -->
+  <a href="https://slyzoo.net/Small-Projects/calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
+<!-- Stopwatch -->
+  <a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.png"></button></a>
+<!-- Gemini -->
+  <a href="https://slyzoo.net/Minecraft/gemini"  id="gemini"><button id="button"><img height="30px" src="/Images/gemini-smp.png"></button></a>
+  </div>
+  </header>
 <body>
-    <header>
-        <div class="navigation-bar">
-    <!-- redoing nav bar-->
-    <a href="https://slyzoo.net">
-        <button id="button"><img height="30px" src="/Images/home.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Big-Projects/neodroid">
-        <button id="button"><img height="30px" src="/Images/neodroid.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta">
-        <button id="button"><img height="30px" src="/Images/keyboard.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/multi-translator">
-        <button id="button"><img height="30px" src="/Images/translate.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/games/snake">
-        <button id="button"><img height="30px" src="/Images/snake.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/games/rock-paper-scissors">
-        <button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Small-Projects/calculator">
-        <button id="button"><img height="30px" src="/Images/calculator.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Small-Projects/stopwatch">
-        <button id="button"><img height="30px" src="/Images/stopwatch.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Minecraft/gemini"  id="gemini">
-        <button id="button"><img height="30px" src="/Images/gemini-smp.png"></button>
-    </a>
-    
-    <a href="https://slyzoo.net/Fabric-Mods/the-kitchen-sink-wiki">
-        <button id="button"><img height="30px" src="/Images/book.png"></button>
-    </a>
-    </div>
-    </header>
-
-<br>
-<br>
-    <div id="calculator">
-        <input id="calculator-display" readonly>
-        <div id="calculator-number-buttons">
-            <button class="calculator-operator-button" onclick="appendToDisplay('+')" >+</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('1')">1</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('2')">2</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('3')">3</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('^')">^</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('%')">%</button>
-            <button class="calculator-operator-button" onclick="appendToDisplay('-')">−</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('4')">4</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('5')">5</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('6')">6</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('tan')">tan</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('cos')">cos</button>
-            <button class="calculator-operator-button" onclick="appendToDisplay('*')">×</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('7')">7</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('8')">8</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('9')">9</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('sin')">sin</button>
-            <button class="calculator-special-button" onclick="sqrt()">√</button>
-            <button class="calculator-operator-button" onclick="appendToDisplay('/')">÷</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('.')">.</button>
-            <button class="calculator-number-button" onclick="appendToDisplay('0')">0</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('&lpar;')">(</button>
-            <button class="calculator-special-button" onclick="appendToDisplay('&rpar;')">)</button>
-            <button class="calculator-operator-button" onclick="clearDisplay()" >Clear</button>
-            <button class="calculator-operator-button" onclick="calculate()">=</button>
-
-        </div>
-        <div id="footer">
+  <div id="calculator">
+    <input id="calculator-display" readonly>
+      <div id="calculator-number-buttons">
+        <button class="calculator-operator-button" onclick="appendToDisplay('+')" >+</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('1')">1</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('2')">2</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('3')">3</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('^')">^</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('%')">%</button>
+        <button class="calculator-operator-button" onclick="appendToDisplay('-')">−</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('4')">4</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('5')">5</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('6')">6</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('tan')">tan</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('cos')">cos</button>
+        <button class="calculator-operator-button" onclick="appendToDisplay('*')">×</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('7')">7</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('8')">8</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('9')">9</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('sin')">sin</button>
+        <button class="calculator-special-button" onclick="sqrt()">√</button>
+        <button class="calculator-operator-button" onclick="appendToDisplay('/')">÷</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('.')">.</button>
+        <button class="calculator-number-button" onclick="appendToDisplay('0')">0</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('&lpar;')">(</button>
+        <button class="calculator-special-button" onclick="appendToDisplay('&rpar;')">)</button>
+        <button class="calculator-operator-button" onclick="clearDisplay()" >Clear</button>
+        <button class="calculator-operator-button" onclick="calculate()">=</button>
+      </div>
+      <div id="footer">
           <footer>
             <button class="openSettingsButton">
               <img src="../Images/settings-96x96px-pink.png" height="30" class="">
@@ -128,7 +107,7 @@
           </div>
           </footer>
         </div>
-        <script src="Javascript/settings.js"></script>
+<script src="Javascript/settings.js"></script>
 <script src="/javascript/calculator.js"></script>
 </body>
 </html>
