@@ -1,21 +1,46 @@
 :root{ /* i feel so stupid, i just learned the existance of css vars */
-/* transparent's*/
+/* Transparent's*/
 --transparent:rgba(0,0,0,0);
-/* magenta's*/
+
+/* Magenta's*/
 --magenta-0:#FF00FF;
 --magenta-1:#d100d1;
-/* pink's*/
+
+/* Pink's*/
 --pink-0:#ff80e6;
 --pink-1:#ce81c9;
 --pink-3:#b471b0;
-/* blacks's*/
+--pink-4:#ffa0f9;
+--pink-5:#e48dde;
+--pink-6:#c473be;
+
+/*Green's*/
+--green-0:#48ff60;
+
+/* Blue's */
+--blue-0: #48a7ff;
+--blue-1: #4196e6;
+--blue-2: #3a83c7;
+
+/* Purple's*/
+--purple-0:#9266cc;
+--purple-1:#7e43cc;
+--purple-2:#743ebb;
+
+/* Blacks's*/
 --black-0:#000000;
 --black-1:#242424;
 --black-2:#202020;
 --black-3:#1f1f1f;
 --black-4:#1a1a1a;
 --black-5:#141414;
-/* whites's*/
+
+/*Grey's*/
+--grey-0:#acacac;
+--grey-1:#4d4d4d;
+--grey-2:#3f3f3f;
+
+/* Whites's*/
 --white-0:#ffffff;
 --white-1:#f1f1f1;
 --white-2:#e9e9e9;
@@ -23,9 +48,18 @@
 --white-4:#dddddd;
 --white-5:#d4d4d4;
 --white-6:#cccccc;
-/*grey's*/
---grey-1000:#acacac;
+
+/* Gemini SMP lore */
+--messenger-of-the-void:#ff6060;
+--kamflame:#6060ff;
+--mangrove-man:#e7a54f;
+--gemini-intro:#f0f8ff;
+--gemini-server-owner:#e91e63;
+--gemini-server-staff:#f1c40f;
+--gemini-server-donator:#e67e22;
+--gemini-server-member:#3498db;
 }
+
 .new-badge{
   background-color: red;
   color: var(--white-0);
@@ -33,17 +67,20 @@
   text-align: center;
   border-radius: 5px;
 }
+
 /* The "main" content */
 .main {
   margin-left: 200px;
   padding: 0px 10px;
 }
+
 /* On every page */
 body{
   color: var(--white-3);
   text-align: center;
   background-image: url('starred_backgroundV2.png');
 }
+
 .openSettingsButton{
   float: left;
   background: transparent;
@@ -51,15 +88,19 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
+
 .openSettingsButton:hover{
   background: var(--black-4);
 }
+
 .openSettingsButton:active{
   background: var(--black-5);
 }
+
 .settings-tab-content{
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
+
 .settings-container {
   position: fixed;
   bottom: 50px;
@@ -72,12 +113,14 @@ body{
   background-color: var(--black-3);
   border-radius: 5px;
 }
+
 .tabs {
   display: flex;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--white-6);
   margin-bottom: 10px;
   clear: both;
 }
+
 .tab-button {
   background-color: var(--white-1);
   padding: 1%;
@@ -89,21 +132,26 @@ body{
   transition: background-color 0.5s ease;
   border-radius: 5px;
 }
+
 .tab-button:hover {
   background-color: var(--white-4);
 }
+
 .tab-button.active {
   background-color: var(--white-6);
 }
+
 .tab-content {
   display: none;
   padding: 16px;
 }
+
 .tab-content.active {
   display: block;
 }
+
 /* The side navigation menu */
-.navigation-bar{
+.enclave{
   display: flex;
   flex-direction: row;
   background-color:var(--black-3);
@@ -112,7 +160,8 @@ body{
   border-radius: 5px;
   padding: 2px;
 }
-.navigation-bar button{
+
+.enclave button{
   background-color: var(--transparent);
   border: none;
   padding: 5px;
@@ -121,49 +170,31 @@ body{
   border-radius: 5px;
   transition: background-color 0.5s ease;
 }
-.navigation-bar button:hover{
-  background-color: #ff80e6;
+
+.enclave button:hover{
+  background-color: var(--pink-0);
 }
-.dropdown{
-  float: left;
-  overflow: hidden;
-}
-.dropdown-content{
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-.dropdown-content a{
-  float: none;
-  padding: 1px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown:hover .dropdown-content{
-  display: block;
-}
-.navigation-bar button:hover{
-  background-color: #4d4d4d;
-}
+
 .navigation-bar button:active{
-  background-color: #b471b0;
+  background-color: var(--pink-3);
 }
-.navigation-bar-dropdown{
-  float: left;
-  overflow: hidden;
-}
+
 #project-magenta button:hover{
   background-color: var(--magenta-0);
 }
+
 #project-magenta button:active{
   background-color: var(--magenta-1);
 }
+
 #gemini button:hover{
-  background-color: #7e43cc; /*#7e43cc*/
+  background-color: var(--purple-0);
 }
+
 #gemini button:active{
-  background-color: #743ebb; /*#743ebb*/
+  background-color: var(--purple-1);
 }
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -179,6 +210,7 @@ body{
   left: 0;
   padding: 5px;
 }
+
 /* The calculator */
 #calculator{
 	font-family: Arial, Helvetica, sans-serif;
@@ -191,23 +223,26 @@ body{
 	overflow: hidden;
 	border-radius: 25px;
 }
+
 #calculator-display{
   width: 100%;
   padding: 20px;
   font-size: 5rem;
   text-align: left;
   border: none;
-  background-color: #3f3f3f;
+  background-color: var(--grey-2);
   color: var(--white-0);
 }
+
 #calculator-number-buttons{
   display: grid;
   grid-template-columns: repeat(5, 4fr);
   gap: 4px;
   padding: 4%;
 }
+
 .calculator-operator-button{
-	background-color: #48a7ff;
+	background-color: var(--blue-0);
   height: 100px;
   width: 100px;
   border: none;
@@ -215,14 +250,17 @@ body{
   font-display: bold;
 	border-radius: 25px;
 }
+
 .calculator-operator-button:hover{
-  background-color: #4196e6;
+  background-color: var(--blue-1);
 }
+
 .calculator-operator-button:active{
-  background-color: #3a83c7;
+  background-color: var(--blue-2);
 }
+
 .calculator-number-button{
-	background-color: #ffa0f9;
+	background-color: var(--pink-4);
   height: 100px;
   width: 100px;
   border: none;
@@ -230,12 +268,15 @@ body{
   font-display: bold;
 	border-radius: 25px;
 }
+
 .calculator-number-button:hover{
-  background-color: #e48dde;
+  background-color: var(--pink-5);
 }
+
 .calculator-number-button:active{
-  background-color: #c473be;
+  background-color: var(--pink-6);
 }
+
 .calculator-special-button{
   background-color: var(--white-2);
   height: 100px;
@@ -245,16 +286,20 @@ body{
   font-display: bold;
 	border-radius: 25px;
 }
+
 .calculator-special-button:hover{
   background-color: var(--white-5);
 }
+
 .calculator-special-button:active{
-  background-color: #acacac;
+  background-color: var(--grey-0);
 }
+
 /* Cypher */
 .cypher{
   text-align: center;
 }
+
 /* multi-translator */
 .cypher-textarea {
   width: 60%;
@@ -266,11 +311,13 @@ body{
   color: var(--white-3);
   background-color:var(--black-3);
 }
+
 .cypher-buttons{
   padding: 2%;
 }
+
 input[type=radio].cypher-radio {
-  accent-color: #ffa0f9;
+  accent-color: var(--pink-4);
 }
 .cypher-radio{
   font-size: 1rem;
@@ -282,6 +329,7 @@ input[type=radio].cypher-radio {
   margin-right: 10px;
   transition: background-color 0.2s, border-color 0.2s;
 }
+
 #cypher-copy-button{
   background-color: #48a7ff;
   border: none;
@@ -292,43 +340,54 @@ input[type=radio].cypher-radio {
   font-size: 1rem;
   cursor: pointer;
 }
+
 #cypher-copy-button:hover{
-  background-color: #e48dde;
+  background-color: var(--pink-5);
 }
 #cypher-copy-button:active{
-  background-color: #c473be;
+  background-color: var(--pink-6);
 }
+
 .base-options {
   display: none;
 }
+
 #binarySegmentContainer {
   display: none;
 }
+
 #caesarShiftContainer {
   display: none;
 }
+
 /* Neodroid*/
 div.neodroid-terms-of-service{
   text-align: center;
 }
+
 .neodroid-terms-of-service-list{
   display: inline-block;
   text-align: left;
 }
+
 div.neodroid-privacy-policy{
   text-align: center;
 }
+
 .neodroid-privacy-policy-list{
   display: inline-block;
   text-align: left;
 }
+
 div.neodroid-commands{
   text-align: center;
 }
+
 .neodroid-commands-list{
   display: inline-block;
   text-align: left;
 }
+
 /* Gemini lore */
 .gemini-navigation-bar {
   display: flex;
@@ -339,8 +398,9 @@ div.neodroid-commands{
   width: 420px;
     padding: 2px;
 }
+
 .gemini-tabs {
-  background-color: #9266cc;
+  background-color: var(--purple-0);
   height: 50px;
   width: 100px;
   border: none;
@@ -350,45 +410,58 @@ div.neodroid-commands{
   border-radius: 5px;
   transition: background-color 0.5s ease;
 }
+
 .gemini-tabs:hover {
-  background-color: #845cb9;
+  background-color: var(--purple-1);
 }
+
 .gemini-tabs:active {
-  background-color: #7a55aa;
+  background-color: var(--purple-2);
 }
+
 .gemini-tab-content {
   display: none;
   padding: 6px 12px;
   border-top: none;
 }
+
 #messenger-of-the-void {
-  color: #ff6060;
+  color: var(--messenger-of-the-void);
 }
+
 #Kamflame {
-  color: #6060ff;
+  color: var(--kamflame);
 }
+
 #mangrove-man {
-  color: #e7a54f;
+  color: var(--mangrove-man);
 }
+
 #gemini-intro {
-  color: #f0f8ff;
+  color: var(--gemini-intro);
 }
+
 #gemini-server-owner {
-  color: #e91e63;
+  color: var(--gemini-server-owner);
 }
+
 #gemini-staff {
-  color: #f1c40f;
+  color: var(--gemini-server-staff);
 }
+
 #gemini-donator {
-  color: #e67e22;
+  color: var(--gemini-server-donator);
 }
+
 #gemini-member {
-  color: #3498db;
+  color: var(--gemini-server-member);
 }
+
 /* Stopwatch */
 #StopwatchTitle{
   font-size: 4rem;
 }
+
 #StopwatchContainer{
 	margin: auto;
   width: 50%;
@@ -400,12 +473,14 @@ div.neodroid-commands{
   border-radius: 50px;
   background-color: var(--black-1);
 }
+
 #StopwatchDisplay{
   font-size: max(4vw);
   font-family: monospace;
   color: var(--black-0);
   margin-bottom: 20px;
 }
+
 #StopwatchControls button{
   font-size: 1.5rem;
   padding: 10px 20px;
@@ -414,30 +489,37 @@ div.neodroid-commands{
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
+
 #StopwatchStart{
-  background-color: #48a7ff;
+  background-color: var(--blue-0);
   border: none;
   border-radius: 30px;
 }
+
 #StopwatchStart:hover{
-  background-color: #4196e6;
+  background-color: var(--blue-1);
 }
+
 #StopwatchStop{
-  background-color: #ffa0f9;
+  background-color: var(--pink-4);
   border: none;
   border-radius: 30px;
 }
+
 #StopwatchStop:hover{
-  background-color: #e48dde;
+  background-color: var(--pink-5);
 }
+
 #StopwatchReset{
   background-color: var(--white-2);
   border: none;
   border-radius: 30px;
 }
+
 #StopwatchReset:hover{
   background-color: var(--white-5);
 }
+
 /* Thekichensink wiki */
 .thekitchensink-navigation-bar{
   display: flex;
@@ -447,31 +529,24 @@ div.neodroid-commands{
   margin: auto;
   padding: 2px;
 }
-.thekitchensink-tabs{
-  background-color: #fcc45c;
-  height: 50px;
-  width: 100px;
-  border: none;
-  padding: 5px;
-  margin-right: 2px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.5s ease;
-}
+
 /* snek */
 #snake-game-container{
   padding: 100px;
 }
+
 #snake-game-board{
   border:none;
   border-radius: 3%;
 }
+
 #snake-game-score{
   font-size: 100px;
   position: absolute;
   right: 200px;
   top: 100px;
 }
+
 #snake-reset-button{
   position: absolute;
   right: 120px;
@@ -484,6 +559,7 @@ div.neodroid-commands{
   cursor: pointer;
   background-color: var(--white-2);
 }
+
 /* rock, paper, scissors */
 #rockPaperScissorsgame{
   border: none;
@@ -491,12 +567,15 @@ div.neodroid-commands{
   padding: 10px;
   background-color: var(--black-3);
 }
+
 #playerText{
-  color: #48a7ff;
+  color: var(--blue-0);
 }
+
 #computerText{
-  color: #48ff60;
+  color: var(--green-0);
 }
+
 .choiceButton{
   line-height: 30px;
   width: 170px;
@@ -505,12 +584,15 @@ div.neodroid-commands{
   font-size: xx-large;
   cursor: pointer;
 }
+
 #ROCK{
-  background-color: #48a7ff;
+  background-color: var(--blue-0);
 }
+
 #PAPER{
-  background-color: #ffa0f9;
+  background-color: var(--pink-4);
 }
+
 #SCISSORS{
   background-color: var(--white-2);
 }
