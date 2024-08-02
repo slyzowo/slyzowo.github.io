@@ -49,6 +49,7 @@ body{
   background: transparent;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 .openSettingsButton:hover{
   background: var(--black-4);
@@ -58,11 +59,6 @@ body{
 }
 .settings-tab-content{
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-.openSettingsButton {
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 .settings-container {
   position: fixed;
@@ -75,18 +71,6 @@ body{
   border: none;
   background-color: var(--black-3);
   border-radius: 5px;
-}
-.close-button {
-  float: right;
-  background-color: #d4352a;
-  color: var(--white-0);
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.close-button:hover {
-  background-color: #d32f2f;
 }
 .tabs {
   display: flex;
@@ -124,8 +108,8 @@ body{
   flex-direction: row;
   background-color:var(--black-3);
   height: 42px;
-  border-radius: 5px;
   width: 380px;
+  border-radius: 5px;
   padding: 2px;
 }
 .navigation-bar button{
@@ -159,7 +143,7 @@ body{
   display: block;
 }
 .navigation-bar button:hover{
-  background-color: #ce81c9;
+  background-color: #4d4d4d;
 }
 .navigation-bar button:active{
   background-color: #b471b0;
