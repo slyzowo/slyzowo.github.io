@@ -158,7 +158,7 @@ body{
   flex-direction: row;
   background-color:var(--black-3);
   height: 42px;
-  width: 455px;
+  width: 24%;
   border-radius: 5px;
   padding: 2px;
 }
