@@ -14,6 +14,9 @@
 --pink-5:#e48dde;
 --pink-6:#c473be;
 
+/* Red's */
+--red-0:#eb4e3e;
+
 /*Green's*/
 --green-0:#48ff60;
 
@@ -155,7 +158,7 @@ body{
   flex-direction: row;
   background-color:var(--black-3);
   height: 42px;
-  width: 380px;
+  width: 455px;
   border-radius: 5px;
   padding: 2px;
 }
@@ -608,4 +611,8 @@ div.neodroid-commands{
   line-height: 1.5;
   display: block;
   white-space: pre-wrap;
+}
+
+#import{
+  color: var(--red-0);
 }

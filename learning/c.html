@@ -20,25 +20,29 @@
 </head>
 <body>
 <header>
-<div class="enclave">
+  <div class="enclave">
 <!-- Home -->
   <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.png"></button></a>
 <!-- NeoDroid -->
-  <a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
+<a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
 <!-- Project Magenta -->
-  <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/keyboard.png"></button></a>
+<a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/keyboard.png"></button></a>
 <!-- Multi-translator -->
-  <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
+<a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
 <!-- snek -->
-  <a href="https://slyzoo.net/games/snake"><button id="button"><img height="30px" src="/Images/snake.png"></button></a>
+<a href="https://slyzoo.net/games/snake"><button id="button"><img height="30px" src="/Images/snake.png"></button></a>
 <!-- Rock, Paper, Scissors -->
-  <a href="https://slyzoo.net/games/rock-paper-scissors"><button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button></a>
+<a href="https://slyzoo.net/games/rock-paper-scissors"><button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button></a>
 <!-- Calculator -->
-  <a href="https://slyzoo.net/Small-Projects/calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
+<a href="https://slyzoo.net/Small-Projects/calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
 <!-- Stopwatch -->
-  <a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.png"></button></a>
+<a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.png"></button></a>
 <!-- Gemini -->
-  <a href="https://slyzoo.net/Minecraft/Arg/gemini"  id="gemini"><button id="button"><img height="30px" src="/Images/gemini-smp.png"></button></a>
+<a href="https://slyzoo.net/Minecraft/Arg/gemini" id="gemini"><button id="button"><img height="30px" src="/Images/gemini-smp.png"></button></a>
+<!-- Learning C -->
+<a href="https://slyzoo.net/learning/c"><button id="button"><img height="30px" src="/Images/c-logo.png"></button></a>
+<!-- Learning Javascript -->
+<a href="https://slyzoo.net/learning/javascript"><button id="button"><img height="30px" src="/Images/javascript-logo.png"></button></a>
 </div>
 </header>
 
@@ -48,7 +52,7 @@
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 printf("Hello World!");
 return 0;
@@ -60,9 +64,17 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+  // this is a single line comment 
+
+  /* this
+  is
+  a
+  multi
+  line
+  comment */
+  return 0;
 }
 </code></pre>
 
@@ -71,10 +83,26 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
-}
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  // tabs | \t
+  printf("\t hello there");
+  
+  // newline | \n
+  printf("UwU\n");
+  
+  // double quotes | \"
+  printf("\"let him cook\"");
+  
+  // single quotes | \'
+  printf("\'I AM HIM\'");
+  
+  // back slash | //
+  printf("hello \\\\ there");
+  
+      return 0;
+  }
 </code></pre>
 
 <div id="body_text">
@@ -82,9 +110,41 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  // variable a thing to hold strings, integers, booleans, and floats
+
+  // declaration
+  int x;
+
+  // initialization
+  x=14;
+
+  // both declaration and initalization
+  int y = 140;
+
+  // integer
+  int age = 17;
+
+  // float
+  float gpa = 2.2;
+
+  // character
+  char grade = 'C';
+
+  // string
+  char name[] = "slyzoo"; // technically an array of characters
+
+printf("hello %s \n", name);
+
+printf("you are %d years old\n", age);
+
+printf("your grade average is %c\n", grade);
+
+printf("your gpa is %f\n", gpa);
+
+  return 0;
 }
 </code></pre>
 
@@ -93,9 +153,28 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  // %c = Character
+  // %s = String
+  // %f = Float
+  // %lf = Double (Long float)
+  // %d = Integer (Digit)
+
+  // %0.1 = Decimal precision
+  // %1.0 = Minimum field width
+  // %-0 = Left align
+
+  float item1 = 5.75;
+  float item2 = 10.00;
+  float item3 = 100.99;
+
+  printf("Item 1: $%8.2f\n", item1);
+  printf("Item 2: $%2.8f\n", item2);
+  printf("Item 3: $%2f\n", item3);
+
+  return 0;
 }
 </code></pre>
 
@@ -104,10 +183,23 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
-}
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  // Constants, they cant be changed or altered by the program during runtime / execution
+  
+  // there is no constant in this, meaning you can change the value
+  float pi_1 = 3.14159;
+  pi_1 = 1.23456;
+  printf("pi 1 = %f", pi_1);
+  
+  // there is a constant here meaning you cant change it bc PI_2 = 3.14159
+  // if you try to change it, you'll get an error trying to change it
+  const float PI_2 = 3.14159;
+  printf("PI 2 = %f", PI_2);
+  
+  return 0;
+  }
 </code></pre>
 
 <div id="body_text">
@@ -115,9 +207,51 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  int number_1 = 21;
+  int number_2 = 65;
+  int number_3 = 7;
+  int number_4 = 89;
+
+// + addition
+  int result_addition = number_1 + number_2;
+printf("add : 21 + 65 = %d \n", result_addition);
+
+// - subtraction
+int result_subtraction = number_1 - number_2;
+printf("subtract : 21 - 65 = %d \n", result_subtraction);
+
+// * multiplcation
+int result_multiply = number_1 * number_2;
+printf("multiply : 21 * 65 = %d \n", result_multiply);
+
+// / division
+int result_divide = number_1 / number_2;
+printf("divide : 21 / 65 = %d \n", result_divide);
+
+// % remander / modulus
+int result_remander = number_1 % number_2;
+printf("remdander : 21 (remander) 65 = %d \n", result_remander);
+
+// ++ increment (add 1)
+number_3++;
+printf("increment : 7 -> %d \n", number_3);
+
+// -- decrement (minus 1)
+number_4--;
+printf("decrement : 89 -> %d \n", number_4);
+
+// or another way to do these would be
+
+number_1 += 4;
+number_2 -= 5;
+number_3 *= 7;
+number_4 /= 2;
+number_4 %= 4;
+
+  return 0;
 }
 </code></pre>
 
@@ -126,21 +260,123 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
-}
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+  // we're doing just a number here
+  
+      int age;
+  
+  // the question
+      printf("how old are you? : ");
+  
+  // the scan allows user input, and we're assigning the input into age
+      scanf("%d", &age);
+  
+      printf("you are %d years old", age);
+  
+      return 0;
+  }
 </code></pre>
+
+<div id="body_text">
+  <h2>User input 2</h2>
+</div>
+<pre><code class="code">
+  <img src="../Images/c-logo.png" height="30">
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  // just a first name here
+  
+      char name[25]; // max is 25 bytes
+  
+      printf("\nwhat is your name? : ");
+  
+      scanf("%s", &name);
+  
+      printf("\nyour name is %s", name);
+  return 0;
+  }
+</code></pre>
+
+<div id="body_text">
+  <h2>User input 3</h2>
+</div>
+<pre><code class="code">
+  <img src="../Images/c-logo.png" height="30">
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+int main(){
+
+  //  now we'll be doing first and last name
+  
+      char name[25]; // max is 25 bytes
+  
+      printf("\nwhat is your name? : ");
+  
+      fgets(name, 25, stdin);
+  
+      printf("\nyour name is %s", name);
+  
+      return 0;
+  }
+</code></pre>
+
 
 <div id="body_text">
   <h2>Math functions</h2>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
-return 0;
-}
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+
+// dont forget math
+<span id="import">&#35;include &lt;math.h&gt;</span>
+
+
+int main(){
+
+  // square root
+      double A = sqrt(9);
+      printf("%lf", A);
+  
+  // 9^12
+      double B = pow(9, 12);
+      printf("%lf", B);
+  
+  // rounding
+      int C = round(1.32);
+      printf("%d", C);
+  
+  // ceiling
+      int D = ceil(15.53);
+      printf("%d", D);
+  
+  // floor
+      int E = floor(3.14);
+      printf("%d", E);
+  
+  // absolute value
+      double F = fabs(-123); // why is it called "fabs"?
+      printf("%lf", F);
+  
+  // logarithms
+      double G = log(3);
+      printf("%lf", G);
+  
+  // sine
+      double H = sin(45);
+      printf("%lf", H);
+  
+  // cosine
+      double I = cos(45);
+      printf("%lf", I);
+  
+  // tangent
+      double J = tan(45);
+      printf("%lf", J);
+  
+  return 0;
+  }
 </code></pre>
 
 <div id="body_text">
@@ -148,8 +384,24 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+<span id="import">&#35;include &lt;math.h&gt;</span>
+int main (){
+
+  const double PI = 3.14159;
+  double radius;
+  double circumference;
+
+  printf("\nEnter the radius : ");
+
+  scanf("%lf", &radius);
+
+//      C = 2πr
+
+  circumference = 2 * PI * radius;
+
+  printf("\nthe circumference is %lf", circumference);
+
 return 0;
 }
 </code></pre>
@@ -159,8 +411,23 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
-int main() {
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
+<span id="import">&#35;include &lt;math.h&gt;</span>
+int main (){
+
+  const double PI = 3.14159;
+  double radius;
+  double area;
+
+  printf("\nEnter the radius : ");
+  scanf("%lf", &radius);
+
+//      A = πr²
+
+  area = PI * pow(radius, 2);
+
+  printf("\nthe area is %lf", area);
+
 return 0;
 }
 </code></pre>
@@ -170,7 +437,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -181,7 +448,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -192,7 +459,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -203,7 +470,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -214,7 +481,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -225,7 +492,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -236,7 +503,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -248,7 +515,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -260,7 +527,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -271,7 +538,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -282,7 +549,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -293,7 +560,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -305,7 +572,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -316,7 +583,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -327,7 +594,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -339,7 +606,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -350,7 +617,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -362,7 +629,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
@@ -373,7 +640,7 @@ return 0;
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
-&#35;include &lt;stdio.h&gt;
+<span id="import">&#35;include &lt;stdio.h&gt;</span>
 int main() {
 return 0;
 }
