@@ -171,11 +171,11 @@ body{
 }
 
 .enclave button:hover{
-  background-color: var(--pink-0);
+  background-color: var(--grey-1);
 }
 
-.navigation-bar button:active{
-  background-color: var(--pink-3);
+.enclave button:active{
+  background-color: var(--grey-2);
 }
 
 #project-magenta button:hover{
