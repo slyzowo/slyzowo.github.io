@@ -614,6 +614,15 @@ div.neodroid-commands{
   white-space: pre-wrap;
 }
 
-#import{
+#syntax{
   color: var(--red-0);
+}
+
+#comment{
+  color: var(--grey-3);
+  background-color: #383838;
+}
+
+#library{
+  color: var(--blue-0);
 }
