@@ -159,7 +159,7 @@ body{
   background-color:var(--black-3);
   height: 42px;
   width: 24%;
-  min-width: 455px;
+  min-width: 700px;
   border-radius: 5px;
   padding: 2px;
 }
