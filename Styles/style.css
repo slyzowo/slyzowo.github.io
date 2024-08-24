@@ -599,6 +599,7 @@ div.neodroid-commands{
 }
 
 .code{
+  text-align: left;
   background-color: var(--grey-2);
   color: var(--white-6);
   padding: 10px;

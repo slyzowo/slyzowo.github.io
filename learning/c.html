@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!--basic stuffs-->
-  <title>learning C</title>
+  <title>Learning C</title>
   <link rel="stylesheet" href="/Styles/style.css">
   <link rel="icon" type="image" href="../Images/c-logo.png">
 <!-- not sure? -->
@@ -54,6 +54,7 @@
 
   <h1>Learning C</h1>
   <h2>Hello world</h2>
+  <p>Printing to the terminal is the first step in this journey to programming in C.</p>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
@@ -65,140 +66,131 @@ return 0;
 </code></pre>
 
   <h2>Comments</h2>
+  <p>Comments; they're used to tell other developers (or you) about the code. The compiler ignores what is in the comments.</p>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main(){
-  <span id="comment">// this is a single line comment</span>
+<span id="comment">// this is a single line comment</span>
 
-<span id="comment">/* this
-  is
-  a
-  multi
-  line
-  comment */</span>
+<span id="comment">/*
+this
+is
+a
+multi
+line
+comment
+*/</span>
   return 0;
 }
 </code></pre>
 
 
   <h2>Escape sequences</h2>
+  <p>Escape sequences; They're used to write in the terminal or where ever you're writing better.</p>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main(){
 
-  <span id="comment">// tabs | \t</span>
+<span id="comment">// tabs | \t</span>
   printf("\t hello there");
   
-  <span id="comment">// newline | \n</span>
+<span id="comment">// newline | \n</span>
   printf("UwU\n");
   
-  <span id="comment">// double quotes | \"</span>
+<span id="comment">// double quotes | \"</span>
   printf("\"let him cook\"");
   
-  <span id="comment">// single quotes | \'</span>
+<span id="comment">// single quotes | \'</span>
   printf("\'I AM HIM\'");
   
-  <span id="comment">// back slash | //</span>
+<span id="comment">// back slash | //</span>
   printf("hello \\\\ there");
   
       return 0;
   }
 </code></pre>
 
+<h2>Format specifiers</h2>
+<p></p>
+</div>
+<pre><code class="code">
+<img src="../Images/c-logo.png" height="30">
+<span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
+int main(){
+
+<span id="comment">/*
+%c = Character
+%lf = Double (Long float)
+%f = Float
+%d = Integer (Digit)
+%s = String
+
+%0.1 = Decimal precision
+%1.0 = Minimum field width
+%-0 = Left align
+*/</span>
+
+float item1 = 5.75;
+float item2 = 10.00;
+float item3 = 100.99;
+
+printf("Item 1: $%8.2f\n", item1);
+printf("Item 2: $%2.8f\n", item2);
+printf("Item 3: $%2f\n", item3);
+
+return 0;
+}
+</code></pre>
 
   <h2>Variables</h2>
+  <p>Variables; A "garage" to hold strings, integers, booleans, and floats.</p>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main(){
 
-  <span id="comment">// variable a thing to hold strings, integers, booleans, and floats</span>
+  int x; <span id="comment">// declaration</span>
 
-  <span id="comment">// declaration</span>
-  int x;
+  x=14; <span id="comment">// initialization</span>
 
-  <span id="comment">// initialization</span>
-  x=14;
+  int y = 140; <span id="comment">// both declaration and initalization</span>
 
-  <span id="comment">// both declaration and initalization</span>
-  int y = 140;
+  int age = 17; <span id="comment">// integer</span>
+  printf("you are %d years old\n", age); <span id="comment">// %d is how you put a variable in a string</span>
 
-  <span id="comment">// integer</span>
-  int age = 17;
+  float gpa = 2.2; <span id="comment">// float</span>
+  printf("your gpa is %f\n", gpa);
+  
+  char grade = 'C'; <span id="comment">// character</span>
+  printf("your grade average is %c\n", grade);
 
-  <span id="comment">// float</span>
-  float gpa = 2.2;
-
-  <span id="comment">// character</span>
-  char grade = 'C';
-
-  <span id="comment">// string</span>
-  char name[] = "slyzoo"; <span id="comment">// technically an array of characters</span>
-
-printf("hello %s \n", name);
-
-printf("you are %d years old\n", age);
-
-printf("your grade average is %c\n", grade);
-
-printf("your gpa is %f\n", gpa);
+  char name[] = "slyzoo"; <span id="comment">// string (technically an array of characters)</span>
+  printf("hello %s \n", name);
 
   return 0;
 }
 </code></pre>
-
-
-  <h2>Format specifiers</h2>
-</div>
-<pre><code class="code">
-  <img src="../Images/c-logo.png" height="30">
-<span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main(){
-
-  <span id="comment">// %c = Character</span>
-  <span id="comment">// %s = String</span>
-  <span id="comment">// %f = Float</span>
-  <span id="comment">// %lf = Double (Long float)</span>
-  <span id="comment">// %d = Integer (Digit)</span>
-
-  <span id="comment">// %0.1 = Decimal precision</span>
-  <span id="comment">// %1.0 = Minimum field width</span>
-  <span id="comment">// %-0 = Left align</span>
-
-  float item1 = 5.75;
-  float item2 = 10.00;
-  float item3 = 100.99;
-
-  printf("Item 1: $%8.2f\n", item1);
-  printf("Item 2: $%2.8f\n", item2);
-  printf("Item 3: $%2f\n", item3);
-
-  return 0;
-}
-</code></pre>
-
 
   <h2>Constants</h2>
+  <p>Constants; They cant be changed or altered by the program during runtime / execution.</p>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main(){
-
-  <span id="comment">// Constants, they cant be changed or altered by the program during runtime / execution</span>
   
-  <span id="comment">// there is no constant in this, meaning you can change the value</span>
+<span id="comment">// there is no constant in this, meaning you can change the value</span>
   float pi_1 = 3.14159;
   pi_1 = 1.23456;
   printf("pi 1 = %f", pi_1);
   
-  <span id="comment">// there is a constant here meaning you cant change it bc PI_2 = 3.14159</span>
-  <span id="comment">// if you try to change it, you'll get an error trying to change it</span>
+<span id="comment">/* there is a constant here meaning you cant change it bc PI_2 = 3.14159
+if you try to change it, you'll get an error trying to change it */</span>
   const float PI_2 = 3.14159;
   printf("PI 2 = %f", PI_2);
   
@@ -303,7 +295,6 @@ int main(){
   }
 </code></pre>
 
-
   <h2>User input 3</h2>
 </div>
 <pre><code class="code">
@@ -325,18 +316,12 @@ int main(){
   }
 </code></pre>
 
-
-
   <h2>Math functions</h2>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-
-<span id="comment">// dont forget math</span>
-<span id="syntax">&#35;include</span> &lt;math.h&gt;
-
-
+<span id="syntax">&#35;include</span> <span  id="library">&lt;math.h&gt;</span> <span id="comment">// dont forget math</span>
 int main(){
 
   <span id="comment">// square root</span>
@@ -383,13 +368,12 @@ int main(){
   }
 </code></pre>
 
-
   <h2>Circumfrence calculator</h2>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-<span id="syntax">&#35;include</span> &lt;math.h&gt;
+<span id="syntax">&#35;include</span> <span  id="library">&lt;math.h&gt;</span>
 int main (){
 
   const double PI = 3.14159;
@@ -397,11 +381,9 @@ int main (){
   double circumference;
 
   printf("\nEnter the radius : ");
-
   scanf("%lf", &radius);
 
 <span id="comment">//      C = 2πr</span>
-
   circumference = 2 * PI * radius;
 
   printf("\nthe circumference is %lf", circumference);
@@ -416,7 +398,7 @@ return 0;
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-<span id="syntax">&#35;include</span> &lt;math.h&gt;
+<span id="syntax">&#35;include</span> <span  id="library">&lt;math.h&gt;</span>
 int main (){
 
   const double PI = 3.14159;
@@ -443,6 +425,21 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+  double side_A;
+  double side_B;
+  double side_C;
+
+  printf("\nEnter side A : ");
+  scanf("%lf", &side_A);
+
+  printf("\nEnter side B : ");
+  scanf("%lf", &side_B);
+
+<span id="comment">//      C = √A² + B²</span>
+
+side_C = sqrt(pow(side_A, 2) + pow(side_B, 2));
+
+  printf("\nside C : %lf", side_C);
 return 0;
 }
 </code></pre>
@@ -454,6 +451,25 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+  int age;
+
+  printf("\nEnter your age : ");
+  scanf("%d", &age);
+
+<span id="comment">// if this, then do that</span>
+  if(age >= 18){
+      printf("\nYou're an adult");
+  }
+
+<span id="comment">// else, BUT wut if</span>
+  else if(age < 0){
+      printf("\nhow in the world are you alive");
+  }
+
+<span id="comment">// else, what else is there</span>
+  else{
+      printf("\nYou're a minor");
+  }
 return 0;
 }
 </code></pre>
@@ -465,6 +481,19 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+  char grade;
+
+  printf("Enter your grade : ");
+  scanf("%c", &grade);
+
+  switch (grade){
+  case 'A': printf("\nPerfect!"); break;
+  case 'B': printf("\nGreat!"); break;
+  case 'C': printf("\nGood"); break;
+  case 'F': printf("\nbro how did you fail?"); break;
+
+  default: printf("You have not entered a vaild letter grade"); break;
+  }
 return 0;
 }
 </code></pre>
@@ -476,6 +505,37 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+  char unit;
+  float temp;
+
+  printf("Is the temperature in F or C : ");
+  scanf("%c", &unit);
+
+  unit = toupper(unit); <span id="comment">// makes it in caps</span>
+
+  if( unit == 'C'){
+      printf("what is the temperature? : ");
+      scanf("%f", &temp);
+
+<span id="comment">//      F = C * 9 / 5 + 32</span>
+      temp = (temp * 9 / 5 + 32);
+
+      printf("The Temp in F is : %f", temp);
+  }
+
+  else if(unit == 'F'){
+      printf("what is the temperature?");
+      scanf("%f", &temp);
+
+<span id="comment">//      C = ((F - 32) * 5) / 9</span>
+      temp = ((temp - 32)* 5) / 9 ;
+
+      printf("The Temp in C is : %f", temp);
+  }
+
+  else{
+      printf("That is not a valid ");
+  }
 return 0;
 }
 </code></pre>
@@ -487,6 +547,53 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+  char operator;
+  double number_1;
+  double number_2;
+  double result;
+
+
+  <span id="comment">// what is the operator</span>
+  printf("\nEnter the operator? (+ - * /) : ");
+  scanf("%c", &operator);
+
+  <span id="comment">// what is the first number</span>
+  printf("\nEnter the first number? : ");
+  scanf("%lf", &number_1);
+
+  <span id="comment">// what is the second number</span>
+  printf("\nEnter the second number? : ");
+  scanf("%lf", &number_2);
+
+  <span id="comment">// result</span>
+
+  switch (operator)
+  {
+  case '+':
+      result = number_1 + number_2;
+      printf("result : %lf", result);
+  break;
+
+  case '-':
+      result = number_1 - number_2;
+      printf("result : %lf", result);
+  break;
+
+  case '*':
+      result = number_1 * number_2;
+      printf("result : %lf", result);
+  break;
+  
+  case '/':
+      result = number_1 / number_2;
+      printf("result : %lf", result);
+  break;
+
+  default:
+  printf("That is not vaild");
+      break;
+  }
+
 return 0;
 }
 </code></pre>
@@ -498,6 +605,35 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+  float temp = 100;
+  bool sunny = false;
+
+<span id="comment">/*
+both values have to be true in order for thing to happen
+AND / &&
+*/</span>
+
+if (temp >= 90){
+  printf("the weather is HOT, but at least its shady");
+}
+
+else if (temp >= 90 && sunny){
+  printf("just stay inside, its not worth it");
+}
+
+else if(temp <= 0){
+  printf("the weather is COLD");
+}
+
+else if (temp <= 89 && temp >= 1 && sunny){
+  printf("the weather is nice");
+}
+
+else{
+  printf("invalid? how did you even get here");
+}
+
 return 0;
 }
 </code></pre>
@@ -509,11 +645,28 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+  float temp = 53;
+
+<span id="comment">/*
+only one of the values have to be true for it to activate
+OR / ||
+*/</span>
+  
+  if (temp >= 90 || temp <= 0){
+      printf("the weather is BAD");
+  }
+  
+  else if(temp >= 1 && temp <= 89){
+      printf("the weather is GOOD");
+  }
+  
+  else{
+      printf("invalid? how did you even get here");
+  }
 return 0;
 }
 </code></pre>
-
-
 
   <h2>Not !</h2>
 </div>
@@ -521,18 +674,44 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+  bool sunny = false;
+
+<span id="comment">/*
+reverses the value
+NOT / !
+*/</span>
+  
+      if (sunny){
+          printf("it is sunny outside");
+      }
+  
+      else if (!sunny){
+          printf("it is not sunny");
+      }
+  
+      else{
+          printf("how did this happen");
+      }
 return 0;
 }
 </code></pre>
-
-
 
   <h2>Functions</h2>
 </div>
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main() {
+void birthday(){
+    printf("\nhappy birthday to you");
+    printf("\nhappy birthday to you");
+    printf("\nhappy birthday to dear, [name]");
+    printf("\nhappy birthday to you");
+}
+
+int main (){
+
+    birthday();
 return 0;
 }
 </code></pre>
@@ -543,7 +722,18 @@ return 0;
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main() {
+void birthday(char name[], int age){
+  printf("\nhappy birthday to %s", name);
+  printf("\nYou are %d years old", age);
+}
+
+
+int main (){
+
+  char name[] = "slyzoo";
+  int age = 17;
+
+  birthday(name, age);
 return 0;
 }
 </code></pre>
@@ -554,7 +744,19 @@ return 0;
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main() {
+double square(double x){
+
+<span id="comment">//  the square times 3.14 to itself and returns it back to the main function</span>
+      return x * x ;
+  }
+  
+  int main (){
+  
+<span id="comment">//  square function, it is == 3.14</span>
+      double x = square(3.14);
+  
+<span id="comment">//  the square functions new value is printed to the terminal</span>
+      printf("%lf", x);
 return 0;
 }
 </code></pre>
@@ -565,7 +767,19 @@ return 0;
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main() {
+int findMax(int x, int y){
+<span id="comment">/* 
+  first it checks to see if x is greater than y
+  then it checks to see is y is greater than x
+  then it returns which ever is greater
+*/</span>
+  return (x > y) ? x : y ;}
+
+int main(){
+
+  int max = findMax(3, 4);
+
+  printf("%d", max);
 return 0;
 }
 </code></pre>
@@ -577,8 +791,28 @@ return 0;
 <pre><code class="code">
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
-int main() {
+// function prototype
+void hello(char[], int){} 
+
+int main () {
+
+<span id="comment">/*
+function prototype is a :
+function declaration without a body, before the main program
+it also ensures that calls to a function are made with the correct arguments
+*/</span>
+
+    char name[] = "jade";
+    int age = 17;
+
+    hello(name, age);
+
 return 0;
+}
+
+void hello (char name[], int age){
+    printf("\n hello %s", name);
+    printf("\n you're %d years old", age);
 }
 </code></pre>
 
@@ -589,10 +823,38 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+  char string1[] = "Sly";
+  char string2[] = "zoo";
+
+<span id="comment">/*
+      strlwr(string1);                                 converts a string to a lowercase
+
+      strupr(string1);                                 converts a string to a uppercase
+
+      strcat(string1, string2);                        appends both strings together
+      strncat(string1, string2, 2);                    appends an amount of characters to both strings
+
+      strcpy(string1);                                 copys the string
+      strncpy(string1, string2, 2);                    copys an amount of characters to both strings
+
+      strset(string1, 'a');                            sets all characters of a string to a given character
+
+      strrev(string1);                                 reverses a string
+
+      int result = strlen(string1);                    returns string length as an integer
+
+      int result = strcmp(string1);                    string compares all the charecters
+      int result = strncmp(string1, string2, 1);       string compares n characters
+
+      int result = strcmpi(string1, string1);          string compares all (ignore case)
+      int result = strnicmp(string1, string1);         string compares n characters (ignore case)
+*/</span>
+
+  printf("%s", string1);
 return 0;
 }
 </code></pre>
-
 
   <h2>For loops</h2>
 </div>
@@ -600,11 +862,21 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+<span id="comment">// for loop, it repeats a section of code for a selected amount of time</span>
+
+<span id="comment">// index means "i", you'll see "i" alot in the future</span>
+
+    for(int index = 1; index <= 10; index+=3){
+
+<span id="comment">/* the for loop code means that the index while in the for loop will start from 1 and count up to 10
+if you did "index =+ [num]" it would add that amount to each time it went up, += 3 would do 1, 4, 7, 10 bc it stops at 10 */</span>
+
+    printf("%d \n", index);
+    }
 return 0;
 }
 </code></pre>
-
-
 
   <h2>While loops</h2>
 </div>
@@ -612,6 +884,30 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+<span id="comment">// while loop, repeats a part of the code *while* it is true</span>
+
+char name[25];
+
+    printf("Enter your name? : ");
+
+    <span id="comment">// for the spaces that might be in the name</span>
+    fgets(name, 25, stdin); 
+
+<span id="comment">/*
+\0 is a null char
+if the string length(name) is -1 then it is equal too the null character
+*/</span>
+    name[strlen(name) - 1] = '\0';
+
+    <span id="comment">// same stuffs but in a while loop</span>
+while(strlen(name) == 0){
+    printf("YOU DID NOT ENTER YOUR NAME!?\n");
+    printf("Enter your name? : ");
+    fgets(name, 25, stdin); 
+    name[strlen(name) - 1] = '\0';
+}
+
+    printf("hello %s", name);
 return 0;
 }
 </code></pre>
@@ -623,6 +919,28 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+
+<span id="comment">/*
+while loop, repeats a part of the code *while* it is true
+DO while loop, always executes a part of the code once, then checks a condition
+*/</span>
+
+int number = 0;
+int sum = 0;
+
+<span id="comment">// number game, see who can get the highest score, if you do a negative you lose</span>
+do{
+  printf("Enter a number above 0 : ");
+  scanf("%d", &number);
+
+  if (number > 0)
+  {
+    sum += number;
+  }
+  
+}while(number > 0);
+
+printf("Sum : %d", sum);
 return 0;
 }
 </code></pre>
@@ -635,6 +953,37 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+<span id="comment">/*
+nested loops, a loop inside another loop
+making rectangles
+*/</span>
+
+  int rows;
+  int columns;
+  char symbol;
+
+  printf("\n Enter number of rows : ");
+  scanf("%d", &rows);
+
+  printf("\n Enter number of columns : ");
+  scanf("%d", &columns);
+
+  scanf("%c");
+
+  printf("\n Enter symbol : ");
+  scanf("%c", &symbol);
+
+  <span id="comment">// i(index) = 1, if i is less than or equal to rows, increment i by 1</span>
+for (int i = 1; i <= rows; i++)
+{
+  <span id="comment">// j(index 2) = 1, if j is less than or equal to columns increment j by 1</span>
+  for (int j = 1; j <= columns; j++)
+  {
+    printf("%c", symbol);
+  }
+  printf("\n");
+  
+}
 return 0;
 }
 </code></pre>
@@ -646,6 +995,26 @@ return 0;
   <img src="../Images/c-logo.png" height="30">
 <span id="syntax">&#35;include</span> <span  id="library">&lt;stdio.h&gt;</span>
 int main() {
+<span id="comment">/*
+continue, skips rest of code and forces the next iteration of the loop
+break, exits the loop / switch
+*/</span>
+
+  <span id="comment">// i(index) equals 1, if 1 is less than or equal to 20 increment i by 1</span>
+for (int i = 1; i <= 20; i++)
+{
+  if (i == 13)
+  {
+
+<span id="comment">/* after 12 the loop stops
+break; */</span>
+
+<span id="comment">// no 13 when this is used</span>
+    continue;
+  }
+  
+  printf("%d\n", i);
+}
 return 0;
 }
 </code></pre>
