@@ -7,6 +7,7 @@
 /* Magenta's*/
 --magenta-0:#FF00FF;
 --magenta-1:#d100d1;
+--magenta-2:#B744B8;
 
 /* Pink's*/
 --pink-0:#ff80e6;
@@ -19,18 +20,25 @@
 /* Red's */
 --red-0:#eb4e3e;
 
+/* Yellow's */
+--yellow-0:#F2BB05;
+
 /*Green's*/
 --green-0:#48ff60;
+--green-1:#5DFDCB;
+--green-2:#384D48;
 
 /* Blue's */
 --blue-0: #48a7ff;
 --blue-1: #4196e6;
 --blue-2: #3a83c7;
+--blue-3:#5347ff;
 
 /* Purple's*/
 --purple-0:#9266cc;
 --purple-1:#7e43cc;
 --purple-2:#743ebb;
+--purple-3:#B47EB3;
 
 /* Blacks's*/
 --black-0:#000000;
@@ -613,7 +621,7 @@ div.neodroid-commands{
   white-space: pre-wrap;
 }
 
-#syntax{ /* include and typedef */
+#syntax{ /* include & typedef & return */
   color: var(--red-0);
 }
 
@@ -627,6 +635,22 @@ div.neodroid-commands{
   color: var(--blue-0);
 }
 
-#keywords{
-  color: var(--green-0);
+#int{
+  color: var(--green-1);
+}
+
+#float{/* floats and doubles */
+  color: var(--yellow-0);
+}
+
+#str{/* strings & chars */
+  color: var(--magenta-2);
+}
+
+#const{
+  color: var(--pink-4);
+}
+
+#switch{ /* switches/cases & if statments*/
+  color:var(--purple-3)
 }
