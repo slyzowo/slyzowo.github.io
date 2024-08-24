@@ -1,4 +1,6 @@
 :root{ /* i feel so stupid, i just learned the existance of css vars */
+
+/* COLOURS */
 /* Transparent's*/
 --transparent:rgba(0,0,0,0);
 
@@ -75,10 +77,6 @@
 body{
   color: var(--white-3);
   background-image: url('starred_backgroundV2.png');
-}
-
-/* The "main" content */
-#body_text {
   text-align: center;
   padding: 0px 10px;
 }
