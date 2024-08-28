@@ -584,15 +584,15 @@ div.neodroid-commands {
 }
 
 #ROCK {
-  background-color: var(--blue-0);
+  background-color: var(--grey-1);
 }
 
 #PAPER {
-  background-color: var(--pink-4);
+  background-color: var(--white-0);
 }
 
 #SCISSORS {
-  background-color: var(--white-2);
+  background-color: var(--grey-0);
 }
 
 .code {
