@@ -82,14 +82,14 @@
 }
 
 /* On every page */
-body{
+body {
   color: var(--white-3);
   background-image: url('starred_backgroundV2.png');
   text-align: center;
   padding: 0px 10px;
 }
 
-.openSettingsButton{
+.openSettingsButton {
   float: left;
   background: transparent;
   border: none;
@@ -97,15 +97,15 @@ body{
   cursor: pointer;
 }
 
-.openSettingsButton:hover{
+.openSettingsButton:hover {
   background: var(--black-4);
 }
 
-.openSettingsButton:active{
+.openSettingsButton:active {
   background: var(--black-5);
 }
 
-.settings-tab-content{
+.settings-tab-content {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
@@ -159,7 +159,7 @@ body{
 }
 
 /* The side navigation menu */
-.enclave{
+.enclave {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -170,7 +170,7 @@ body{
   padding: 2px;
 }
 
-.enclave button{
+.enclave button {
   background-color: var(--transparent);
   border: none;
   padding: 5px;
@@ -180,27 +180,27 @@ body{
   transition: background-color 0.5s ease;
 }
 
-.enclave button:hover{
+.enclave button:hover {
   background-color: var(--grey-1);
 }
 
-.enclave button:active{
+.enclave button:active {
   background-color: var(--grey-2);
 }
 
-#project-magenta button:hover{
+#project-magenta button:hover {
   background-color: var(--magenta-0);
 }
 
-#project-magenta button:active{
+#project-magenta button:active {
   background-color: var(--magenta-1);
 }
 
-#gemini button:hover{
+#gemini button:hover {
   background-color: var(--purple-0);
 }
 
-#gemini button:active{
+#gemini button:active {
   background-color: var(--purple-1);
 }
 
@@ -221,7 +221,7 @@ body{
 }
 
 /* The calculator */
-#calculator{
+#calculator {
 	font-family: Arial, Helvetica, sans-serif;
   background-color: var(--black-2);
 	margin-top: 1%;
@@ -233,7 +233,7 @@ body{
 	border-radius: 25px;
 }
 
-#calculator-display{
+#calculator-display {
   width: 100%;
   padding: 20px;
   font-size: 5rem;
@@ -243,14 +243,14 @@ body{
   color: var(--white-0);
 }
 
-#calculator-number-buttons{
+#calculator-number-buttons {
   display: grid;
   grid-template-columns: repeat(5, 4fr);
   gap: 4px;
   padding: 4%;
 }
 
-.calculator-operator-button{
+.calculator-operator-button {
 	background-color: var(--blue-0);
   height: 100px;
   width: 100px;
@@ -260,15 +260,15 @@ body{
 	border-radius: 25px;
 }
 
-.calculator-operator-button:hover{
+.calculator-operator-button:hover {
   background-color: var(--blue-1);
 }
 
-.calculator-operator-button:active{
+.calculator-operator-button:active {
   background-color: var(--blue-2);
 }
 
-.calculator-number-button{
+.calculator-number-button {
 	background-color: var(--pink-4);
   height: 100px;
   width: 100px;
@@ -278,15 +278,15 @@ body{
 	border-radius: 25px;
 }
 
-.calculator-number-button:hover{
+.calculator-number-button:hover {
   background-color: var(--pink-5);
 }
 
-.calculator-number-button:active{
+.calculator-number-button:active {
   background-color: var(--pink-6);
 }
 
-.calculator-special-button{
+.calculator-special-button {
   background-color: var(--white-2);
   height: 100px;
   width: 100px;
@@ -296,16 +296,16 @@ body{
 	border-radius: 25px;
 }
 
-.calculator-special-button:hover{
+.calculator-special-button:hover {
   background-color: var(--white-5);
 }
 
-.calculator-special-button:active{
+.calculator-special-button:active {
   background-color: var(--grey-0);
 }
 
 /* Cypher */
-.cypher{
+.cypher {
   text-align: center;
 }
 
@@ -321,7 +321,7 @@ body{
   background-color:var(--black-3);
 }
 
-.cypher-buttons{
+.cypher-buttons {
   padding: 2%;
 }
 
@@ -339,7 +339,7 @@ input[type=radio].cypher-radio {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-#cypher-copy-button{
+#cypher-copy-button {
   background-color: #48a7ff;
   border: none;
   border-radius: 30px;
@@ -350,10 +350,10 @@ input[type=radio].cypher-radio {
   cursor: pointer;
 }
 
-#cypher-copy-button:hover{
+#cypher-copy-button:hover {
   background-color: var(--pink-5);
 }
-#cypher-copy-button:active{
+#cypher-copy-button:active {
   background-color: var(--pink-6);
 }
 
@@ -370,29 +370,29 @@ input[type=radio].cypher-radio {
 }
 
 /* Neodroid*/
-div.neodroid-terms-of-service{
+div.neodroid-terms-of-service {
   text-align: center;
 }
 
-.neodroid-terms-of-service-list{
+.neodroid-terms-of-service-list {
   display: inline-block;
   text-align: left;
 }
 
-div.neodroid-privacy-policy{
+div.neodroid-privacy-policy {
   text-align: center;
 }
 
-.neodroid-privacy-policy-list{
+.neodroid-privacy-policy-list {
   display: inline-block;
   text-align: left;
 }
 
-div.neodroid-commands{
+div.neodroid-commands {
   text-align: center;
 }
 
-.neodroid-commands-list{
+.neodroid-commands-list {
   display: inline-block;
   text-align: left;
 }
@@ -467,11 +467,11 @@ div.neodroid-commands{
 }
 
 /* Stopwatch */
-#StopwatchTitle{
+#StopwatchTitle {
   font-size: 4rem;
 }
 
-#StopwatchContainer{
+#StopwatchContainer {
 	margin: auto;
   width: 50%;
 	max-width: 40vw;
@@ -483,14 +483,14 @@ div.neodroid-commands{
   background-color: var(--black-1);
 }
 
-#StopwatchDisplay{
+#StopwatchDisplay {
   font-size: max(4vw);
   font-family: monospace;
   color: var(--black-0);
   margin-bottom: 20px;
 }
 
-#StopwatchControls button{
+#StopwatchControls button {
   font-size: 1.5rem;
   padding: 10px 20px;
   margin: 5px;
@@ -499,64 +499,54 @@ div.neodroid-commands{
   transition: background-color 0.5s ease;
 }
 
-#StopwatchStart{
+#StopwatchStart {
   background-color: var(--blue-0);
   border: none;
   border-radius: 30px;
 }
 
-#StopwatchStart:hover{
+#StopwatchStart:hover {
   background-color: var(--blue-1);
 }
 
-#StopwatchStop{
+#StopwatchStop {
   background-color: var(--pink-4);
   border: none;
   border-radius: 30px;
 }
 
-#StopwatchStop:hover{
+#StopwatchStop:hover {
   background-color: var(--pink-5);
 }
 
-#StopwatchReset{
+#StopwatchReset {
   background-color: var(--white-2);
   border: none;
   border-radius: 30px;
 }
 
-#StopwatchReset:hover{
+#StopwatchReset:hover {
   background-color: var(--white-5);
 }
 
-/* Thekichensink wiki */
-.thekitchensink-navigation-bar{
-  display: flex;
-  flex-direction: row;
-  height: 52px;
-  border-radius: 5px;
-  margin: auto;
-  padding: 2px;
-}
-
 /* snek */
-#snake-game-container{
+#snake-game-container {
   padding: 100px;
 }
 
-#snake-game-board{
+#snake-game-board {
   border:none;
   border-radius: 3%;
 }
 
-#snake-game-score{
+#snake-game-score {
   font-size: 100px;
   position: absolute;
   right: 200px;
   top: 100px;
 }
 
-#snake-reset-button{
+#snake-reset-button {
   position: absolute;
   right: 120px;
   top: 700px;
@@ -570,22 +560,22 @@ div.neodroid-commands{
 }
 
 /* rock, paper, scissors */
-#rockPaperScissorsgame{
+#rockPaperScissorsgame {
   border: none;
   border-radius: 25px;
   padding: 10px;
   background-color: var(--black-3);
 }
 
-#playerText{
+#playerText {
   color: var(--blue-0);
 }
 
-#computerText{
+#computerText {
   color: var(--green-0);
 }
 
-.choiceButton{
+.choiceButton {
   line-height: 30px;
   width: 170px;
   border: none;
@@ -594,19 +584,19 @@ div.neodroid-commands{
   cursor: pointer;
 }
 
-#ROCK{
+#ROCK {
   background-color: var(--blue-0);
 }
 
-#PAPER{
+#PAPER {
   background-color: var(--pink-4);
 }
 
-#SCISSORS{
+#SCISSORS {
   background-color: var(--white-2);
 }
 
-.code{
+.code {
   text-align: left;
   background-color: var(--grey-2);
   color: var(--white-6);
@@ -621,36 +611,45 @@ div.neodroid-commands{
   white-space: pre-wrap;
 }
 
-#syntax{ /* include & typedef & return */
+#syntax { /* include & typedef & return */
   color: var(--red-0);
 }
 
-#comment{
+#comment {
   color: var(--grey-3);
   background-color: #2b2b2b;
   padding: 4px;
 }
 
-#library{
+#library {
   color: var(--blue-0);
 }
 
-#int{
+#int {
   color: var(--green-1);
 }
 
-#float{/* floats and doubles */
+#float {/* floats and doubles */
   color: var(--yellow-0);
 }
 
-#str{/* strings & chars */
+#str {/* strings & chars */
   color: var(--magenta-2);
 }
 
-#const{
+#const {
   color: var(--pink-4);
 }
 
-#switch{ /* switches/cases & if statments*/
+#switch { /* switches/cases & if statments*/
   color:var(--purple-3)
+}
+
+#mod-stuffs {
+  text-align: left;
+}
+
+#mod-stuffs img {
+  margin-left: 85%;
+  border: solid;
 }
