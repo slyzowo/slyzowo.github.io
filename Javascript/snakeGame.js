@@ -129,10 +129,10 @@ function drawSnake(){
 // changes the direction of where the snake is moving 
 function changeDirection(event){
     const keyPressed = event.keyCode;
-    const LEFT = 37;
-    const UP = 38;
-    const RIGHT = 39;
-    const DOWN = 40;
+    const LEFT = 65;  // A key
+    const UP = 87;    // W key
+    const RIGHT = 68; // D key
+    const DOWN = 83;  // S key
 
     const goingLeft = (Xvelocity == -unitSize);
     const goingUp = (Yvelocity == -unitSize);
