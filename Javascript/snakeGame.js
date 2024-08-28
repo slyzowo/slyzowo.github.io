@@ -15,10 +15,10 @@ const gameHeight = snakeGameBoard.height;
 const snakeGameBoardBackground = "#242424";
 
 //      the snake colours
-const snakeColour = "#48a7ff";
-const snakeBorderColour = "#48a7ff";
+const snakeColour = "#34eb43";
+const snakeBorderColour = "#34eb43";
 //      the food colours
-const foodColour = "#ffa0f9";
+const foodColour = "#eb3446";
 
 // game rules
 //      Unit Size is how big the squares are
@@ -127,41 +127,59 @@ function drawSnake(){
 };
 
 // changes the direction of where the snake is moving 
-function changeDirection(event){
+function changeDirection(event) {
     const keyPressed = event.keyCode;
-    const LEFT = 65;  // A key
-    const UP = 87;    // W key
-    const RIGHT = 68; // D key
-    const DOWN = 83;  // S key
+
+    // WASD keys
+    const LEFT_WASD = 65;  // A key
+    const UP_WASD = 87;    // W key
+    const RIGHT_WASD = 68; // D key
+    const DOWN_WASD = 83;  // S key
+
+    // Arrow keys
+    const LEFT_ARROW = 37; // left arrow key
+    const UP_ARROW = 38;   // up arrow key
+    const RIGHT_ARROW = 39; // right arrow key
+    const DOWN_ARROW = 40;  // down arrow key
+
+    // numpad for psychos
+    const  LEFT_NUMPAD = 100; // numpad 4 = left
+    const  UP_NUMPAD = 104; // numpad 8 = up
+    const  RIGHT_NUMPAD = 102; // numpad 6 = right
+    const  DOWN_NUMPAD = 98; // numpad 2 = down
 
     const goingLeft = (Xvelocity == -unitSize);
     const goingUp = (Yvelocity == -unitSize);
     const goingRight = (Xvelocity == unitSize);
     const goingDown = (Yvelocity == unitSize);
 
-    switch(true){
-//      if you're going left that means you cant go right
-        case(keyPressed == LEFT && !goingRight):
-        Xvelocity = -unitSize;
-        Yvelocity = 0;
-        break;
-//      if you're going right that means you cant go left
-        case(keyPressed == RIGHT && !goingLeft):
-        Xvelocity = unitSize;
-        Yvelocity = 0;
-        break;
-//      if you're going up that means you cant go down
-        case(keyPressed == UP && !goingDown):
-        Xvelocity = 0;
-        Yvelocity = -unitSize;
-        break;
-//      if you're going down that means you cant go up
-        case(keyPressed == DOWN && !goingUp):
-        Xvelocity = 0;
-        Yvelocity = unitSize;
-        break;
-    };
-};
+    switch (true) {
+        // if you're going left, you can't go right
+        case ( (keyPressed == LEFT_WASD || keyPressed == LEFT_ARROW || keyPressed == LEFT_NUMPAD) && !goingRight ):
+            Xvelocity = -unitSize;
+            Yvelocity = 0;
+            break;
+
+        // if you're going right, you can't go left
+        case ( (keyPressed == RIGHT_WASD || keyPressed == RIGHT_ARROW || keyPressed == RIGHT_NUMPAD) && !goingLeft ):
+            Xvelocity = unitSize;
+            Yvelocity = 0;
+            break;
+
+        // if you're going up, you can't go down
+        case ( (keyPressed == UP_WASD || keyPressed == UP_ARROW || keyPressed == UP_NUMPAD) && !goingDown ):
+            Xvelocity = 0;
+            Yvelocity = -unitSize;
+            break;
+
+        // if you're going down, you can't go up
+        case ( (keyPressed == DOWN_WASD || keyPressed == DOWN_ARROW || keyPressed == DOWN_NUMPAD) && !goingUp ):
+            Xvelocity = 0;
+            Yvelocity = unitSize;
+            break;
+    }
+}
+
 
 // checks to see if the game is over yet 
 function checkGameOver(){

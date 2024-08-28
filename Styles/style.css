@@ -535,8 +535,7 @@ div.neodroid-commands {
 }
 
 #snake-game-board {
-  border:none;
-  border-radius: 3%;
+  border: none;
 }
 
 #snake-game-score {
