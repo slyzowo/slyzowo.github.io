@@ -392,13 +392,13 @@ div.neodroid-commands {
   align-items: center;
   padding: 20px;
   border-radius: 50px;
-  background-color: var(--black-1);
+  background-color: var(--black-2);
 }
 
 #StopwatchDisplay {
   font-size: max(4vw);
   font-family: monospace;
-  color: var(--black-0);
+  color: var(--white-2);
   margin-bottom: 20px;
 }
 
