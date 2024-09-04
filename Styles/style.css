@@ -135,9 +135,11 @@ body {
 /* The calculator */
 .multi-calculator-buttons {
   background-color: var(--grey-0);
-  width: 100px;
+  width: 85px;
   height: 36px;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .multi-calculator-buttons:hover {
@@ -148,11 +150,30 @@ body {
   background-color: var(--grey-2);
 }
 
-.multi-calculator-operator-buttons {
-  background-color: var(--blue-0);
-  width: 100px;
+.multi-calculator-number-buttons {
+  background-color: var(--grey-0);
+  width: 85px;
   height: 36px;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.multi-calculator-number-buttons:hover {
+  background-color: var(--grey-1);
+}
+
+.multi-calculator-number-buttons:active {
+  background-color: var(--grey-2);
+}
+
+.multi-calculator-operator-buttons {
+  background-color: var(--blue-0);
+  width: 85px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .multi-calculator-operator-buttons:hover {
