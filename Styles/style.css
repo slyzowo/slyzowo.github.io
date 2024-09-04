@@ -19,6 +19,8 @@
 
 /* Red's */
 --red-0:#eb4e3e;
+--red-1:#ce4637;
+--red-2:#b13f32;
 
 /* Yellow's */
 --yellow-0:#F2BB05;
@@ -195,6 +197,23 @@ body {
 
 .multi-calculator-operator-buttons:active {
   background-color: var(--blue-2);
+}
+
+.multi-calculator-delete-buttons {
+  background-color: var(--red-0);
+  width: 85px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.multi-calculator-delete-buttons:hover {
+  background-color: var(--red-1);
+}
+
+.multi-calculator-delete-buttons:active {
+  background-color: var(--red-2);
 }
 
 #formula{
