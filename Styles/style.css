@@ -575,3 +575,10 @@ div.neodroid-commands {
   margin-left: 85%;
   border: solid;
 }
+
+.finnish-tables table,  th, tr, td{
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
