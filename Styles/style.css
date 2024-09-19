@@ -578,9 +578,7 @@ div.neodroid-commands {
   border: none;
 }
 
-.finnish-tables table,  th, tr, td{
-  border: 1px solid rgb(255, 255, 255);
+.finnish-tables {
   border-collapse: collapse;
-  padding: 5px;
   text-align: center;
 }
