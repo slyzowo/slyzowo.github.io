@@ -136,18 +136,6 @@ function changeDirection(event) {
     const RIGHT_WASD = 68; // D key
     const DOWN_WASD = 83;  // S key
 
-    // Arrow keys
-    const LEFT_ARROW = 37; // left arrow key
-    const UP_ARROW = 38;   // up arrow key
-    const RIGHT_ARROW = 39; // right arrow key
-    const DOWN_ARROW = 40;  // down arrow key
-
-    // numpad for psychos
-    const  LEFT_NUMPAD = 100; // numpad 4 = left
-    const  UP_NUMPAD = 104; // numpad 8 = up
-    const  RIGHT_NUMPAD = 102; // numpad 6 = right
-    const  DOWN_NUMPAD = 98; // numpad 2 = down
-
     const goingLeft = (Xvelocity == -unitSize);
     const goingUp = (Yvelocity == -unitSize);
     const goingRight = (Xvelocity == unitSize);
@@ -155,25 +143,25 @@ function changeDirection(event) {
 
     switch (true) {
         // if you're going left, you can't go right
-        case ( (keyPressed == LEFT_WASD || keyPressed == LEFT_ARROW || keyPressed == LEFT_NUMPAD) && !goingRight ):
+        case (keyPressed == LEFT_WASD&& !goingRight ):
             Xvelocity = -unitSize;
             Yvelocity = 0;
             break;
 
         // if you're going right, you can't go left
-        case ( (keyPressed == RIGHT_WASD || keyPressed == RIGHT_ARROW || keyPressed == RIGHT_NUMPAD) && !goingLeft ):
+        case (keyPressed == RIGHT_WASD && !goingLeft ):
             Xvelocity = unitSize;
             Yvelocity = 0;
             break;
 
         // if you're going up, you can't go down
-        case ( (keyPressed == UP_WASD || keyPressed == UP_ARROW || keyPressed == UP_NUMPAD) && !goingDown ):
+        case (keyPressed == UP_WASD&& !goingDown):
             Xvelocity = 0;
             Yvelocity = -unitSize;
             break;
 
         // if you're going down, you can't go up
-        case ( (keyPressed == DOWN_WASD || keyPressed == DOWN_ARROW || keyPressed == DOWN_NUMPAD) && !goingUp ):
+        case (keyPressed == DOWN_WASD && !goingUp):
             Xvelocity = 0;
             Yvelocity = unitSize;
             break;

@@ -129,9 +129,27 @@ body {
   background-color: var(--purple-1);
 }
 
-/* settings remade */
-.settings {
-  text-align: left;
+/* The second navigation menu */
+.small-enclave {
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:var(--black-2);
+  height: auto;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.small-enclave button {
+  background-color: var(--transparent);
+  border: none;
+  padding: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
 }
 
 /* The calculator */
@@ -321,20 +339,8 @@ div.neodroid-commands {
 }
 
 /* Gemini lore */
-.gemini-navigation-bar {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--black-3);
-  height: 52px;
-  border-radius: 5px;
-  width: 420px;
-    padding: 2px;
-}
-
 .gemini-tabs {
   background-color: var(--purple-0);
-  height: 50px;
-  width: 100px;
   border: none;
   padding: 5px;
   margin-right: 2px;
@@ -450,6 +456,22 @@ div.neodroid-commands {
 
 #StopwatchReset:hover {
   background-color: var(--white-1);
+}
+
+.game-tabs {
+  background-color: var(--black-2);
+  border: none;
+  padding: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.game-tab-content {
+  display: block;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 /* snek */

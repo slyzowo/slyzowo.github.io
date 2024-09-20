@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 <!--basic stuffs-->
-  <title>Snake</title>
+  <title>Games</title>
   <link rel="stylesheet" href="/Styles/style.css">
-  <link rel="icon" type="image" href="../Images/snake.png">
+  <link rel="icon" type="image" href="../Images/controller.png">
 <!-- not sure? -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- embed support part-1 -->
-  <meta name="description" content="The classic game Snake">
-  <meta name="keywords" content="snake, game, classic, slyzoo, slyzoo4995">
+  <meta name="description" content="A few of the classic games like Snake, Rock paper scissors">
+  <meta name="keywords" content="snake, rock paper scissors, game, classic, slyzoo, slyzoo4995">
   <meta name="author" content="slyzoo4995">
 <!-- embed support part-2 -->
-  <meta property="og:title" content="Snake">
-  <meta property="og:description" content="The classic game Snake">
-  <meta property="og:image" content="https://slyzoo.net/Images/snake.png">
+  <meta property="og:title" content="Games">
+  <meta property="og:description" content="A few of classic games">
+  <meta property="og:image" content="https://slyzoo.net/Images/controller.png">
 </head>
 <body>
   <nav class="enclave">
@@ -29,9 +29,7 @@
     <!-- Multi-translator -->
       <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
     <!-- snek -->
-      <a href="https://slyzoo.net/games/snake"><button id="button"><img height="30px" src="/Images/snake.png"></button></a>
-    <!-- Rock, Paper, Scissors -->
-      <a href="https://slyzoo.net/games/rock-paper-scissors"><button id="button"><img height="30px" src="/Images/rock-paper-scissors.png"></button></a>
+      <a href="https://slyzoo.net/games"><button id="button"><img height="30px" src="/Images/controller.png"></button></a>
     <!-- Calculator -->
     <a href="https://slyzoo.net/multi-calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
     <!-- Stopwatch -->
@@ -48,18 +46,34 @@
       <a href="https://slyzoo.net/Minecraft/Fabric/The-Backrooms-Mod-wiki"><button id="button"><img height="30px" src="/Images/backrooms/backrooms_level_zero_wall_block.png"></button></a>
       <a href="https://slyzoo.net/Minecraft/Fabric/More-Hearts-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-hearts/diamond_plated_heart.png"></button></a>
       <a href="https://slyzoo.net/Minecraft/Fabric/More-Currency-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-currency/diamond_coin.png"></button></a>
-      </nav>
+    </nav>
 
+    <nav class="small-enclave">
+      <button class="game-tabs" id="game-default-open" onclick="openTabGame(event, 'snake-game-container')"><img src="Images/snake.png" height="30"></button>
+      <button class="game-tabs" onclick="openTabGame(event, 'rockPaperScissorsgame')"><img src="Images/rock-paper-scissors.png" height="30"></button>
+    </nav>
 
-<div id="snake-game-container">
-  <div id="reset-and-score">
-    <div id="snake-game-score">0</div>
-    <button id="snake-reset-button">Reset Game</button>
-  </div>
-  <h4>controls : WASD | Arrow keys | Numpad</h4>
-  <canvas id="snake-game-board" width="625vw" height="625vh"></canvas>
-</div>
-<script src="../Javascript/snakeGame.js"></script>
+    <div class="game-tab-content" id="snake-game-container">
+      <div id="reset-and-score">
+        <div id="snake-game-score">0</div>
+        <button id="snake-reset-button">Reset Game</button>
+      </div>
+      <h4>controls: WASD</h4>
+      <canvas id="snake-game-board" width="625vw" height="625vh"></canvas>
+    </div>
+  
+    <!-- Tab content for Rock-Paper-Scissors -->
+    <div class="game-tab-content" id="rockPaperScissorsgame">
+      <h1 class="gameText" id="playerText">Player: </h1>
+      <h1 class="gameText" id="computerText">Computer: </h1>
+      <button class="choiceButton" id="ROCK">ROCK</button>
+      <button class="choiceButton" id="PAPER">PAPER</button>
+      <button class="choiceButton" id="SCISSORS">SCISSORS</button>
+    </div>
+
+<script src="Javascript/tabs.js"></script>
+<script src="Javascript/snakeGame.js"></script>
+<script src="Javascript/rpsgame.js"></script>
 <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>

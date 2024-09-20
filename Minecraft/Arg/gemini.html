@@ -49,13 +49,12 @@
       <a href="https://slyzoo.net/Minecraft/Fabric/More-Currency-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-currency/diamond_coin.png"></button></a>
       </nav>
 
-    <div class="gemini-navigation-bar">
-        <button class="gemini-tabs" id="default-open" onclick="openLore(event, 'season-1-content')"><img src="../../Images/circle-1.png" height="30"></button>
-        <button class="gemini-tabs" onclick="openLore(event, 'season-1point5-content')"><img src="../../Images/1-and-a-half.png" height="30"></button>
-        <button class="gemini-tabs" onclick="openLore(event, 'season-2-content')"><img src="../../Images/circle-2.png" height="30"></button>
-        <button class="gemini-tabs" onclick="openLore(event, 'season-3-content')"><img src="../../Images/circle-3.png" height="30"></button>
-        <button class="gemini-tabs" onclick="openLore(event, 'gemini-credits')">Credits</button>
-    </div>
+    <nav class="small-enclave">
+        <button class="gemini-tabs" id="gemini-default-open" onclick="openTabGemini(event, 'season-1-content')"><img src="../../Images/circle-1.png" height="30"></button>
+        <button class="gemini-tabs" onclick="openTabGemini(event, 'season-1point5-content')"><img src="../../Images/circle-2.png" height="30"></button>
+        <button class="gemini-tabs" onclick="openTabGemini(event, 'season-2-content')"><img src="../../Images/circle-3.png" height="30"></button>
+        <button class="gemini-tabs" onclick="openTabGemini(event, 'gemini-credits')">Credits</button>
+    </nav>
 
     <div class="gemini-tab-content" id="season-1-content">
         <h1>Gemini lore season 1 recap</h1>
@@ -92,12 +91,6 @@
         <p id="Kamflame">Warped sign : I believe is one of Kam's personalities (the one we know)</p>
         <p id="mangrove-man">Mangrove sign : mangrove man (i forgor his canon name)</p>
     </div>
-
-    <div class="gemini-tab-content" id="season-3-content">
-        <br>
-        <h1>Gemini season 3?</h1>
-    </div>
-
     <div class="gemini-tab-content" id="gemini-credits">
         <div id="gemini-server-owner">
             <h1>Owners</h1>
@@ -172,6 +165,6 @@
             <h3>zeromii</h3>
         </div>
     </div>
-<script src="../../Javascript/geminiTabs.js"></script>
+<script src="../../Javascript/tabs.js"></script>
 </body>
 </html>
