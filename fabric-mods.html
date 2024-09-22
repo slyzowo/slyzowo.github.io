@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>More Currency Mod Wiki</title>
+    <title>Fabric Mods Wiki</title>
     <link rel="stylesheet" href="/Styles/style.css">
     <link rel="icon" type="image" href="../../Images/more-currency/diamond_coin.png">
 
@@ -21,43 +21,358 @@
 <body>
   <nav class="enclave">
     <!-- Home -->
-      <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.png"></button></a>
+      <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/icons/home.png"></button></a>
     <!-- NeoDroid -->
-      <a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
+      <a href="https://slyzoo.net/Big-Projects/neodroid"><button id="button"><img height="30px" src="/Images/icons/neodroid.png"></button></a>
     <!-- Project Magenta -->
-      <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/keyboard.png"></button></a>
+      <a href="https://slyzoo.net/Big-Projects/project-magenta" id="project-magenta"><button id="button"><img height="30px" src="/Images/icons/keyboard.png"></button></a>
     <!-- Multi-translator -->
-      <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/translate.png"></button></a>
+      <a href="https://slyzoo.net/multi-translator"><button id="button"><img height="30px" src="/Images/icons/translate.png"></button></a>
     <!-- Games -->
-    <a href="https://slyzoo.net/games"><button id="button"><img height="30px" src="/Images/controller.png"></button></a>
+    <a href="https://slyzoo.net/games"><button id="button"><img height="30px" src="/Images/icons/controller.png"></button></a>
     <!-- Calculator -->
-    <a href="https://slyzoo.net/multi-calculator"><button id="button"><img height="30px" src="/Images/calculator.png"></button></a>
+    <a href="https://slyzoo.net/multi-calculator"><button id="button"><img height="30px" src="/Images/icons/calculator.png"></button></a>
     <!-- Stopwatch -->
-      <a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.png"></button></a>
+      <a href="https://slyzoo.net/Small-Projects/stopwatch"><button id="button"><img height="30px" src="/Images/icons/stopwatch.png"></button></a>
     <!-- Gemini -->
-      <a href="https://slyzoo.net/Minecraft/Arg/gemini" id="gemini"><button id="button"><img height="30px" src="/Images/gemini-smp.png"></button></a>
+      <a href="https://slyzoo.net/Minecraft/Arg/gemini" id="gemini"><button id="button"><img height="30px" src="/Images/icons/gemini-smp.png"></button></a>
     <!-- Learning C -->
-      <a href="https://slyzoo.net/learning/c"><button id="button"><img height="30px" src="/Images/c-logo.png"></button></a>
-    <!-- Wikis -->
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Food-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-food/diamond_apple.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Gems-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-gems/ruby.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Metals-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-metals/purple_gold_ingot.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Weapons-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-weapons/lifestealer_sword.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/The-Backrooms-Mod-wiki"><button id="button"><img height="30px" src="/Images/backrooms/backrooms_level_zero_wall_block.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Hearts-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-hearts/diamond_plated_heart.png"></button></a>
-      <a href="https://slyzoo.net/Minecraft/Fabric/More-Currency-Mod-wiki"><button id="button"><img height="30px" src="/Images/more-currency/diamond_coin.png"></button></a>
-      </nav>
-      <nav>
-
+      <a href="https://slyzoo.net/learning/c"><button id="button"><img height="30px" src="/Images/icons/c-logo.png"></button></a>
+    <!-- Fabric mods -->
+      <a href="https://slyzoo.net/fabric-mods"><button id="button"><img height="30px" src="/Images/icons/fabric.png"></button></a>
       </nav>
 
-      <div>Backrooms</div>
-      <div>More Currency</div>
-      <div>More Equipment</div>
-      <div>More Food</div>
-      <div>More Gems</div>
-      <div>More Hearts</div>
-      <div>More Metals</div>
-</div>
+      <nav class="small-enclave">
+        <button class="fabric-tabs" id="fabric-default-open" onclick="openTabFabric(event, 'metals-container')">
+          <img src="Images/more-metals/purple_gold_ingot.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'backrooms-container')">
+          <img src="Images/backrooms/backrooms_level_zero_wall_block.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'currency-container')">
+          <img src="Images/more-currency/gold_coin.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'hearts-container')">
+          <img src="Images/more-hearts/heart.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'food-container')">
+          <img src="Images/more-food/diamond_apple.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'gems-container')">
+          <img src="Images/more-gems/sapphire.png" height="30">
+        </button>
+
+        <button class="fabric-tabs" onclick="openTabFabric(event, 'equipment-container')">
+          <img src="Images/more-weapons/lifestealer_sword.png" height="30">
+        </button>
+      </nav>
+      
+      <!-- Tab content -->
+      <div class="fabric-tab-content" id="backrooms-container">Backrooms</div>
+      <div class="fabric-tab-content" id="currency-container">
+        <h1>More Currency Mod</h1>
+        <div id="mod-stuffs">
+          <h2>Copper Coin</h2>
+          <img src="../../Images/more-currency/copper_coin.png" alt="Copper Coin">
+          
+          <h2>Iron Coin</h2>
+          <img src="../../Images/more-currency/iron_coin.png" alt="Iron Coin">
+          
+          <h2>Gold Coin</h2>
+          <img src="../../Images/more-currency/gold_coin.png" alt="Gold Coin">
+          
+          <h2>Diamond Coin</h2>
+          <img src="../../Images/more-currency/diamond_coin.png" alt="Diamond Coin">
+          
+          <h2>Emerald Coin</h2>
+          <img src="../../Images/more-currency/emerald_coin.png" alt="Emerald Coin">
+          
+          <h2>Netherite Coin</h2>
+          <img src="../../Images/more-currency/netherite_coin.png" alt="Netherite Coin">
+          
+          <h3>if you get More Metals Mod, here are more coins you can get</h3>
+          
+          <h2>Aluminium</h2>
+          <img src="../../Images/more-currency/aluminium_coin.png" alt="Aluminium Coin">
+          
+          <h2>Brass</h2>
+          <img src="../../Images/more-currency/brass_coin.png" alt="Brass Coin">
+          
+          <h2>Bronze</h2>
+          <img src="../../Images/more-currency/bronze_coin.png" alt="Bronze Coin">
+          
+          <h2>Purple gold</h2>
+          <img src="../../Images/more-currency/purple_gold_coin.png" alt="Purple Gold Coin">
+          
+          <h2>Platinum</h2>
+          <img src="../../Images/more-currency/platinum_coin.png" alt="Platinum Coin">
+          
+          <h2>Steel</h2>
+          <img src="../../Images/more-currency/steel_coin.png" alt="Steel Coin">
+          
+          <h2>titanium</h2>
+          <img src="../../Images/more-currency/titanium_coin.png" alt="Titanium Coin">
+          
+          <h2>tin</h2>
+          <img src="../../Images/more-currency/tin_coin.png" alt="Tin Coin">
+          
+          <h2>zinc</h2>
+          <img src="../../Images/more-currency/zinc_coin.png" alt="Zinc Coin">
+          </div>
+      </div>
+      <div class="fabric-tab-content" id="equipment-container"><h1>More Weapons Mod</h1>
+        <div id="mod-stuffs">
+        <h2>katana</h2>
+        <h2>spear</h2>
+        <h2>flail</h2>
+        <h2>knife</h2>
+        <h2>long bow</h2>
+        <h2>short bow</h2>
+        <h2>heavy crossbow</h2>
+        </div></div>
+      <div class="fabric-tab-content" id="food-container"><h1>More Food Mod</h1>
+        <div id="mod-stuffs">
+        <h2>Artichoke</h2>
+        <h4>Class of Food : Veggie</h4>
+        <img src="../../Images/more-food/artichoke.png" alt="Artichoke">
+        
+        <h2>Baguette</h2>
+        <h4>Class of Food : Bread</h4>
+        <img src="../../Images/more-food/baguette.png" alt="Baguette">
+        
+        <h2>Banana</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/banana.png" alt="Banana">
+        
+        <h2>Blackberry</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/blackberry.png" alt="Blackberry">
+        
+        <h2>Blueberry</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/blueberry.png" alt="Blueberry">
+        
+        <h2>Cantaloupe</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/cantaloupe.png" alt="Cantaloupe">
+        
+        <h2>Cherry</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/cherry.png" alt="Cherry">
+        
+        <h2>Corn</h2>
+        <h4>Class of Food : Veggie</h4>
+        <img src="../../Images/more-food/corn.png" alt="Corn">
+        
+        <h2>Diamond Apple</h2>
+        <h4>Class of Food : gem incased fruit</h4>
+        <img src="../../Images/more-food/diamond_apple.png" alt="Diamond Apple">
+        
+        <h2>Diamond Carrot</h2>
+        <h4>Class of Food : gem incased Veggie</h4>
+        <img src="../../Images/more-food/diamond_carrot.png" alt="Diamond Carrot">
+        
+        <h2>Dragonfruit</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/dragon_fruit.png" alt="Dragon Fruit">
+        
+        <h2>End Dragonfruit</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/end_dragon_fruit.png" alt="End Dragon Fruit">
+        
+        <h2>Grape</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/grape.png" alt="Grape">
+        
+        <h2>Grapefruit</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/grapefruit.png" alt="Grapefruit">
+        
+        <h2>Kiwi</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/kiwi.png" alt="Kiwi">
+        
+        <h2>Lemon</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/lemon.png" alt="Lemon">
+        
+        <h2>Lime</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/lime.png" alt="Lime">
+        
+        <h2>Mango</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/mango.png" alt="Mango">
+        
+        <h2>Netherite Apple</h2>
+        <h4>Class of Food : metal incased fruit</h4>
+        <img src="../../Images/more-food/netherite_apple.png" alt="Netherite Apple">
+        
+        <h2>Netherite Carrot</h2>
+        <h4>Class of Food : metal incased fruit</h4>
+        <img src="../../Images/more-food/netherite_carrot.png" alt="Netherite Carrot">
+        
+        <h2>Orange</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/orange.png" alt="Orange">
+        
+        <h2>Papaya</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/papaya.png" alt="Papaya">
+        
+        <h2>Peach</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/peach.png" alt="Peach">
+        
+        <h2>Pear</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/pear.png" alt="Pear">
+        
+        <h2>Pineapple</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/pineapple.png" alt="Pineapple">
+        
+        <h2>Plum</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/plum.png" alt="Plum">
+        
+        <h2>Pomegranate</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/pomegranate.png" alt="Pomegranate">
+        
+        <h2>Raspberry</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/raspberry.png" alt="Raspberry">
+        
+        <h2>Strawberry</h2>
+        <h4>Class of Food : Fruit</h4>
+        <img src="../../Images/more-food/strawberry.png" alt="Strawberry">
+        </div></div>
+      <div class="fabric-tab-content" id="gems-container"><div id="mod-stuffs">
+        <h1>Gems</h1>
+        <h2>Amber</h2>
+        <p>Can be dropped from big pine trees</p>
+        <img src="../../Images/more-gems/amber" alt="Amber">
+    
+        <h2>Ametrine</h2>
+        <p>Made with both quartz and amethyst</p>
+        <img src="../../Images/more-gems/ametrine" alt="Ametrine">
+    
+        <h2>Chrysoberyl</h2>
+        <p>Cats eye gem</p>
+        <img src="../../Images/more-gems/chrysoberyl" alt="Chrysoberyl">
+    
+        <h2>Diamonds (red, orange, yellow, green, purple, black, brown)</h2>
+        <p>the same as diamond but in different colours</p>
+        <img src="../../Images/more-gems/chrysoberyl" alt="Diamond (red, orange, yellow, green, purple, black, brown)">
+    
+        <h2>Garnet</h2>
+        <p></p>
+        <img src="../../Images/more-gems/garnet.png" alt="Garnet">
+    
+        <h2>Jade</h2>
+        <p></p>
+        <img src="../../Images/more-gems/jade.png" alt="Jade">
+    
+        <h2>Jasper</h2>
+        <p></p>
+        <img src="../../Images/more-gems/jasper.png" alt="Jasper">
+    
+        <h2>Onyx</h2>
+        <p></p>
+        <img src="../../Images/more-gems/onyx" alt="Onyx">
+    
+        <h2>Opal</h2>
+        <p>World of Colour</p>
+        <img src="../../Images/more-gems/opal" alt="Opal">
+    
+        <h2>Pearl</h2>
+        <p></p>
+        <img src="../../Images/more-gems/pearl.png" alt="Pearl">
+    
+        <h2>Ruby</h2>
+        <p></p>
+        <img src="../../Images/more-gems/ruby.png" alt="Ruby">
+    
+        <h2>Rose quartz</h2>
+        <p>Made with redstone and quartz</p>
+        <img src="../../Images/more-gems/rose_quartz.png" alt="Rose Quartz">
+    
+        <h2>Sapphire</h2>
+        <p></p>
+        <img src="../../Images/more-gems/sapphire.png" alt="Sapphire">
+    
+        <h2>Topaz</h2>
+        <p></p>
+        <img src="../../Images/more-gems/topaz.png" alt="Topaz">
+      </div></div>
+      <div class="fabric-tab-content" id="hearts-container"><h1>More Hearts Mod</h1>
+        <div id="mod-stuffs">
+        <h2>aluminium heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>brass heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>bronze heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>purple gold heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>platinum heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>steel heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>titanium heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>tin heart <sub>(needs More Metals Mod)</sub></h2>
+        <h2>zinc heart <sub>(needs More Metals Mod)</sub></h2>
+        </div></div>
+      <div class="fabric-tab-content" id="metals-container"><h1>More Metals Mod</h1>
+        <div id="mod-stuffs">
+        <h2>Aluminium</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/aluminium_block.png" height="160px">
+        <img src="../../Images/more-metals/aluminium_ingot.png" height="160px">
+        
+        <h2>Brass</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/brass_block.png" height="160px">
+        <img src="../../Images/more-metals/brass_ingot.png" height="160px">
+        
+        <h2>Bronze</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/bronze_block.png" height="160px">
+        <img src="../../Images/more-metals/bronze_ingot.png" height="160px">
+        
+        <h2>Purple Gold</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/purple_gold_block.png" height="160px">
+        <img src="../../Images/more-metals/purple_gold_ingot.png" height="160px">
+        
+        <h2>Platinum</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/platinum_block.png" height="160px">
+        <img src="../../Images/more-metals/platinum_ingot.png" height="160px">
+        
+        <h2>Steel</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/steel_block.png" height="160px">
+        <img src="../../Images/more-metals/steel_ingot.png" height="160px">
+        
+        <h2>Titanium</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/titanium_block.png" height="160px">
+        <img src="../../Images/more-metals/titanium_ingot.png" height="160px">
+        
+        <h2>Tin</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/tin_block.png" height="160px">
+        <img src="../../Images/more-metals/tin_ingot.png" height="160px">
+        
+        <h2>Zinc</h2>
+        <p>filler desc</p>
+        <img src="../../Images/more-metals/zinc_block.png" height="160px">
+        <img src="../../Images/more-metals/zinc_ingot.png" height="160px">
+        </div></div>
+      
+      
+
+      <script src="Javascript/tabs.js"></script>
 </body>
 </html>

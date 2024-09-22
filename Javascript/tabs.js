@@ -19,7 +19,6 @@ function openTabGemini(evt, season) {
 document.getElementById("gemini-default-open").click();
 
 
-
 function openTabGame(evt, gameName) {
 
   var i, tabContent, tabLinks;
@@ -40,3 +39,30 @@ function openTabGame(evt, gameName) {
 }
 // Automatically open the default tab
 document.getElementById("game-default-open").click();
+
+function openTabFabric(evt, fabricName) {
+  var i, tabContent, tabLinks;
+
+  // Hide all tab content
+  tabContent = document.getElementsByClassName("fabric-tab-content");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Remove "active" class from all buttons
+  tabLinks = document.getElementsByClassName("fabric-tabs");
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+  }
+
+  // Show the selected tab content
+  document.getElementById(fabricName).style.display = "block";
+
+  // Add "active" class to the clicked button
+  evt.currentTarget.className += " active";
+}
+
+// Automatically open the default tab when the page loads
+window.onload = function() {
+  document.getElementById("fabric-default-open").click();
+};
