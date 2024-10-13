@@ -80,7 +80,6 @@ body {
   color: var(--white-2);
   background: var(--black-1);
   background-attachment: fixed;
-  text-align: center;
   padding: 0px 10px;
 }
 
@@ -592,33 +591,44 @@ div.neodroid-commands {
   color:var(--purple-3)
 }
 
-#mod-stuffs {
+#fabric-mod-stuffs {
   text-align: left;
 }
 
-#mod-stuffs img {
+#fabric-mod-stuffs img {
   margin-left: 85%;
   border: none;
 }
 
-.fabric-tabs {
+.fabric-mod-grid-container{
+  grid-template-columns: auto auto auto;
+  display: grid;
+  gap: 50px;
+  padding: 10px;;
+}
+
+.fabric-mod-grid-item{
   background-color: var(--black-2);
-  border: none;
-  padding: 5px;
-  margin-right: 2px;
-  cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.5s ease;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.fabric-tab-content {
-  padding: 6px 12px;
-  border-top: none;
-  display: none;
+.fabric-mod-grid-container button{
+  background-color: var(--transparent);
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
-.active-tab {
-  display: block; /* Show only the active tab content */
+.fabric-mod-grid-container button:hover{
+  box-shadow: 0 0 16px var(--black-2);
+  transition: box-shadow 0.5s ease;
+}
+
+.fabric-mod-grid-container a:hover, a:visited, a:link, a:active{
+  text-decoration: none; 
 }
 
 .finnish-tables {
