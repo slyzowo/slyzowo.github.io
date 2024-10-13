@@ -10,12 +10,9 @@
 --magenta-2:#B744B8;
 
 /* Pink's*/
---pink-0:#ff80e6;
+--pink-0:#ffa0f9;
 --pink-1:#ce81c9;
---pink-3:#b471b0;
---pink-4:#ffa0f9;
---pink-5:#e48dde;
---pink-6:#c473be;
+--pink-2:#b471b0;
 
 /* Red's */
 --red-0:#eb4e3e;
@@ -45,6 +42,9 @@
 --black-0:#1f1f1f;
 --black-1:#121212;
 --black-2:#242424;
+
+/* black transparent*/
+--black-trans:#242424E6;
 
 /*Grey's*/
 --grey-0:#acacac;
@@ -78,7 +78,8 @@
 /* On every page */
 body {
   color: var(--white-2);
-  background-image: url('starred_backgroundV2.png');
+  background: var(--black-1);
+  background-attachment: fixed;
   text-align: center;
   padding: 0px 10px;
 }
@@ -88,7 +89,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color:var(--black-2);
+  background-color:var(--black-trans);
   height: auto;
   width: auto;
   border-radius: 5px;
@@ -267,7 +268,7 @@ body {
 }
 
 input[type=radio].cypher-radio {
-  accent-color: var(--pink-4);
+  accent-color: var(--pink-0);
 }
 .cypher-radio{
   font-size: 1rem;
@@ -292,10 +293,10 @@ input[type=radio].cypher-radio {
 }
 
 #cypher-copy-button:hover {
-  background-color: var(--pink-5);
+  background-color: var(--pink-1);
 }
 #cypher-copy-button:active {
-  background-color: var(--pink-6);
+  background-color: var(--pink-2);
 }
 
 .base-options {
@@ -439,13 +440,13 @@ div.neodroid-commands {
 }
 
 #StopwatchStop {
-  background-color: var(--pink-4);
+  background-color: var(--pink-0);
   border: none;
   border-radius: 30px;
 }
 
 #StopwatchStop:hover {
-  background-color: var(--pink-5);
+  background-color: var(--pink-1);
 }
 
 #StopwatchReset {
