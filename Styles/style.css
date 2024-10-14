@@ -601,10 +601,11 @@ div.neodroid-commands {
 }
 
 .fabric-mod-grid-container{
-  grid-template-columns: auto auto auto;
   display: grid;
-  gap: 50px;
-  padding: 10px;;
+  grid-template-rows: repeat(3, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
+  gap: 45px;
+  padding: 10px;
 }
 
 .fabric-mod-grid-item{
@@ -629,6 +630,10 @@ div.neodroid-commands {
 
 .fabric-mod-grid-container a:hover, a:visited, a:link, a:active{
   text-decoration: none; 
+}
+
+.fabric-mod-grid-container image{
+  align-items: center;
 }
 
 .finnish-tables {
