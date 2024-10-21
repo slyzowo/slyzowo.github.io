@@ -67,8 +67,8 @@
 --gemini-server-member:#3498db;
 }
 
-.new-badge{
-  background-color: red;
+.badge{
+  background-color: rgb(218, 51, 51);
   color: var(--white-0);
   padding: 4px 8px;
   text-align: center;
