@@ -17,7 +17,60 @@
 	<meta property="og:description" content="A cypher translator that supports ASCII, Binary, Bases 8 - 91, Caesar, Hex-colour, and Morse">
 	<meta property="og:image" content="https://slyzoo.net/Images/translate.png">
 </head>
+<style>
+  /* Cypher */
+.cypher {
+  text-align: center;
+}
 
+/* multi-translator */
+.cypher-textarea {
+  width: 60%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: var(--white-2);
+  background-color:var(--black-2);
+}
+
+.cypher-buttons {
+  padding: 2%;
+}
+
+input[type=radio].cypher-radio {
+  accent-color: var(--pink-0);
+}
+.cypher-radio{
+  font-size: 1rem;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#cypher-copy-button {
+  background-color: #48a7ff;
+  border: none;
+  border-radius: 30px;
+  border: none;
+  height: 80px;
+  width: 150px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#cypher-copy-button:hover {
+  background-color: var(--pink-1);
+}
+#cypher-copy-button:active {
+  background-color: var(--pink-2);
+}
+</style>
 <body>
   <nav class="enclave">
     <!-- Home -->
