@@ -1,0 +1,24 @@
+{ 
+  "colours" : {
+    "body" : {
+      "background" : "#121212",
+      "text" : "#e9e9e9"
+    },
+
+    "enclave" : {
+      "background" : "#242424E6"
+    },
+    
+    "transparent" : "#00000000",
+
+    "gemini" : {
+      "kamflame" : "#6060ff",
+      "messager-of-the-void" : "#ff6060",
+      "mangrove-man" : "#e7a54f",
+      "owner" : "#e91e63",
+      "staff" : "#f1c40f",
+      "donator" : "#e67e22",
+      "member" : "#3498db"
+    }
+  }
+}

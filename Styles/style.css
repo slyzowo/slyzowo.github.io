@@ -2,7 +2,7 @@
 
 /* COLOURS */
 /* Transparent's*/
---transparent:rgba(0,0,0,0);
+--transparent:#00000000;
 
 /* Magenta's*/
 --magenta-0:#FF00FF;
@@ -55,17 +55,6 @@
 --white-0:#ffffff;
 --white-1:#f1f1f1;
 --white-2:#e9e9e9;
-
-/* Gemini SMP lore */
---messenger-of-the-void:#ff6060;
---kamflame:#6060ff;
---mangrove-man:#e7a54f;
---gemini-intro:#f0f8ff;
---gemini-server-owner:#e91e63;
---gemini-server-staff:#f1c40f;
---gemini-server-donator:#e67e22;
---gemini-server-member:#3498db;
-}
 
 .badge{
   background-color: rgb(218, 51, 51);

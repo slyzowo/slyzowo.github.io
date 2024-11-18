@@ -14,7 +14,7 @@
 	<meta name="author" content="slyzoo.c">
 <!-- embed support part-2 -->
 	<meta property="og:title" content="Multi-Translator">
-	<meta property="og:description" content="A cypher translator that supports ASCII, Binary, Bases 8 - 91, Caesar, Hex-colour, and Morse">
+	<meta property="og:description" content="A cypher translator that supports Atbash, ASCII, Binary, base 64, Caesar, Hex-colour, and Morse code">
 	<meta property="og:image" content="https://slyzoo.net/Images/translate.png">
 </head>
 <style>
@@ -39,9 +39,6 @@
   padding: 2%;
 }
 
-input[type=radio].cypher-radio {
-  accent-color: var(--pink-0);
-}
 .cypher-radio{
   font-size: 1rem;
   cursor: pointer;
@@ -67,6 +64,7 @@ input[type=radio].cypher-radio {
 #cypher-copy-button:hover {
   background-color: var(--pink-1);
 }
+
 #cypher-copy-button:active {
   background-color: var(--pink-2);
 }
@@ -94,8 +92,6 @@ input[type=radio].cypher-radio {
   <div class="cypher">
     <div class="container">
       <h1>Multi-Translator</h1>
-      <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
-  
       <div class="cypher-options">
         <div>
           <label>
@@ -105,7 +101,6 @@ input[type=radio].cypher-radio {
             <input type="radio" name="mode" value="decode"> Decode
           </label>
         </div>
-  
         <div>
           <select id="cipherSelect">
             <option value="atbash">Atbash</option>
@@ -117,6 +112,23 @@ input[type=radio].cypher-radio {
             <option value="morse">Morse Code</option>
           </select>
         </div>
+        <button id="cypher-copy-button">Copy Output</button><br>
+      <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
+  
+  
+<!-- ciphers / feats to add
+        Tab code
+        Adjustable caesar
+        Numerology code
+        Unicode
+        Wingdings (emoji)
+        Atomic names
+        Atomic numbers
+        Atomic symbols
+        Pig latin
+        
+        TODO : fix hexcolour
+-->
   
         <!-- Caesar Shift Input -->
         <div id="caesarShiftContainer" style="display: none;">
@@ -126,12 +138,10 @@ input[type=radio].cypher-radio {
       </div>
   
       <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
-      <button id="cypher-copy-button">Copy Output</button>
     </div>
   </div>
   
   <script src="Javascript/cypher.js"></script>
-  
-  
+  <script src="Javascript/theme.js"></script>
 </body>
 </html>
