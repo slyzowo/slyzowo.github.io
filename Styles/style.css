@@ -103,22 +103,6 @@ body {
   background-color: var(--grey-2);
 }
 
-#project-magenta button:hover {
-  background-color: var(--magenta-0);
-}
-
-#project-magenta button:active {
-  background-color: var(--magenta-1);
-}
-
-#gemini button:hover {
-  background-color: var(--purple-0);
-}
-
-#gemini button:active {
-  background-color: var(--purple-1);
-}
-
 /* The second navigation menu */
 .small-enclave {
   margin-top: 2px;
