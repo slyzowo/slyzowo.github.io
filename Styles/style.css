@@ -113,6 +113,18 @@ body {
   background-color: var(--grey-2);
 }
 
+.newsletter{
+  padding: 10px;
+  margin: 100px;
+  border-radius: 10px;
+  background-color: light-dark(var(--light-enclave), var(--dark-enclave));
+}
+
+.newsletter h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
 #fabric-mod-stuffs {
   text-align: left;
 }
