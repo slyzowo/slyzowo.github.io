@@ -113,16 +113,16 @@ body {
   background-color: var(--grey-2);
 }
 
-
 .sidenav {
   height: 90%;
-  width: 200px;
+  width: 150px;
   position: fixed;
   z-index: 1;
   left: 0;
   background-color: #00000000;
   overflow-x: hidden;
   padding-top: 20px;
+  margin-left: 20px;
 }
 
 .sidenav a {

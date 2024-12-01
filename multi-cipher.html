@@ -22,32 +22,33 @@
 /* multi-translator */
 .cypher-textarea {
   width: 60%;
-  height: 100px;
+  height: 150px;
   margin-bottom: 10px;
   padding: 10px;
   border: none;
   border-radius: 10px;
   color: var(--white-2);
   background-color:var(--black-2);
+  resize: none;
 }
 
 .cypher-buttons {
   padding: 2%;
 }
 
-.cypher-radio{
+.cipher-radio{
   font-size: 1rem;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: relative;
-  margin-right: 10px;
-  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#cipherDropdown{
+  margin-top: 10px;
+  width: 150px;
+  height: auto;
 }
 
 #cypher-copy-button {
-  background-color: #48a7ff;
+  background-color: var(--blue-0);
   border: none;
   border-radius: 30px;
   border: none;
@@ -55,14 +56,15 @@
   width: 150px;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 #cypher-copy-button:hover {
-  background-color: var(--pink-1);
+  background-color: var(--blue-1);
 }
 
 #cypher-copy-button:active {
-  background-color: var(--pink-2);
+  background-color: var(--blue-2);
 }
 </style>
 <body>
@@ -87,54 +89,45 @@
         <a href="https://slyzoo.net/stopwatch"><button id="button"><img height="30px" src="/Images/icons/stopwatch.svg"></button></a>      
       </nav>
 
+  <div class="sidenav">
+    <div class="cipher-radio">
+      <label><input type="radio" name="mode" value="encode" checked> Encode</label><br>
+      <label><input type="radio" name="mode" value="decode"> Decode</label><br>
+      <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
+    </div>
+
+    <button id="cypher-copy-button">Copy Output</button>
+
+      <select id="cipherDropdown">
+        <option value="atbash">Atbash</option>
+        <option value="ascii">ASCII</option>
+        <option value="base64">Base64</option>
+        <option value="binary">Binary</option>
+        <option value="caesar">Caesar</option>
+        <option value="hex-colour">Hex Colour</option>
+        <option value="hexadecimal">Hexadecimal</option>
+        <option value="morse">Morse Code</option>
+        <option value="pig-latin">Pig Latin</option>
+        <option value="tap">Tap Code</option>
+        <option value="unicode">Unicode</option>
+        <option value="uwu">UwU</option>
+      </select>
+  </div>
+  <!-- ciphers / feats to add
+  Adjustable caesar
+  Numerology code
+  Atomic names
+  Atomic numbers
+  Atomic symbols
+  
+  TODO : fix hexcolour
+  -->
+  
   <div class="cypher">
     <div class="container">
       <h1>Multi-Translator</h1>
       <div class="cypher-options">
-        <div>
-          <label>
-            <input type="radio" name="mode" value="encode" checked> Encode
-          </label>
-          <label>
-            <input type="radio" name="mode" value="decode"> Decode
-          </label>
-        </div>
-        <div>
-          <select id="cipherSelect">
-            <option value="atbash">Atbash</option>
-            <option value="ascii">ASCII</option>
-            <option value="base64">Base64</option>
-            <option value="binary">Binary</option>
-            <option value="caesar">Caesar</option>
-            <option value="hex-colour">Hex Colour</option>
-            <option value="morse">Morse Code</option>
-          </select>
-        </div>
-        <button id="cypher-copy-button">Copy Output</button><br>
       <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
-  
-  
-<!-- ciphers / feats to add
-        Tab code
-        Adjustable caesar
-        Numerology code
-        Unicode
-        Wingdings (emoji)
-        Atomic names
-        Atomic numbers
-        Atomic symbols
-        Pig latin
-        
-        TODO : fix hexcolour
--->
-  
-        <!-- Caesar Shift Input -->
-        <div id="caesarShiftContainer" style="display: none;">
-          <label for="caesarShift">Shift:</label>
-          <input type="number" id="caesarShift" value="1" min="1" max="25">
-        </div>
-      </div>
-  
       <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
     </div>
   </div>
