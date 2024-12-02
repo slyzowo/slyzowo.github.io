@@ -141,14 +141,18 @@ body {
   margin-left: 150px; /* Same as the width of the sidenav */
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 360px) {
+  .sidenav {
+
+  }
+  
+  .cypher{
+    margin-top: 100%;
+  }
 }
 
 .newsletter{
   padding: 10px;
-  margin: 100px;
   border-radius: 10px;
   background-color: light-dark(var(--light-enclave), var(--dark-enclave));
 }
