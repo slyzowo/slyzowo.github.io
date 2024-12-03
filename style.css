@@ -1,4 +1,4 @@
-:root{ /* i feel so stupid, i just learned the existance of css vars */
+:root{
 
 color-scheme: light dark;
 
@@ -143,9 +143,9 @@ body {
 
 @media screen and (max-width: 360px) {
   .sidenav {
-
+    width: 150px;
   }
-  
+
   .cypher{
     margin-top: 100%;
   }
