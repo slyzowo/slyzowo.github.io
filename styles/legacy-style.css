@@ -1,17 +1,17 @@
 :root{ color-scheme: light dark;
 
 /* COLOURS */
- --dark-bg: #121212;
- --light-bg: #e9e9e9;
- 
- --dark-txt: #e9e9e9;
- --light-txt: #121212;
- 
- --dark-enclave: #202020e6;
- --light-enclave: #d6d6d6e6;
- 
- --dark-grid-bg: #242424;
- --light-grid-bg: #dfdfdf;
+--dark-bg: #121212;
+--light-bg: #e9e9e9;
+
+--dark-txt: #e9e9e9;
+--light-txt: #121212;
+
+--dark-enclave: #202020e6;
+--light-enclave: #d6d6d6e6;
+
+--dark-grid-bg: #242424;
+--light-grid-bg: #dfdfdf;
 
 /* Transparent's*/
 --transparent:#00000000;
