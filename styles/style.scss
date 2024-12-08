@@ -69,7 +69,7 @@ body{
 }
 
 /* The navigation menu */
-.enclave {
+.enclave{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -95,7 +95,7 @@ body{
   }
 }
 
-.sidenav {
+.sidenav{
   height: 90%;
   width: 150px;
   position: fixed;
@@ -119,8 +119,8 @@ body{
   }
 }
 
-@media screen and (max-width: 360px) {
-  .sidenav {
+@media screen and (max-width: 360px){
+  .sidenav{
     width: 150px;
   }
 
@@ -137,7 +137,7 @@ body{
   h1{font-family: 'Times New Roman', Times, serif;}
 }
 
-#fabric-mod-stuffs {
+#fabric-mod-stuffs{
   text-align: left;
 
   img{
@@ -181,11 +181,11 @@ body{
 
 
 /* Stopwatch */
-#StopwatchTitle {
+#StopwatchTitle{
   font-size: 4rem;
 }
 
-#StopwatchContainer {
+#StopwatchContainer{
   margin: auto;
   width: 55%;
   max-width: 40vw;
@@ -197,7 +197,7 @@ body{
   background-color: $dark-enclave;
 }
 
-#StopwatchDisplay {
+#StopwatchDisplay{
   font-size: max(4vw);
   font-family: monospace;
   color: $white-active;
@@ -205,7 +205,7 @@ body{
 }
 
 
-@mixin stopwatch-button {
+@mixin stopwatch-button{
   font-size: 1.5rem;
   margin: 5px;
   min-width: 125px;
@@ -215,23 +215,20 @@ body{
   padding: 10px 20px;
 }
 
-#StopwatchStart {
+#StopwatchStart{
   background-color: $blue-default;
   @include stopwatch-button();
-
-  :hover {background-color: $blue-hover;}
+  :hover{background-color: $blue-hover;}
 }
 
-#StopwatchStop {
+#StopwatchStop{
   background-color: $pink-default;
   @include stopwatch-button();
-
-  :hover {background-color: $pink-hover}
+  :hover{background-color: $pink-hover}
 }
 
-#StopwatchReset {
+#StopwatchReset{
   background-color: $white-default;
   @include stopwatch-button();
-
-  :hover {background-color: $white-hover;}
+  :hover{background-color: $white-hover;}
 }
