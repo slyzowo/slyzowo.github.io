@@ -147,8 +147,11 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStart :hover {
+#StopwatchStart:hover {
   background-color: #4196e6;
+}
+#StopwatchStart:active {
+  background-color: #3a83c7;
 }
 
 #StopwatchStop {
@@ -161,8 +164,11 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStop :hover {
+#StopwatchStop:hover {
   background-color: #ce81c9;
+}
+#StopwatchStop:active {
+  background-color: #b471b0;
 }
 
 #StopwatchReset {
@@ -175,6 +181,9 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchReset :hover {
+#StopwatchReset:hover {
   background-color: #f1f1f1;
+}
+#StopwatchReset:active {
+  background-color: #e9e9e9;
 }/*# sourceMappingURL=style.css.map */

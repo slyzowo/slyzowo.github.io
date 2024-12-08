@@ -60,6 +60,15 @@ $white-default:#ffffff;
 $white-hover:#f1f1f1;
 $white-active:#e9e9e9;
 
+@mixin stopwatch-button(){
+  font-size: 1.5rem;
+  margin: 5px;
+  min-width: 125px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
 
 body{
   background-color: $dark-bg;
@@ -204,31 +213,23 @@ body{
   margin-bottom: 20px;
 }
 
-
-@mixin stopwatch-button{
-  font-size: 1.5rem;
-  margin: 5px;
-  min-width: 125px;
-  cursor: pointer;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-}
-
 #StopwatchStart{
   background-color: $blue-default;
   @include stopwatch-button();
   :hover{background-color: $blue-hover;}
+  :hover{background-color: $blue-active;}
 }
 
 #StopwatchStop{
   background-color: $pink-default;
   @include stopwatch-button();
-  :hover{background-color: $pink-hover}
+  :hover{background-color: $pink-hover;}
+  :hover{background-color: $pink-active;}
 }
 
 #StopwatchReset{
   background-color: $white-default;
   @include stopwatch-button();
   :hover{background-color: $white-hover;}
-}
+  :hover{background-color: $white-active;}
+  }
