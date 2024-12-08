@@ -85,21 +85,23 @@ body{
   background-color: $dark-enclave;
   height: auto;
   width: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2px;
+
   button{
     background-color: $transparent;
     border: none;
     padding: 5px;
     margin-right: 2px;
     cursor: pointer;
-    border-radius: 5px;
+
     :hover{
       background-color: $grey-hover;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 3px;
       transition: 0.5s ease;
     }
+
     :active{background-color: $grey-hover;}
   }
 }
@@ -128,22 +130,29 @@ body{
   }
 }
 
-@media screen and (max-width: 360px){
-  .sidenav{
-    width: 150px;
-  }
-
-  .cypher{
-    margin-top: 100%;
-  }
+.flexy-container{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
 }
 
-.newsletter{
-  padding: 10px;
-  border-radius: 10px;
+.flexy-item{
   background-color: $dark-enclave;
-
   h1{font-family: 'Times New Roman', Times, serif;}
+  font-size: medium;
+  padding: 10px;
+  flex: 25%;
+  padding: 10px;
+  margin: .5%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 360px){
+  .enclave{ max-width: 295px;}
+  .flexy-item{flex: 100%;}
+  .sidenav{width: 150px;}
+  .cypher{margin-top: 100%;}
 }
 
 #fabric-mod-stuffs{
@@ -227,7 +236,7 @@ body{
   :hover{background-color: $pink-active;}
 }
 
-#StopwatchReset{
+#StopwatchReset {
   background-color: $white-default;
   @include stopwatch-button();
   :hover{background-color: $white-hover;}
