@@ -14,53 +14,53 @@ $light-grid-bg: #dfdfdf;
 // Transparents
 $transparent:#00000000;
 
-// Pinks
+// Pink
 $pink-default:#ffa0f9;
 $pink-hover:#ce81c9;
 $pink-active:#b471b0;
 
-// Reds 
+// Red 
 $red-default:#eb4e3e;
 $red-hover:#ce4637;
 $red-active:#b13f32;
 
-// Yellows 
+// Yellow
 $yellow-default:#F2BB05;
 
-//Greens
+// Green
 $green-default:#48ff60;
 $green-hover:#5DFDCB;
 $green-active:#384D48;
 
-// Blues 
+// Blue
 $blue-default: #48a7ff;
 $blue-hover: #4196e6;
 $blue-active: #3a83c7;
 $blue-3:#5347ff;
 
-// Purples
+// Purple
 $purple-default:#9266cc;
 $purple-hover:#7e43cc;
 $purple-active:#743ebb;
 
-// Blackss
+// Black
 $black-default:#1f1f1f;
 $black-hover:#242424;
 
 // black transparent
 $black-trans:#242424E6;
 
-// Greys
+// Grey
 $grey-default:#acacac;
 $grey-hover:#4d4d4d;
 $grey-active:#3f3f3f;
 
-// Whitess
+// White
 $white-default:#ffffff;
 $white-hover:#f1f1f1;
 $white-active:#e9e9e9;
 
-// body
+
 body{
   background-color: $dark-bg;
   color: $dark-txt;
@@ -204,32 +204,34 @@ body{
   margin-bottom: 20px;
 }
 
-#StopwatchControls button {
+
+@mixin stopwatch-button {
   font-size: 1.5rem;
-  padding: 10px 20px;
   margin: 5px;
   min-width: 125px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
 }
 
 #StopwatchStart {
-  background-color: $blue-active;
-  border: none;
-  border-radius: 30px;
+  background-color: $blue-default;
+  @include stopwatch-button();
+
   :hover {background-color: $blue-hover;}
 }
 
 #StopwatchStop {
   background-color: $pink-default;
-  border: none;
-  border-radius: 30px;
+  @include stopwatch-button();
+
   :hover {background-color: $pink-hover}
 }
 
 #StopwatchReset {
   background-color: $white-default;
-  border: none;
-  border-radius: 30px;
+  @include stopwatch-button();
+
   :hover {background-color: $white-hover;}
 }

@@ -137,19 +137,15 @@ body {
   margin-bottom: 20px;
 }
 
-#StopwatchControls button {
+#StopwatchStart {
+  background-color: #48a7ff;
   font-size: 1.5rem;
-  padding: 10px 20px;
   margin: 5px;
   min-width: 125px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
-}
-
-#StopwatchStart {
-  background-color: #3a83c7;
   border: none;
   border-radius: 30px;
+  padding: 10px 20px;
 }
 #StopwatchStart :hover {
   background-color: #4196e6;
@@ -157,8 +153,13 @@ body {
 
 #StopwatchStop {
   background-color: #ffa0f9;
+  font-size: 1.5rem;
+  margin: 5px;
+  min-width: 125px;
+  cursor: pointer;
   border: none;
   border-radius: 30px;
+  padding: 10px 20px;
 }
 #StopwatchStop :hover {
   background-color: #ce81c9;
@@ -166,8 +167,13 @@ body {
 
 #StopwatchReset {
   background-color: #ffffff;
+  font-size: 1.5rem;
+  margin: 5px;
+  min-width: 125px;
+  cursor: pointer;
   border: none;
   border-radius: 30px;
+  padding: 10px 20px;
 }
 #StopwatchReset :hover {
   background-color: #f1f1f1;
