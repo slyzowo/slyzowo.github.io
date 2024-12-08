@@ -150,7 +150,7 @@ body {
 #StopwatchStart:hover {
   background-color: #4196e6;
 }
-#StopwatchStart:active {
+#StopwatchStart:hover {
   background-color: #3a83c7;
 }
 
@@ -167,7 +167,7 @@ body {
 #StopwatchStop:hover {
   background-color: #ce81c9;
 }
-#StopwatchStop:active {
+#StopwatchStop:hover {
   background-color: #b471b0;
 }
 
