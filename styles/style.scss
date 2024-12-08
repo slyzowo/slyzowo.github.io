@@ -78,7 +78,6 @@ body{
   width: auto;
   border-radius: 5px;
   padding: 2px;
-  
   button{
     background-color: $transparent;
     border: none;
@@ -86,7 +85,6 @@ body{
     margin-right: 2px;
     cursor: pointer;
     border-radius: 5px;
-    
     :hover{
       background-color: $grey-hover;
       border-radius: 5px;
@@ -179,4 +177,59 @@ body{
   font-size: 30px;
   text-align: center;
   color: white;
+}
+
+
+/* Stopwatch */
+#StopwatchTitle {
+  font-size: 4rem;
+}
+
+#StopwatchContainer {
+  margin: auto;
+  width: 55%;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: $dark-enclave;
+}
+
+#StopwatchDisplay {
+  font-size: max(4vw);
+  font-family: monospace;
+  color: $white-active;
+  margin-bottom: 20px;
+}
+
+#StopwatchControls button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#StopwatchStart {
+  background-color: $blue-active;
+  border: none;
+  border-radius: 30px;
+  :hover {background-color: $blue-hover;}
+}
+
+#StopwatchStop {
+  background-color: $pink-default;
+  border: none;
+  border-radius: 30px;
+  :hover {background-color: $pink-hover}
+}
+
+#StopwatchReset {
+  background-color: $white-default;
+  border: none;
+  border-radius: 30px;
+  :hover {background-color: $white-hover;}
 }
