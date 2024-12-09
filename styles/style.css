@@ -62,7 +62,7 @@ body {
   text-align: center;
 }
 
-.flexy-item {
+.big-flexy-item {
   background-color: #202020e6;
   font-size: medium;
   padding: 10px;
@@ -71,23 +71,23 @@ body {
   margin: 0.5%;
   border-radius: 10px;
 }
-.flexy-item h1 {
-  font-family: "Times New Roman", Times, serif;
+.big-flexy-item h1 {font-family: "Times New Roman", Times, serif;}
+
+.small-flexy-item {
+  background-color: #202020e6;
+  font-size: medium;
+  padding: 10px;
+  flex: 25%;
+  padding: 10px;
+  margin: 0.5%;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 360px) {
-  .enclave {
-    max-width: 295px;
-  }
-  .flexy-item {
-    flex: 100%;
-  }
-  .sidenav {
-    width: 150px;
-  }
-  .cypher {
-    margin-top: 100%;
-  }
+  .enclave {max-width: 295px;}
+  .flexy-item {flex: 100%;}
+  .sidenav {width: 150px;}
+  .cypher {margin-top: 100%;}
 }
 #fabric-mod-stuffs {
   text-align: left;
@@ -163,10 +163,10 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStart :hover {
+#StopwatchStart:hover {
   background-color: #4196e6;
 }
-#StopwatchStart :hover {
+#StopwatchStart:active {
   background-color: #3a83c7;
 }
 
@@ -180,10 +180,10 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStop :hover {
+#StopwatchStop:hover {
   background-color: #ce81c9;
 }
-#StopwatchStop :hover {
+#StopwatchStop:active {
   background-color: #b471b0;
 }
 
@@ -197,8 +197,9 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchReset :hover {
+#StopwatchReset:hover {
   background-color: #f1f1f1;
 }
-#StopwatchReset :hover {
+#StopwatchReset:active {
   background-color: #e9e9e9;
+}
