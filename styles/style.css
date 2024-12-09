@@ -17,7 +17,7 @@ body {
   padding: 2px;
 }
 .enclave button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border: none;
   padding: 5px;
   margin-right: 2px;
@@ -39,7 +39,7 @@ body {
   position: fixed;
   z-index: 1;
   left: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   overflow-x: hidden;
   padding-top: 20px;
   margin-left: 20px;
@@ -63,7 +63,7 @@ body {
 }
 
 .flexy-item {
-  background-color: rgba(32, 32, 32, 0.9019607843);
+  background-color: #202020e6;
   font-size: medium;
   padding: 10px;
   flex: 25%;
@@ -105,12 +105,12 @@ body {
   padding: 10px;
 }
 .grid-container button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border: none;
   cursor: pointer;
 }
 .grid-container button :hover {
-  box-shadow: 0 0 16px rgba(36, 36, 36, 0.9019607843);
+  box-shadow: 0 0 16px #242424e6;
   transition: box-shadow 0.5s ease;
 }
 .grid-container a {
@@ -143,7 +143,7 @@ body {
   align-items: center;
   padding: 20px;
   border-radius: 50px;
-  background-color: rgba(32, 32, 32, 0.9019607843);
+  background-color: #202020e6;
 }
 
 #StopwatchDisplay {
@@ -202,4 +202,3 @@ body {
 }
 #StopwatchReset :hover {
   background-color: #e9e9e9;
-}/*# sourceMappingURL=style.css.map */
