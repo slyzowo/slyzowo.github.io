@@ -5,57 +5,66 @@ color-scheme: light dark; /* enables both light and dark mode */
 --dark-txt:#e9e9e9;
 --dark-transparent: #202020e6;
 
+--transparent:#00000000;
+
 --light-bg:#e9e9e9;
 --light-txt:#121212;
 --light-transparent:#dddddde6;
 
-/* standardized colours */
+/* standardized colours*/
 --white:#ffffff;
+--white-hover:#cccccc;
+--white-active:#999999;
+
 --pink:#ff87fb;
+--pink-hover:#cc6cc9;
+--pink-active:#995197;
+
 --magenta:#ff00ff;
+--magenta-hover:#cc00cc;
+--magenta-active:#990099;
+
 --red:#e33b4c;
+--red-hover:#b62f3d;
+--red-active:#88232e;
+
 --orange:#ffa940;
+--orange-hover:#cc8733;
+--orange-active:#996526;
+
 --yellow:#ffd969;
+--yellow-hover:#ccae54;
+--yellow-active:#99823f;
+
 --lime:#67ff5c;
+--lime-hover:#52cc4a;
+--lime-active:#3e9937;
+
 --green:#0cb300;
+--green-hover:#0a8f00;
+--green-active:#076b00;
+
 --light-blue:#5bcffa;
+--light-blue-hover:#49a6c8;
+--light-blue-active:#377c96;
+
 --blue:#3b5ae3;
+--blue-hover:#2f48b6;
+--blue-active:#233688;
+
 --purple:#7b3be3;
+--purple-hover:#622fb6;
+--purple-active:#4a2388;
+
 --grey:#888888;
+--grey-hover:#6d6d6d;
+--grey-active:#525252;
+
 --dark-grey:#4d4d4d;
+--dark-grey-hover:#3e3e3e;
+--dark-grey-active:#2e2e2e;
+
 --black:#141414;
---transparent:#00000000;
-
-/* Hover */
---white-hover:#e6e6e6;
---pink-hover:#ff87fb;
---magenta-hover:#ff00ff;
---red-hover:#e33b4c;
---orange-hover:#ffa940;
---yellow-hover:#ffd969;
---lime-hover:#67ff5c;
---green-hover:#0cb300;
---light-blue-hover:#5bcffa;
---blue-hover:#3b5ae3;
---purple-hover:#7b3be3;
---grey-hover:#888888;
---dark-grey-hover:#4d4d4d;
-
-/* Active */
---white-active:#d9d9d9;
---pink-active:#ff87fb;
---magenta-active:#ff00ff;
---red-active:#e33b4c;
---orange-active:#ffa940;
---yellow-active:#ffd969;
---lime-active:#67ff5c;
---green-active:#0cb300;
---light-blue-active:#5bcffa;
---blue-active:#3b5ae3;
---purple-active:#7b3be3;
---grey-active:#888888;
---dark-grey-active:#4d4d4d;
-
 }
 
 body {
@@ -246,6 +255,7 @@ body {
 #StopwatchStop:hover {
   background-color: var(--pink-hover);
 }
+
 #StopwatchStop:active {
   background-color: var(--pink-active);
 }
