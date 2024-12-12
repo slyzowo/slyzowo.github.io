@@ -15,55 +15,42 @@ color-scheme: light dark; /* enables both light and dark mode */
 --white:#ffffff;
 --white-hover:#cccccc;
 --white-active:#999999;
-
 --pink:#ff87fb;
 --pink-hover:#cc6cc9;
 --pink-active:#995197;
-
 --magenta:#ff00ff;
 --magenta-hover:#cc00cc;
 --magenta-active:#990099;
-
 --red:#e33b4c;
 --red-hover:#b62f3d;
 --red-active:#88232e;
-
 --orange:#ffa940;
 --orange-hover:#cc8733;
 --orange-active:#996526;
-
 --yellow:#ffd969;
 --yellow-hover:#ccae54;
 --yellow-active:#99823f;
-
 --lime:#67ff5c;
 --lime-hover:#52cc4a;
 --lime-active:#3e9937;
-
 --green:#0cb300;
 --green-hover:#0a8f00;
 --green-active:#076b00;
-
 --light-blue:#5bcffa;
 --light-blue-hover:#49a6c8;
 --light-blue-active:#377c96;
-
 --blue:#3b5ae3;
 --blue-hover:#2f48b6;
 --blue-active:#233688;
-
 --purple:#7b3be3;
 --purple-hover:#622fb6;
 --purple-active:#4a2388;
-
 --grey:#888888;
 --grey-hover:#6d6d6d;
 --grey-active:#525252;
-
 --dark-grey:#4d4d4d;
 --dark-grey-hover:#3e3e3e;
 --dark-grey-active:#2e2e2e;
-
 --black:#141414;
 }
 
@@ -79,6 +66,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  position: sticky;
+  top: 0;
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   height: auto;
   width: auto;
@@ -151,6 +140,8 @@ body {
   padding: 10px;
   margin: 0.5%;
   border-radius: 10px;
+  border: none;
+  max-width: 150px;
 }
 
 @media screen and (max-width: 360px) {
@@ -451,4 +442,41 @@ div.neodroid-commands {
 
 #cypher-copy-button:active {
   background-color: var(--light-blue-active);
+}
+
+/* The Yapcast*/
+
+.yapcast-pfp img{
+  height: 100px;
+  width: 100px;
+}
+
+.top-left{
+  display: inline-block;
+  clip-path: circle(100% at 100% 100%);
+}
+
+.top-right{
+  display: inline-block;
+  clip-path: circle(100% at 0% 100%);
+}
+
+.bottom-left{
+  display: inline-block;
+  clip-path: circle(100% at 100% 0%);
+}
+
+.bottom-right{
+  display: inline-block;
+  clip-path: circle(100% at 0% 0%);
+}
+.yapcast-banner img{
+  background-color: var(--dark-transparent);
+  position: relative;
+  left: 20%;
+  top: -175px;
+  border-radius: 50%;
+  padding: 15px;
+  height: 100px;
+  width: 100px;
 }
