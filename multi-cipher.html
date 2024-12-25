@@ -40,30 +40,6 @@
     <a href="https://slyzoo.net/no-clue-yapcast"><button id="button"><img height="30px" src="/Images/yapcast/yapcast-pfp.png"></button></a>
   </nav>
 
-  <div class="sidenav">
-    <div class="cipher-radio">
-      <label><input type="radio" name="mode" value="encode" checked> Encode</label><br>
-      <label><input type="radio" name="mode" value="decode"> Decode</label><br>
-      <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
-    </div>
-
-    <button id="cypher-copy-button">Copy Output</button>
-
-      <select id="cipherDropdown">
-        <option value="atbash">Atbash</option>
-        <option value="ascii">ASCII</option>
-        <option value="base64">Base64</option>
-        <option value="binary">Binary</option>
-        <option value="caesar">Caesar</option>
-        <option value="hex-colour">Hex Colour</option>
-        <option value="hexadecimal">Hexadecimal</option>
-        <option value="morse">Morse Code</option>
-        <option value="pig-latin">Pig Latin</option>
-        <option value="tap">Tap Code</option>
-        <option value="unicode">Unicode</option>
-        <option value="uwu">UwU</option>
-      </select>
-  </div>
   <!-- ciphers / feats to add
   Adjustable caesar
   Numerology code
@@ -73,15 +49,44 @@
   
   TODO : fix hexcolour
   -->
-  
-  <div class="cypher">
+
+  <h1>Multi-Translator</h1>
+  <div class="flexy-container">
+    <div class="cipher-flexy-item">
+      <label><input type="radio" name="mode" value="encode" checked> Encode</label><br>
+      <label><input type="radio" name="mode" value="decode"> Decode</label><br>
+      <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
+      <div class="cipher-radio">
+        <button id="cypher-copy-button">Copy Output</button>
+        <select id="cipherDropdown">
+          <option value="atbash">Atbash</option>
+          <option value="ascii">ASCII</option>
+          <option value="base64">Base64</option>
+          <option value="binary">Binary</option>
+          <option value="caesar">Caesar</option>
+          <option value="hex-colour">Hex Colour</option>
+          <option value="hexadecimal">Hexadecimal</option>
+          <option value="morse">Morse Code</option>
+          <option value="pig-latin">Pig Latin</option>
+          <option value="tap">Tap Code</option>
+          <option value="unicode">Unicode</option>
+          <option value="uwu">UwU</option>
+        </select>
+      </div>
+    </div>
+
+  <div class="cipher-flex-text-item">
     <div class="container">
-      <h1>Multi-Translator</h1>
       <div class="cypher-options">
-      <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
-      <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
+        <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
+        <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
+      </div>
     </div>
   </div>
+
+
+
+  
   
   <script src="Javascript/cypher.js"></script>
 </body>

@@ -54,7 +54,7 @@ color-scheme: light dark; /* enables both light and dark mode */
 --black:#141414;
 }
 
-body {
+body{
   background-color: light-dark(var(--light-bg), var(--dark-bg));
   color: light-dark(var(--light-txt), var(--dark-txt));
   font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ body {
 }
 
 /* The navigation menu */
-.enclave {
+.enclave{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -75,7 +75,7 @@ body {
   padding: 2px;
 }
 
-.enclave button {
+.enclave button{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   border: none;
   padding: 5px;
@@ -84,14 +84,14 @@ body {
   border-radius: 10px;
 }
 
-.enclave button:hover {
+.enclave button:hover{
   background-color: var(--dark-grey);
   transition: 0.5s ease;
 }
 
-.enclave button:active {background-color: var(--dark-grey-active);}
+.enclave button:active{background-color: var(--dark-grey-active);}
 
-.sidenav {
+.sidenav{
   height: 90%;
   width: 150px;
   position: fixed;
@@ -102,25 +102,24 @@ body {
   padding-top: 20px;
   margin-left: 20px;
 }
-.sidenav a {
+.sidenav a{
   padding: 6px 6px 6px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
 }
-.sidenav a :hover {
+.sidenav a :hover{
   color: #f1f1f1;
 }
 
-.flexy-container {
+.flexy-container{
   display: flex;
   flex-wrap: wrap;
-  font-size: 30px;
   text-align: left;
 }
 
-.big-flexy-item {
+.big-flexy-item{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   font-size: medium;
   padding: 10px;
@@ -130,9 +129,9 @@ body {
   border-radius: 10px;
 }
 
-.big-flexy-item h1 {font-family: "Times New Roman", Times, serif;}
+.big-flexy-item h1{font-family: "Times New Roman", Times, serif;}
 
-.small-flexy-item {
+.small-flexy-item{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   font-size: medium;
   padding: 10px;
@@ -144,44 +143,48 @@ body {
   max-width: 150px;
 }
 
-@media screen and (max-width: 360px) {
-  .enclave {max-width: 295px;}
-  .flexy-item {flex: 100%;}
-  .sidenav {width: 150px;}
-  .cypher {margin-top: 100%;}
+
+
+@media screen and (max-width: 360px){
+  .enclave{max-width: 295px;}
+  .flexy-item{flex: 100%;}
+  .cipher-flexy-item{flex: 100%;}
+  .sidenav{width: 150px;}
 }
-#fabric-mod-stuffs {
+
+#fabric-mod-stuffs{
   text-align: left;
 }
-#fabric-mod-stuffs img {
+
+#fabric-mod-stuffs img{
   margin-left: 85%;
   border: none;
 }
 
-.grid-container {
+.grid-container{
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 45px;
   padding: 10px;
 }
-.grid-container button {
+.grid-container button{
   background-color: var(--transparent);
   border: none;
   cursor: pointer;
 }
-.grid-container button:hover {
+.grid-container button:hover{
   box-shadow: 0 0 16px #242424e6;
   transition: box-shadow 0.5s ease;
 }
-.grid-container a {
+.grid-container a{
   text-decoration: none;
 }
-.grid-container img {
+.grid-container img{
   align-items: center;
 }
 
-.grid-item {
+.grid-item{
   background-color: #242424;
   color: white;
   border-radius: 5px;
@@ -191,11 +194,11 @@ body {
 }
 
 /* Stopwatch */
-#StopwatchTitle {
+#StopwatchTitle{
   font-size: 4rem;
 }
 
-#StopwatchContainer {
+#StopwatchContainer{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   margin: auto;
   width: 55%;
@@ -207,14 +210,14 @@ body {
   border-radius: 50px;
 }
 
-#StopwatchDisplay {
+#StopwatchDisplay{
   color: light-dark(var(--light-txt), var(--dark-txt));
   font-size: 4vw;
   font-family: monospace;
   margin-bottom: 20px;
 }
 
-#StopwatchStart {
+#StopwatchStart{
   background-color: var(--light-blue);
   color: var(--light-txt);
   font-size: 1.5rem;
@@ -225,14 +228,14 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStart:hover {
+#StopwatchStart:hover{
   background-color: var(--light-blue-hover);
 }
-#StopwatchStart:active {
+#StopwatchStart:active{
   background-color: var(--light-blue-active);
 }
 
-#StopwatchStop {
+#StopwatchStop{
   background-color: var(--pink);
   color: var(--light-txt);
   font-size: 1.5rem;
@@ -243,15 +246,15 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchStop:hover {
+#StopwatchStop:hover{
   background-color: var(--pink-hover);
 }
 
-#StopwatchStop:active {
+#StopwatchStop:active{
   background-color: var(--pink-active);
 }
 
-#StopwatchReset {
+#StopwatchReset{
   background-color: var(--white);
   color: var(--light-txt);
   font-size: 1.5rem;
@@ -262,44 +265,44 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
 }
-#StopwatchReset:hover {
+#StopwatchReset:hover{
   background-color: var(--white-hover);
 }
-#StopwatchReset:active {
+#StopwatchReset:active{
   background-color: var(white-active);
 }
 
 /* Neodroid*/
-div.neodroid-terms-of-service {
+div.neodroid-terms-of-service{
   text-align: center;
 }
 
-.neodroid-terms-of-service-list {
+.neodroid-terms-of-service-list{
   display: inline-block;
   text-align: left;
 }
 
-div.neodroid-privacy-policy {
+div.neodroid-privacy-policy{
   text-align: center;
 }
 
-.neodroid-privacy-policy-list {
+.neodroid-privacy-policy-list{
   display: inline-block;
   text-align: left;
 }
 
-div.neodroid-commands {
+div.neodroid-commands{
   text-align: center;
 }
 
-.neodroid-commands-list {
+.neodroid-commands-list{
   display: inline-block;
   text-align: left;
 }
 
 /* The calculator */
 
-.multi-calculator-display {
+.multi-calculator-display{
   background-color: var(--dark-grey);
   width: 550px;
   height: 50px;
@@ -311,7 +314,7 @@ div.neodroid-commands {
   margin-top: 50px;
 }
 
-.multi-calculator-buttons {
+.multi-calculator-buttons{
   background-color: var(--dark-grey);
   width: 85px;
   height: 36px;
@@ -320,15 +323,15 @@ div.neodroid-commands {
   cursor: pointer;
 }
 
-.multi-calculator-buttons:hover {
+.multi-calculator-buttons:hover{
   background-color: var(--dark-grey-hover);
 }
 
-.multi-calculator-buttons:active {
+.multi-calculator-buttons:active{
   background-color: var(--dark-grey-active);
 }
 
-.multi-calculator-number-buttons {
+.multi-calculator-number-buttons{
   background-color: var(--grey);
   width: 85px;
   height: 36px;
@@ -337,15 +340,15 @@ div.neodroid-commands {
   cursor: pointer;
 }
 
-.multi-calculator-number-buttons:hover {
+.multi-calculator-number-buttons:hover{
   background-color: var(--grey-hover);
 }
 
-.multi-calculator-number-buttons:active {
+.multi-calculator-number-buttons:active{
   background-color: var(--grey-active);
 }
 
-.multi-calculator-operator-buttons {
+.multi-calculator-operator-buttons{
   background-color: var(--light-blue);
   width: 85px;
   height: 36px;
@@ -354,15 +357,15 @@ div.neodroid-commands {
   cursor: pointer;
 }
 
-.multi-calculator-operator-buttons:hover {
+.multi-calculator-operator-buttons:hover{
   background-color: var(--light-blue-hover);
 }
 
-.multi-calculator-operator-buttons:active {
+.multi-calculator-operator-buttons:active{
   background-color: var(--light-blue-active);
 }
 
-.multi-calculator-delete-buttons {
+.multi-calculator-delete-buttons{
   background-color: var(--red);
   width: 85px;
   height: 36px;
@@ -371,11 +374,11 @@ div.neodroid-commands {
   cursor: pointer;
 }
 
-.multi-calculator-delete-buttons:hover {
+.multi-calculator-delete-buttons:hover{
   background-color: var(--red-hover);
 }
 
-.multi-calculator-delete-buttons:active {
+.multi-calculator-delete-buttons:active{
   background-color: var(--red-active);
 }
 
@@ -391,14 +394,24 @@ div.neodroid-commands {
 }
 
 /* Cypher */
-.cypher {
+
+.cipher-flexy-item{
   text-align: center;
+  flex: 15%;
+  padding: 10px;
+  margin: 0.5%;
 }
 
-/* multi-translator */
-.cypher-textarea {
-  width: 60%;
-  height: 150px;
+.cipher-flex-text-item{
+  text-align: center;
+  flex: 75%;
+  padding: 10px;
+  margin: 0.5%;
+}
+
+.cypher-textarea{
+  width: 100%;
+  height: 200px;
   margin-bottom: 10px;
   padding: 10px;
   border: none;
@@ -408,7 +421,7 @@ div.neodroid-commands {
   resize: none;
 }
 
-.cypher-buttons {
+.cypher-buttons{
   padding: 2%;
 }
 
@@ -423,7 +436,7 @@ div.neodroid-commands {
   height: auto;
 }
 
-#cypher-copy-button {
+#cypher-copy-button{
   background-color: var(--light-blue);
   color: var(--light-txt);
   border: none;
@@ -436,11 +449,11 @@ div.neodroid-commands {
   margin-top: 10px;
 }
 
-#cypher-copy-button:hover {
+#cypher-copy-button:hover{
   background-color: var(--light-blue-hover);
 }
 
-#cypher-copy-button:active {
+#cypher-copy-button:active{
   background-color: var(--light-blue-active);
 }
 
