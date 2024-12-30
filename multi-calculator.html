@@ -38,71 +38,37 @@
     <a href="https://slyzoo.net/no-clue-yapcast"><button id="button"><img height="30px" src="/Images/yapcast/yapcast-pfp.png"></button></a>
   </nav>
 
-      <div class="multi-calc-display">
-      </div>
-      <table>
-        <tr>
-          <td colspan="6"><input type="text" class="multi-calculator-display" readonly></td>
-        </tr>
-        <tr>
-          <th><button  onclick="appendValue('π')" class="multi-calculator-buttons">π</button></th>
-          <th><button  onclick="appendValue('sin')" class="multi-calculator-buttons">sin</button></th>
-          <th><button  onclick="appendValue('1')" class="multi-calculator-number-buttons">1</button></th>
-          <th><button  onclick="appendValue('2')" class="multi-calculator-number-buttons">2</button></th>
-          <th><button  onclick="appendValue('3')" class="multi-calculator-number-buttons">3</button></th>
-          <th><button  onclick="appendValue('+')" class="multi-calculator-operator-buttons">&plus;</button></th>
-          <th colspan="5"><button onclick="clearDisplay()" class="multi-calculator-delete-buttons">C</button></th>
-        </tr>
-        <tr>
-          <th><button onclick="appendValue('e')" class="multi-calculator-buttons">e</button></th>
-          <th><button onclick="appendValue('cosin')" class="multi-calculator-buttons">cosin</button></th>
-          <th><button onclick="appendValue('4')" class="multi-calculator-number-buttons">4</button></th>
-          <th><button onclick="appendValue('5')" class="multi-calculator-number-buttons">5</button></th>
-          <th><button onclick="appendValue('6')" class="multi-calculator-number-buttons">6</button></th>
-          <th><button onclick="appendValue('-')" class="multi-calculator-operator-buttons">&minus;</button></th>
-          <th><button onclick="deleteLast()" class="multi-calculator-delete-buttons">Del</button></th>
-        </tr>
-        <tr>
-          <th><button onclick="appendValue('!')" class="multi-calculator-buttons">x!</button></th>
-          <th><button onclick="appendValue('tan')" class="multi-calculator-buttons">tan</button></th>
-          <th><button onclick="appendValue('7')" class="multi-calculator-number-buttons">7</button></th>
-          <th><button onclick="appendValue('8')" class="multi-calculator-number-buttons">8</button></th>
-          <th><button onclick="appendValue('9')" class="multi-calculator-number-buttons">9</button></th>
-          <th><button onclick="appendValue('×')" class="multi-calculator-operator-buttons">&times;</button></th>
-        </tr>
-        <tr>
-          <th><button onclick="appendValue('&lpar;')" class="multi-calculator-buttons">&lpar;</button></th>
-          <th><button onclick="appendValue('&rpar;')" class="multi-calculator-buttons">&rpar;</button></th>
-          <th><button onclick="appendValue('.')" class="multi-calculator-buttons">.</button></th>
-          <th><button onclick="appendValue('0')" class="multi-calculator-number-buttons">0</button></th>
-          <th><button onclick="appendValue('=')" class="multi-calculator-operator-buttons">&equals;</button></th>
-          <th><button onclick="appendValue('÷')" class="multi-calculator-operator-buttons">&div;</button></th>
-        </tr>
-      </table>
-
-
-<div id="formula"><h1>Maths Formulas</h1>
-
-<h2>Perimeter</h2>
-<p>Square = (l * 4)</p>
-<p>Rectangle = 2(l + w)</p>
-<p>Circle = (2 * π) * radius</p>
-
-<h2>Area</h2>
-<p>Square = length²</p>
-<p>Rectangle = width * height</p>
-<p>Triangle = base * height / 2</p>
-<p>Circle = π * radius²</p>
-<p>Rhombus = LARGE-DIAGONAL + little-diagonal / 2</p>
-<p>Trapezoid = BIG-BASE + little-base /2 * height</p>
-<p>Cone = π * radius * slant hieght</p>
-<p>Sphere = 4 * π * radius²</p>
-
-<h2>Volume</h2>
-<p>Cube = side³</p>
-
-<h2>Other</h2>
-</div>
+  <div class="multi-calc-display"></div>
+  <div class="calculator-grid">
+    <input type="text" class="multi-calculator-display" readonly>
+    
+    <button onclick="appendValue('1')" class="multi-calculator-number-buttons">1</button>
+    <button onclick="appendValue('2')" class="multi-calculator-number-buttons">2</button>
+    <button onclick="appendValue('3')" class="multi-calculator-number-buttons">3</button>
+    <button onclick="appendValue('+')" class="multi-calculator-operator-buttons">&plus;</button>
+    <button onclick="appendValue('e')" class="multi-calculator-buttons">e</button>
+    <button onclick="appendValue('!')" class="multi-calculator-buttons">x!</button>
+    <button onclick="appendValue('4')" class="multi-calculator-number-buttons">4</button>
+    <button onclick="appendValue('5')" class="multi-calculator-number-buttons">5</button>
+    <button onclick="appendValue('6')" class="multi-calculator-number-buttons">6</button>
+    <button onclick="appendValue('-')" class="multi-calculator-operator-buttons">&minus;</button>
+    <button onclick="appendValue('sin')" class="multi-calculator-buttons">sin</button>
+    <button onclick="appendValue('cosin')" class="multi-calculator-buttons">cosin</button>
+    <button onclick="appendValue('7')" class="multi-calculator-number-buttons">7</button>
+    <button onclick="appendValue('8')" class="multi-calculator-number-buttons">8</button>
+    <button onclick="appendValue('9')" class="multi-calculator-number-buttons">9</button>
+    <button onclick="appendValue('×')" class="multi-calculator-operator-buttons">&times;</button>
+    <button onclick="appendValue('π')" class="multi-calculator-buttons">π</button>
+    <button onclick="appendValue('tan')" class="multi-calculator-buttons">tan</button>
+    <button onclick="appendValue('.')" class="multi-calculator-buttons">.</button>
+    <button onclick="appendValue('0')" class="multi-calculator-number-buttons">0</button>
+    <button onclick="appendValue('=')" class="multi-calculator-operator-buttons">&equals;</button>
+    <button onclick="appendValue('÷')" class="multi-calculator-operator-buttons">&div;</button>
+    <button onclick="appendValue('&lpar;')" class="multi-calculator-buttons">&lpar;</button>
+    <button onclick="appendValue('&rpar;')" class="multi-calculator-buttons">&rpar;</button>
+    <button onclick="clearDisplay()" class="multi-calculator-delete-buttons clear-btn">C</button>
+    <button onclick="deleteLast()" class="multi-calculator-delete-buttons">Del</button>
+  </div>
 <script src="Javascript/multi-calc.js"></script>
 <noscript>Your browser does not support JavaScript!</noscript>
 </body>

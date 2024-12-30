@@ -146,8 +146,9 @@ body{
 
 
 @media screen and (max-width: 360px){
-  .enclave{max-width: 295px;}
+  .enclave{max-width: 100%;}
   .flexy-item{flex: 100%;}
+  .big-flexy-item{flex: 100%;}
   .cipher-flexy-item{flex: 100%;}
   .sidenav{width: 150px;}
 }
@@ -159,38 +160,6 @@ body{
 #fabric-mod-stuffs img{
   margin-left: 85%;
   border: none;
-}
-
-.grid-container{
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  gap: 45px;
-  padding: 10px;
-}
-.grid-container button{
-  background-color: var(--transparent);
-  border: none;
-  cursor: pointer;
-}
-.grid-container button:hover{
-  box-shadow: 0 0 16px #242424e6;
-  transition: box-shadow 0.5s ease;
-}
-.grid-container a{
-  text-decoration: none;
-}
-.grid-container img{
-  align-items: center;
-}
-
-.grid-item{
-  background-color: #242424;
-  color: white;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
 }
 
 /* Stopwatch */
@@ -302,16 +271,29 @@ div.neodroid-commands{
 
 /* The calculator */
 
+.calculator-grid{
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
 .multi-calculator-display{
   background-color: var(--dark-grey);
+  color: var(--white);
   width: 550px;
   height: 50px;
   border-radius: 5px;
   border: none;
-  font-size: 2rem;
-  color: var(--white);
-  text-align: right;
   margin-top: 50px;
+  margin-bottom: 10px;
+  grid-column: span 7;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .multi-calculator-buttons{
@@ -380,17 +362,6 @@ div.neodroid-commands{
 
 .multi-calculator-delete-buttons:active{
   background-color: var(--red-active);
-}
-
-#formula{
-  float: right;
-  text-align: left;
-  background-color: var(--dark-grey);
-  color: var(--white);
-  padding: 10px;
-  min-width: 20%;
-  border-radius: 5px;
-  margin-top: -215px;
 }
 
 /* Cypher */
