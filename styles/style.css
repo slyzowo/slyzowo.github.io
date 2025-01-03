@@ -242,29 +242,7 @@ body{
 }
 
 /* Neodroid*/
-div.neodroid-terms-of-service{
-  text-align: center;
-}
-
-.neodroid-terms-of-service-list{
-  display: inline-block;
-  text-align: left;
-}
-
-div.neodroid-privacy-policy{
-  text-align: center;
-}
-
-.neodroid-privacy-policy-list{
-  display: inline-block;
-  text-align: left;
-}
-
-div.neodroid-commands{
-  text-align: center;
-}
-
-.neodroid-commands-list{
+.neodroid-list{
   display: inline-block;
   text-align: left;
 }
