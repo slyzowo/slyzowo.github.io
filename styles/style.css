@@ -131,6 +131,13 @@ body{
 
 .big-flexy-item h1{font-family: "Times New Roman", Times, serif;}
 
+.big-flexy-item button, a{
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: light-dark(var(--dark-text), var(--light-text));
+}
+
 .small-flexy-item{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
   font-size: medium;
@@ -404,8 +411,25 @@ body{
   background-color: var(--light-blue-active);
 }
 
-/* The Yapcast*/
+/* Programming Tutorials */
+.programming-flexy-item{
+  background-color: none;
+  font-size: medium;
+  padding: 10px;
+  flex: 25%;
+  padding: 10px;
+  margin: 0.5%;
+  border-radius: 10px;
+}
 
+.programming-flexy-item button, a{
+  color: light-dark(var(--dark-text), var(--light-text));
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* The Yapcast */
 .yapcast-pfp img{
   height: 100px;
   width: 100px;
