@@ -464,3 +464,29 @@ body{
   height: 100px;
   width: 100px;
 }
+
+.code{
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+#comment{
+  color: var(--grey-3);
+  background-color: #2b2b2b;
+  padding: 4px;
+}
+
+#syntax{color: var(--red-0);}
+#library{color: var(--blue-0);}
+#int{color: var(--green-1);}
+#float{color: var(--yellow-0);}
+#str{color: var(--magenta-2);}
+#const{color: var(--pink-4);}
+#switch{color:var(--purple-3);}
