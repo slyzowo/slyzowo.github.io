@@ -20,7 +20,7 @@
   .cipher-flexy-item{
     background-color: #414141;
     border-radius: 10px;
-    }
+  }
 </style>
 
 <body>
@@ -31,8 +31,7 @@
   <div class="flexy-container">
     <div class="cipher-flexy-item">
       <h3><a href="#1900sSpaceRace">1900s Space Race</a></h3>
-      <h3><a href="#Successes">Successes</a></h3>
-      <h3><a href="#Failures">Failures</a></h3>
+      <h3><a href="#Successes">Activity</a></h3>
       <h3><a href="#Technology">Technology</a></h3>
       <h3><a href="#Funding">Funding</a></h3>
       <h3><a href="#Citations&Sources">Citations & Sources</a></h3>
@@ -44,17 +43,12 @@
       <p>The start of the coined Space Race started when the United States declared to launch the first artificial satellite into space on july 9th, 1955. 
         Only eight years into the cold war.</p>
 
-      <h1 id="Successes">Successes</h1>      <!-- Achievements & successful launches -->
-      <div id="SuccessChartPerMission" style="max-width:700px; height:400px"></div>
+      <h1 id="Successes">Activity</h1>      <!-- Achievements & successful launches -->
+      <div id="SuccessChartPerYear" style="max-width:700px; height:400px;" ></div>
       <div id="SuccessChartTotal" style="max-width:700px; height:400px"></div>
-
-      <h1 id="Failures">Failures</h1>        <!-- Crashes & what / how things went wrong -->
-      <div id="FailureChartPerMission" style="max-width:700px; height:400px"></div>
-      <div id="FailureChartTotal" style="max-width:700px; height:400px"></div>
 
       <h1 id="Technology">Technology</h1>    <!-- comparisons of tech specs -->
       <p>The United States and Russia were not only fighting politically but also technologically too. Both countries were using cutting edge technology for the time</p>
-      <div id="TechnologyChart" style="max-width:700px; height:400px"></div>
 
       <h1 id="Funding">Funding</h1>          <!-- How much money was spent total / per year -->
       <div id="FundingChart" style="max-width:700px; height:400px"></div>
@@ -90,91 +84,147 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script>
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+    // Set Data
+    const data = google.visualization.arrayToDataTable([
+      ['Year', 'America', 'Russia'],
+      [1955, 0, 0],
+      [1956, 0, 0],
+      [1957, 0, 3],
+      [1958, 1, 0],
+      [1959, 2, 10],
+      [1960, 3, 1],
+      [1961, 2, 7],
+      [1962, 1, 4],
+      [1963, 2, 3],
+      [1964, 1, 1],
+      [1965, 2, 0],
+      [1966, 2, 4],
+      [1967, 0, 2],
+      [1968, 1, 1],
+      [1969, 2, 2],
+      [1970, 0, 5],
+      [1971, 1, 2],
+      [1972, 2, 0],
+      [1973, 1, 0],
+      [1974, 1, 0],
+      [1975, 1, 1],
+      [1976, 0, 0],
+      [1977, 0, 0],
+      [1978, 0, 0],
+      [1979, 1, 0],
+      [1980, 0, 0],
+      [1980, 1, 0],
+      [1980, 0, 0],
+      [1981, 0, 0],
+      [1982, 0, 0],
+      [1983, 0, 0],
+      [1984, 1, 0],
+      [1985, 0, 1],
+      [1986, 1, 0],
+      [1987, 0, 0],
+      [1988, 0, 0], 
+      [1989, 1, 0], 
+      [1990, 0, 1], 
+    ]);
+  
+    // Set Options
+    const options = {
+      title: 'Missions Per Year',
+      hAxis: {title: 'Year'},
+      vAxis: {title: 'Missions'},
+      legend: {position: 'bottom'}
+    };
+  
+    // Draw
+    const chart = new google.visualization.LineChart(document.getElementById('SuccessChartPerYear'));
+    chart.draw(data, options);
+  }
+</script>
+
+
+<script>
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
   function drawChart() {
   const data = google.visualization.arrayToDataTable([
-    ['Total', 'Success'],
-    ['America',55],
-    ['Russia',49],
+    ['Total', 'Missions'],
+    ['America',27],
+    ['Russia',48],
   ]);
 
   const options = {
-    title:'Space Race Successes Total'
+    title:'Space Race Missions Total'
   };
 
   const chart = new google.visualization.BarChart(document.getElementById('SuccessChartTotal'));
     chart.draw(data, options);
   }
 </script>
+
 <script>
-  google.charts.load('current', {'packages':['corechart']});
+  google.charts.load('current', {packages: ['corechart']});
   google.charts.setOnLoadCallback(drawChart);
-
+  
   function drawChart() {
-  const data = google.visualization.arrayToDataTable([
-    ['Total', 'Fails'],
-    ['America',55],
-    ['Russia',49],
-  ]);
-
-  const options = {
-    title:'Space Race Fails Total'
-  };
-
-  const chart = new google.visualization.BarChart(document.getElementById('FailureChartTotal'));
+    // Set Data
+    const data = google.visualization.arrayToDataTable([
+      ['Year', 'America', 'Russia'],
+      [1955, 0, 0],
+      [1956, 0, 0],
+      [1957, 0, 0],
+      [1958, 0, 0],
+      [1959, 0, 0],
+      [1960, 0, 0],
+      [1961, 0, 0],
+      [1962, 0, 0],
+      [1963, 0, 0],
+      [1964, 0, 0],
+      [1965, 0, 0],
+      [1966, 0, 0],
+      [1967, 0, 0],
+      [1968, 0, 0],
+      [1969, 0, 0],
+      [1970, 0, 0],
+      [1971, 0, 0],
+      [1972, 0, 0],
+      [1973, 0, 0],
+      [1974, 0, 0],
+      [1975, 0, 0],
+      [1976, 0, 0],
+      [1977, 0, 0],
+      [1978, 0, 0],
+      [1979, 0, 0],
+      [1980, 0, 0],
+      [1980, 0, 0],
+      [1980, 0, 0],
+      [1981, 0, 0],
+      [1982, 0, 0],
+      [1983, 0, 0],
+      [1984, 0, 0],
+      [1985, 0, 0],
+      [1986, 0, 0],
+      [1987, 0, 0],
+      [1988, 0, 0], 
+      [1989, 0, 0], 
+      [1990, 0, 0], 
+    ]);
+  
+    // Set Options
+    const options = {
+      title: 'Missions Per Year',
+      hAxis: {title: 'Year'},
+      vAxis: {title: 'Missions'},
+      legend: {position: 'bottom'}
+    };
+  
+    // Draw
+    const chart = new google.visualization.LineChart(document.getElementById('FundingChart'));
     chart.draw(data, options);
-  }
-</script>
-
-<script>
-  google.charts.load('current',{packages:['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-  
-  function drawChart() {
-  // Set Data
-  const data = google.visualization.arrayToDataTable([
-    ['Price', 'Size'],
-    [50,7],[60,8],[70,8],[80,9],[90,9],
-    [100,9],[110,10],[120,11],
-    [130,14],[140,14],[150,15]
-  ]);
-  // Set Options
-  const options = {
-    title: 'House Prices vs. Size',
-    hAxis: {title: 'Time'},
-    vAxis: {title: 'Money Spent in Millions'},
-    legend: 'none'
-  };
-  // Draw
-  const chart = new google.visualization.LineChart(document.getElementById('TechnologyChart'));
-  chart.draw(data, options);
-  }
-</script>
-
-<script>
-  google.charts.load('current',{packages:['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-  
-  function drawChart() {
-  // Set Data
-  const data = google.visualization.arrayToDataTable([
-    ['Price', 'Size'],
-    [50,7],[60,8],[70,8],[80,9],[90,9],
-    [100,9],[110,10],[120,11],
-    [130,14],[140,14],[150,15]
-  ]);
-  // Set Options
-  const options = {
-    title: 'Money spent per mission (America)',
-    hAxis: {title: 'Per Mission'},
-    vAxis: {title: 'Money Spent in Millions'},
-    legend: 'none'
-  };
-  // Draw
-  const chart = new google.visualization.LineChart(document.getElementById('FundingChart'));
-  chart.draw(data, options);
   }
 </script>
 </body>
