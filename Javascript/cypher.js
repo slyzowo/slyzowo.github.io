@@ -275,6 +275,56 @@ function uwuDecode(text) {
 
 
 
+// Reverse Encode/Decode
+function reverseEncode(text) {
+    return text.split('').reverse().join('');
+}
+function reverseDecode(text) {
+    return reverseEncode(text);  // Same as encoding
+}
+
+// Roman Numerals Encode/Decode
+const romanMap = [
+    { value: 1000, numeral: 'M' },
+    { value: 900, numeral: 'CM' },
+    { value: 500, numeral: 'D' },
+    { value: 400, numeral: 'CD' },
+    { value: 100, numeral: 'C' },
+    { value: 90, numeral: 'XC' },
+    { value: 50, numeral: 'L' },
+    { value: 40, numeral: 'XL' },
+    { value: 10, numeral: 'X' },
+    { value: 9, numeral: 'IX' },
+    { value: 5, numeral: 'V' },
+    { value: 4, numeral: 'IV' },
+    { value: 1, numeral: 'I' }
+];
+
+function romanEncode(num) {
+    let result = '';
+    romanMap.forEach(({ value, numeral }) => {
+        while (num >= value) {
+            result += numeral;
+            num -= value;
+        }
+    });
+    return result;
+}
+
+function romanDecode(roman) {
+    let result = 0;
+    let index = 0;
+
+    romanMap.forEach(({ value, numeral }) => {
+        while (roman.substr(index, numeral.length) === numeral) {
+            result += value;
+            index += numeral.length;
+        }
+    });
+
+    return result;
+}
+
 // Translate Function
 function translate() {
     const input = document.getElementById('inputText').value;
@@ -294,6 +344,10 @@ function translate() {
         case 'hex-colour': result = mode === 'encode' ? hexColourEncode(input) : hexColourDecode(input); break;
         case 'hexadecimal': result = mode === 'encode' ? hexadecimalEncode(input) : hexadecimalDecode(input); break;
         case 'morse': result = mode === 'encode' ? morseEncode(input) : morseDecode(input); break;
+        case 'reverse': result = mode === 'encode' ? reverseEncode(input) : reverseDecode(input); break;
+        case 'roman-numerals': 
+            result = mode === 'encode' ? romanEncode(parseInt(input)) : romanDecode(input); 
+            break;
         case 'uwu': result = mode === 'encode' ? uwuEncode(input) : uwuDecode(input); break;
         case 'pig-latin': result = mode === 'encode' ? pigLatinEncode(input) : pigLatinDecode(input); break;
         case 'tap': result = mode === 'encode' ? tapCodeEncode(input) : tapCodeDecode(input); break;
@@ -302,6 +356,7 @@ function translate() {
 
     output.value = result;
 }
+
 
 // Event Listeners
 function setupEventListeners() {
@@ -318,3 +373,4 @@ function setupEventListeners() {
 
 // Call this function when the page loads or after any dynamic changes
 setupEventListeners();
+
