@@ -338,6 +338,9 @@ body{
   padding: 10px;
   margin: 0.5%;
 }
+.cipher-flex-text-item table, th, td{
+  margin: auto;
+}
 
 .cypher-textarea{
   width: 100%;
@@ -466,3 +469,10 @@ body{
 #str{color: var(--magenta-2);}
 #const{color: var(--pink-4);}
 #switch{color:var(--purple-3);}
+
+table, th, td {
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
