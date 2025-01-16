@@ -1,0 +1,16 @@
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+  M 50 30
+  C 70 10, 90 20, 90 50
+  C 90 80, 60 90, 50 100
+  C 40 90, 10 80, 10 50
+  C 10 20, 30 10, 50 30
+  Z" fill="#e33b4c" />
+  <!--
+  COORDS
+  50, 25 - top of heart
+  100, 50 - right side of heart
+  0, 50 - left side of heart
+  50, 100 - botton of heart
+  -->
+</svg>
