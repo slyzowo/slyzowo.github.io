@@ -342,8 +342,23 @@ body{
 }
 
 /* Cipher */
+
+.cypher-textarea{
+  background-color: light-dark(var(--light-transparent), var(--dark-transparent));
+  height: 150px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0.5%;
+}
+
 .cypher-buttons{
-  padding: 2%;
+  border: none;
+  border-radius: 30px;
+  border: none;
+  height: 80px;
+  width: 150px;
 }
 
 .cipher-radio{
