@@ -109,10 +109,12 @@ body{
 }
 
 .x-small-flex-card{
+  border-radius: 15px;
   text-align: center;
   flex: 15%;
   padding: 10px;
   margin: 0.5%;
+  align-items: center;
 }
 
 @media screen and (max-width: 360px){

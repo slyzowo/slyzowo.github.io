@@ -14,7 +14,9 @@
 <meta property="og:image" content="https://slyzoo.net/Images/cipher.svg">
 </head>
 <style>
-
+  .x-small-flex-card{
+    background-color: #202020e6;
+  }
 </style>
 <body>
   <nav class="enclave">
@@ -55,7 +57,6 @@
       <label><input type="radio" name="mode" value="decode"> Decode</label><br>
       <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
       <div class="cipher-radio">
-        <button id="cypher-copy-button">Copy Output</button><br>
         <select id="cipherDropdown">
           <option value="atbash">Atbash</option>
           <option value="ascii">ASCII</option>
@@ -74,12 +75,13 @@
         </select>
       </div>
     </div>
-
-  <div class="x-large-flex-card">
-    <div class="container">
-      <div class="cypher-options">
-        <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
-        <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea>
+    
+    <div class="x-large-flex-card">
+      <div class="container">
+        <div class="cypher-options">
+          <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
+          <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea><br>
+          <button id="cypher-copy-button">Copy Output</button>
       </div>
     </div>
   </div>
