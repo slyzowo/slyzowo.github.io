@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--basic stuffs-->
+  <title>learning C++</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" type="image" href="../Images/languages/cpp-logo.png">
+<!-- not sure? -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- embed support -->
+<meta property="og:title" content="slyzoo's website for her projects">
+<meta property="og:description" content="she just makes and posts random things here">
+<meta property="og:image" content="https://slyzoo.net/Images/languages/cpp-logo.png">
+</head>
+<body>
+
+  <nav class="enclave">
+    <!-- Home -->
+        <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.svg"></button></a>
+    <!-- Calculator -->
+        <a href="https://slyzoo.net/multi-calculator"><button id="button"><img height="30px" src="/Images/calculator.svg"></button></a>
+    <!-- Multi-Cipher -->
+        <a href="https://slyzoo.net/multi-cipher"><button id="button"><img height="30px" src="/Images/cipher.svg"></button></a>
+    <!-- Fabric mods -->
+        <a href="https://slyzoo.net/fabric-mods"><button id="button"><img height="30px" src="/Images/fabric.png"></button></a>
+    <!-- NeoDroid -->
+        <a href="https://slyzoo.net/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
+    <!-- Neomoji -->
+        <a href="https://slyzoo.net/neomoji"><button id="button"><img height="30px" src="/Images/neomoji/pink_heart.svg"></button></a>
+    <!-- Programming -->
+        <a href="https://slyzoo.net/programming"><button id="button"><img height="30px" src="/Images/terminal.svg"></button></a>
+    <!-- Project Magenta -->
+        <a href="https://slyzoo.net/project-magenta" id="button"><button id="button"><img height="30px" src="/Images/keyboard.svg"></button></a>
+    <!-- Stopwatch -->
+        <a href="https://slyzoo.net/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.svg"></button></a>
+  </nav>
+
+  <h1>Learning C++</h1>
+
+  <div class="flex-container">
+    <div class="x-small-flex-card">
+      <h2>Table of Contents</h2>
+      <p>Hello World</p>
+      <p>Comments</p>
+      <p>Variables</p>
+      <p>Datatypes</p>
+      <p>Constants</p>
+      <p>Type defs</p>
+      <p>Arithmatic</p>
+      <p>Type Conversion</p>
+      <p>User Input</p>
+      <p>Math Functions</p>
+      <p>BEEP (win only)</p>
+      <p>Hypotenuse Calculator</p>
+      <p>If Statments</p>
+      <p>Switch cases</p>
+      <p>Switch cases</p>
+      <p>Console Calculator</p>
+      <p>Ternary</p>
+      <p>Logical Operators</p>
+      <p>Temperature Conversion</p>
+      <p>String Methods</p>
+      <p>While Loops</p>
+      <p>Do While Loops</p>
+      <p>Break & Continue</p>
+      <p>Nested Loops</p>
+      <p>Rows and Columns</p>
+      <p>Random Number Generator</p>
+      <p>Random Event Generator</p>
+      <p>Min Max Generator</p>
+      <p>Number Guessing Game</p>
+      <p>User Defined Functions</p>
+      <p>ProtoFunctions</p>
+      <p>Functions with Variables</p>
+      <p>Return</p>
+      <p>Variable Scope</p>
+      <p>Banking Practice System</p>
+      <p>Rock Paper Scissors</p>
+      <p>Arrays</p>
+      <p>Size of</p>
+      <p>Iterate over an array</p>
+      <p>For Each Loop</p>
+      <p>Pass Array to a Function</p>
+      <p>Search an Array</p>
+      <p>Fill() Function</p>
+      <p>Fill an Array with User Input</p>
+      <p>Search for an Element in an Array</p>
+      <p>Muli-Dimensional Arrays</p>
+      <p>Quiz Game</p>
+      <p>Memory Addresses</p>
+      <p>Pass by Value vs pass by Refrence</p>
+      <p>Constant Parameters</p>
+      <p>Credit Card Validator Program</p>
+      <p>Pointers</p>
+      <p>Null Pointers</p>
+      <p>Tic Tac Toe</p>
+      <p>Dynamic Memory</p>
+      <p>Recursion</p>
+      <p>Function Templates</p>
+      <p>Structs</p>
+      <p>Pass Structs as Arguments</p>
+      <p>Enums</p>
+      <p>OOP</p>
+      <p>Contructors</p>
+      <p>Contructor Overloading</p>
+      <p>Getters & Setters</p>
+      <p>Inheritance</p>
+    </div>
+    <div class="x-large-flex-card">
+      <code>#include <FastLED.h>
+
+        <p>// Define the number of LEDs and the data pin</p>
+        <p>#define NUM_LEDS 300    // Adjust this to the number of LEDs in your strip</p>
+        <p>#define DATA_PIN 10     // XIAO SAMD21 data pin for WS2811</p>
+        <p>// Create a FastLED array</p>
+        <p>CRGB leds[NUM_LEDS];</p>
+        <p>void setup() {</p>
+        <p>  // Initialize the LED strip</p>
+        <p>  FastLED.addLeds<WS2811, DATA_PIN, GRB>(leds, NUM_LEDS);</p>
+        <p>  // Set all LEDs to red</p>
+        <p>  for (int i = 0; i < NUM_LEDS; i++) {</p>
+        <p>    leds[i] = CRGB(255, 0, 0);  // Red color</p>
+        <p>  }</p>
+        <p>  // Push the updated data to the LED strip</p>
+        <p>  FastLED.show();</p>
+        <p>}</p>
+        <p>void loop() {</p>
+        <p>  // No updates needed for static red color</p>
+        <p>}</p>
+      </code>
+    </div>
+  </div>
+
+</body>
+</html>
