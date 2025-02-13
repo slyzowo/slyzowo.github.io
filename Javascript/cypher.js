@@ -169,7 +169,7 @@ const morseCodeMap = {
 '?': '-.-.--',
 '/': '-..-.',
 ';': '-.-.-.',
- };
+};
 
 const reverseMorseCodeMap = Object.fromEntries(Object.entries(morseCodeMap).map(([k, v]) => [v, k]));
 function morseEncode(text) {
