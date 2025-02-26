@@ -58,7 +58,6 @@ body{
   background-color: light-dark(var(--light-bg), var(--dark-bg));
   color: light-dark(var(--light-txt), var(--dark-txt));
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 10px;
 }
 
 .flex-container{
@@ -125,35 +124,90 @@ body{
   .sidenav{width: 150px;}
 }
 
-/* The navigation menu */
-.enclave{
+/* Navigation bar */
+.nav{
+  background-color: light-dark(var(--light-transparent), var(--dark-transparent));
+  max-width: 75px;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav ul{
+  list-style-type: none;
+  margin: none;
+  padding: 12px;
+  
+}
+
+.nav li{padding-top: 5px;}
+
+.nav img{
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  object-fit: fill;
+}
+
+.nav img:hover{
+  transition: background-color 200ms linear;
+  transform: scale(1.1);
+  background-color: #4d4d4d;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.main{
+  margin-left: 100px
+}
+
+.flex-container{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  position: sticky;
-  top: 0;
-  background-color: light-dark(var(--light-transparent), var(--dark-transparent));
-  height: auto;
-  width: auto;
-  border-radius: 10px;
-  padding: 2px;
+  text-align: left;
 }
 
-.enclave button{
+.medium-flex-card{
   background-color: light-dark(var(--light-transparent), var(--dark-transparent));
-  border: none;
-  padding: 5px;
-  margin-right: 2px;
-  cursor: pointer;
+  font-size: medium;
+  padding: 10px;
+  flex: 25%;
+  padding: 10px;
+  margin: 0.5%;
   border-radius: 10px;
 }
-
-.enclave button:hover{
-  background-color: var(--dark-grey);
-  transition: 0.5s ease;
-}
-
-.enclave button:active{background-color: var(--dark-grey-active);}
 
 #fabric-mod-stuffs{
   text-align: left;

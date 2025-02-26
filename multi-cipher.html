@@ -19,73 +19,95 @@
   }
 </style>
 <body>
-  <nav class="enclave">
-    <!-- Home -->
-        <a href="https://slyzoo.net"><button id="button"><img height="30px" src="/Images/home.svg"></button></a>
-    <!-- Calculator -->
-        <a href="https://slyzoo.net/multi-calculator"><button id="button"><img height="30px" src="/Images/calculator.svg"></button></a>
-    <!-- Multi-Cipher -->
-        <a href="https://slyzoo.net/multi-cipher"><button id="button"><img height="30px" src="/Images/cipher.svg"></button></a>
-    <!-- Fabric mods -->
-        <a href="https://slyzoo.net/fabric-mods"><button id="button"><img height="30px" src="/Images/fabric.png"></button></a>
-    <!-- NeoDroid -->
-        <a href="https://slyzoo.net/neodroid"><button id="button"><img height="30px" src="/Images/neodroid.png"></button></a>
-    <!-- Neomoji -->
-        <a href="https://slyzoo.net/neomoji"><button id="button"><img height="30px" src="/Images/neomoji/pink_heart.svg"></button></a>
-    <!-- Programming -->
-        <a href="https://slyzoo.net/programming"><button id="button"><img height="30px" src="/Images/terminal.svg"></button></a>
-    <!-- Project Magenta -->
-        <a href="https://slyzoo.net/project-magenta" id="button"><button id="button"><img height="30px" src="/Images/keyboard.svg"></button></a>
-    <!-- Stopwatch -->
-        <a href="https://slyzoo.net/stopwatch"><button id="button"><img height="30px" src="/Images/stopwatch.svg"></button></a>
-  </nav>
-
-  <!-- ciphers / feats to add
-  Adjustable caesar
-  Numerology code
-  Atomic names
-  Atomic numbers
-  Atomic symbols
-  
-  TODO : fix hexcolour
-  -->
-
-  <h1>Multi-Cipher</h1>
-  <div class="flex-container">
-    <div class="x-small-flex-card">
-      <label><input type="radio" name="mode" value="encode" checked> Encode</label><br>
-      <label><input type="radio" name="mode" value="decode"> Decode</label><br>
-      <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
-      <div class="cipher-radio">
-        <select id="cipherDropdown">
-          <option value="atbash">Atbash</option>
-          <option value="ascii">ASCII</option>
-          <option value="base64">Base64</option>
-          <option value="binary">Binary</option>
-          <option value="caesar">Caesar</option>
-          <option value="hex-colour">Hex Colour</option>
-          <option value="hexadecimal">Hexadecimal</option>
-          <option value="morse">Morse Code</option>
-          <option value="pig-latin">Pig Latin</option>
-          <option value="reverse">Reverse</option>
-          <option value="roman-numerals">Roman Numerals</option>
-          <option value="tap">Tap Code</option>
-          <option value="unicode">Unicode</option>
-          <option value="uwu">UwU</option>
-        </select>
-      </div>
+  <div class="nav">
+    <ul>
+      <li class="tooltip">
+        <a href="https://slyzoo.net"><img src="/Images/home.svg"></a>
+        <span class="tooltiptext">Home</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/multi-calculator"><img src="/Images/calculator.svg"></a>
+        <span class="tooltiptext">multi-calculator</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/multi-cipher"><img src="/Images/cipher.svg"></a>
+        <span class="tooltiptext">multi-cipher</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/fabric-mods"><img src="/Images/fabric.png"></a>
+        <span class="tooltiptext">Fabric Mods</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/neodroid"><img src="/Images/neodroid.png"></a>
+        <span class="tooltiptext">NeoDroid</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/neomoji"><img src="/Images/neomoji/red_circle.svg"></a>
+        <span class="tooltiptext">Neomoji</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/programming"><img src="/Images/terminal.svg"></a>
+        <span class="tooltiptext">Programming</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/project-magenta"><img src="/Images/keyboard.svg"></a>
+        <span class="tooltiptext">Project Magenta</span>
+      </li>
+      <li class="tooltip">
+        <a href="https://slyzoo.net/stopwatch"><img src="/Images/stopwatch.svg"></a>
+        <span class="tooltiptext">Stopwatch</span>
+      </li>
+      </ul>
     </div>
-    
-    <div class="x-large-flex-card">
-      <div class="container">
-        <div class="cypher-options">
-          <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
-          <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea><br>
-          <button id="cypher-copy-button">Copy Output</button>
-      </div>
-    </div>
-  </div>
+    <div class="main">
 
+      
+      <!-- ciphers / feats to add
+      Adjustable caesar
+      Numerology code
+      Atomic names
+      Atomic numbers
+      Atomic symbols
+      
+      TODO : fix hexcolour
+      -->
+      
+      <h1>Multi-Cipher</h1>
+      <div class="flex-container">
+        <div class="x-small-flex-card">
+          <label><input type="radio" name="mode" value="encode" checked> Encode</label><br>
+          <label><input type="radio" name="mode" value="decode"> Decode</label><br>
+          <label for="caesarShift">Shift Value:</label><input type="number" id="caesarShift" min="0" max="25" value="3">
+          <div class="cipher-radio">
+            <select id="cipherDropdown">
+              <option value="atbash">Atbash</option>
+              <option value="ascii">ASCII</option>
+              <option value="base64">Base64</option>
+              <option value="binary">Binary</option>
+              <option value="caesar">Caesar</option>
+              <option value="hex-colour">Hex Colour</option>
+              <option value="hexadecimal">Hexadecimal</option>
+              <option value="morse">Morse Code</option>
+              <option value="pig-latin">Pig Latin</option>
+              <option value="reverse">Reverse</option>
+              <option value="roman-numerals">Roman Numerals</option>
+              <option value="tap">Tap Code</option>
+              <option value="unicode">Unicode</option>
+              <option value="uwu">UwU</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="x-large-flex-card">
+          <div class="container">
+            <div class="cypher-options">
+              <textarea class="cypher-textarea" id="inputText" placeholder="Input"></textarea>
+              <textarea class="cypher-textarea" id="outputText" readonly placeholder="Output"></textarea><br>
+              <button id="cypher-copy-button">Copy Output</button>
+            </div>
+          </div>
+        </div>
+</div>
 
 
   
