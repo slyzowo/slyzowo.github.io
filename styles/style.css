@@ -116,8 +116,28 @@ body{
   align-items: center;
 }
 
-@media screen and (max-width: 360px){
-  .enclave{max-width: 100%;}
+@media screen and (max-width: 600px){
+  .nav {
+    min-width: 100%;
+    overflow-x: auto;
+    top: 0;
+    display:list-item;
+    padding: 10px 0;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav li {padding: 5px;}
+  .tooltip .tooltiptext {display: none;}
+  .main{
+    margin-top: 150px;
+  }
   .flexy-item{flex: 100%;}
   .big-flexy-item{flex: 100%;}
   .cipher-flexy-item{flex: 100%;}
@@ -130,14 +150,12 @@ body{
   max-width: 75px;
   border-radius: 15px;
   position: fixed;
-  z-index: 1;
 }
 
 .nav ul{
   list-style-type: none;
   margin: none;
   padding: 12px;
-  
 }
 
 .nav li{padding-top: 5px;}
@@ -521,13 +539,13 @@ body{
   padding: 4px;
 }
 
-#syntax{color: var(--red-0);}
-#library{color: var(--blue-0);}
-#int{color: var(--green-1);}
-#float{color: var(--yellow-0);}
-#str{color: var(--magenta-2);}
-#const{color: var(--pink-4);}
-#switch{color:var(--purple-3);}
+#syntax{color: var(--red);}
+#library{color: var(--blue);}
+#int{color: var(--green);}
+#float{color: var(--yellow);}
+#str{color: var(--magenta);}
+#const{color: var(--pink);}
+#switch{color:var(--purple);}
 
 table, th, td {
   border: 1px solid rgb(255, 255, 255);
