@@ -116,27 +116,15 @@ body{
   align-items: center;
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
   .nav {
-    min-width: 100%;
-    overflow-x: auto;
-    top: 0;
-    display:list-item;
-    padding: 10px 0;
+    max-width: 100% !important;
+    display: block;
+    top: 0 !important;
   }
-
-  .nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-  }
-
-  .nav li {padding: 5px;}
-  .tooltip .tooltiptext {display: none;}
   .main{
-    margin-top: 150px;
+    margin-top: 120px;
+    margin-left: 0 !important;
   }
   .flexy-item{flex: 100%;}
   .big-flexy-item{flex: 100%;}
