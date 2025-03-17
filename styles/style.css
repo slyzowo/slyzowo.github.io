@@ -117,86 +117,53 @@ body{
 }
 
 @media (max-width: 600px){
-  .nav {
-    max-width: 100% !important;
-    display: block;
-    top: 0 !important;
+  .nav{
+    float: top !important;
+    height: 14vh !important;
+    width: 100vw !important;
   }
-  .main{
-    margin-top: 120px;
-    margin-left: 0 !important;
+  .nav-flex-container{
+    flex-direction: row;
   }
-  .flexy-item{flex: 100%;}
-  .big-flexy-item{flex: 100%;}
-  .cipher-flexy-item{flex: 100%;}
-  .sidenav{width: 150px;}
 }
 
-/* Navigation bar */
+body{
+  margin: 0;
+}
+
 .nav{
-  background-color: light-dark(var(--light-transparent), var(--dark-transparent));
-  max-width: 75px;
-  border-radius: 15px;
-  position: fixed;
+  background-color: #202020e6;
+  height: 100vh;
+  width: 75px;
+  float: left;
+  overflow-x: scroll;
 }
 
-.nav ul{
-  list-style-type: none;
-  margin: none;
-  padding: 12px;
-}
-
-.nav li{padding-top: 5px;}
-
-.nav img{
-  height: 50px;
-  width: 50px;
-  border-radius: 12px;
-  object-fit: fill;
-}
-
-.nav img:hover{
-  transition: background-color 200ms linear;
-  transform: scale(1.1);
-  background-color: #4d4d4d;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px 10px;
-  position: absolute;
-  z-index: 1;
-  top: 20%;
-  left: 110%;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent black transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.nav-flex-container{
+  flex-direction: column;
 }
 
 .main{
-  margin-left: 100px
+  background-color: #121212;
+  padding: 15px;
+  height: 96.7vh;
+}
+
+.flex-container{
+  background-color: #00000000;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 15px;
+}
+
+.medium-flex-box{
+  background-color: #202020e6;
+  border-radius: 20px;
+  font-size: medium;
+  padding: 10px;
+  flex: 25%;
+  margin: 5px;
 }
 
 .flex-container{

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- embed support -->
+</head>
+<style>
+
+  @media (max-width: 600px){
+    .nav{
+      float: top !important;
+      height: 7vh !important;
+      width: 98vw !important;
+    }
+    .table-of-contents{
+      float: top;
+      width: 98vw !important;
+      height: 7vh !important;
+    }
+  }
+
+  body{
+    margin: 0;
+  }
+
+  .nav{
+    background-color: #ff87fb;
+    height: 96.7vh;
+    float: left;
+    padding: 15px;
+    overflow-x: scroll;
+  }
+
+  .table-of-contents{
+    background-color: #e33b4c;
+    padding: 15px;
+    float: left;
+    height: 96.7vh;
+    overflow-x: scroll;
+  }
+  
+  .main{
+    background-color: #ffa940;
+    padding: 15px;
+    height: 96.7vh;
+  }
+
+  .flex-container{
+    background-color: #ffd969;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .medium-flex-box{
+    background-color: #67ff5c;
+    font-size: medium;
+    padding: 10px;
+    flex: 25%;
+    margin: 5px;
+  }
+</style>
+<body>
+  <div class="nav">
+    <p>test nav element</p>
+  </div>
+  <div class="table-of-contents">
+    <p>test toc element</p>
+  </div>
+  
+  <div class="main">
+    <p>test main element</p>
+    <div class="flex-container">
+      <p>test flex-container element</p>
+      <div class="medium-flex-box">
+        <p>test flex-box element</p>
+      </div>
+      <div class="medium-flex-box">
+        <p>test flex-box element</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
