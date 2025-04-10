@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <title>404 Page Not Found</title>
+  <title>stopwatch</title>
 </head>
 <body>
   <li class="navigation">
@@ -19,12 +19,27 @@
     <ul><a href="https://slyzoo.net/reading">          <img src="assets/images/logo-book.svg"></a></ul>
     <ul><a href="https://slyzoo.net/time">             <img src="assets/images/logo-time.svg"></a></ul>
     <ul><a href="https://slyzoo.net/vulcan">           <img src="assets/images/logo-vulcan.png"></a></ul>
-
   </li>
 <div class="main">
-  <h1>404 Page Not Found</h1>
-
-
+  <h1>Stopwatch</h1>
+  <div class="time-container">
+    <div id="stopwatch-display">00:00:00:00</div>
+    <div class="time-controls">
+      <button id="stopwatch-start" onclick="stopwatchStart()">Start</button>
+      <button id="stopwatch-pause" onclick="stopwatchPause()">Pause</button>
+      <button id="stopwatch-reset" onclick="stopwatchReset()">Reset</button>
+    </div>
+  </div>
+  <h1>Timer</h1>
+  <div class="time-container">
+    <div id="timer-display">00:00:00:00</div>
+    <div class="time-controls">
+      <button id="timer-start" onclick="stopwatchStart()">Start</button>
+      <button id="timer-pause" onclick="stopwatchPause()">Pause</button>
+      <button id="timer-reset" onclick="stopwatchReset()">Reset</button>
+    </div>
+  </div>
 </div>
+<script src="javascript/stopwatch"></script>
 </body>
 </html>
