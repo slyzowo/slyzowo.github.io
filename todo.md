@@ -1,30 +1,31 @@
 # Universal
-- add settings
-- add mobile support
-- add markup syntax
+Add settings
+Add mobile support
+Add markup syntax
+Add "table of contents"
 
 # Calculator
-- add text boxes
-- add buttons
-- add js
+Add text boxes
+Add buttons
+Add js
 
 # Cipher
-- add text boxes
-- add js
+Add text boxes
+Add buttons
+Add js
 
 # Glyphgraph
-- add all current emojis
+Add all current emojis
 
 # Fabric Mods
-- add all current textures
-- make mods
+Add all current textures
+Make mods
 
 # Learning
-- make programming syntax
-- learn all the (programming) languages
-- add all the (programming) languages
+Learn all the (programming) languages
+Add all the (programming) languages
 
 # Vulcan
-- learn js
-- learn discord api
-- make vulcan bot
+Learn js
+Learn discord api
+Make vulcan bot

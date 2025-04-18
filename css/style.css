@@ -32,6 +32,14 @@
   ::marker{color:  var(--light-blue);}
 }
 
+.code{
+
+}
+#comment{color: var(--grey);}
+#datatype{color: var(--grey);}
+#operator{color: var(--grey);}
+#function{color: var(--grey);}
+
 body{
   background-color: light-dark(var(--light-main), var(--dark-main));
   color: light-dark(var(--light-txt), var(--dark-txt));
@@ -43,8 +51,7 @@ body{
   width: 100px;
   height: 100%;
   position: fixed;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 0px 25px 25px 0px;
   overflow-y: scroll;
   overflow-x: hidden;
   
@@ -67,8 +74,6 @@ body{
   img{
     display: block;
     margin: auto;
-    margin-left:  auto;
-    margin-right: auto;
     height: 50px;
     width:  50px;
     padding-top: 10px;
@@ -82,6 +87,7 @@ body{
   margin-left: 100px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  border-radius: 25px 0px 0px 25px;
   overflow-y: auto;
   
   p, h1, h2, h3, h4{
@@ -98,13 +104,34 @@ body{
     min-height: 30vh;
     height: auto;
     flex: 15%;
-    margin-left: 20px;
+    margin: 0px 15px 0px 20px;
     border-radius: 25px;
   }
   
-  h1{
-    margin-left: 20px;
-  }
+  h1{ margin-left: 20px; }
+}
+
+.small-flex-box{
+  background-color: light-dark(var(--light-main), var(--dark-main));
+  min-height: 30vh;
+  width: 10vw;
+  padding: 10px;
+  height: auto;
+  margin: 10px 15px 0px 20px;
+  border-radius: 25px;
+
+}
+
+textarea{
+  background-color: var(--dark-main);
+  margin-left: 15%;
+  margin-right: 30px;
+  height: 500px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  resize: none;
 }
 
 .flex-bar-container{
