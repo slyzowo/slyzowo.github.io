@@ -136,20 +136,20 @@ textarea{
 
 .flex-bar-container{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   
   > div{
     background-color: light-dark(var(--light-main), var(--dark-main));
     height: auto;
-    min-width: 200px;
     padding: 15px;
-    margin: 10px;
+    margin: 50px;
     border-radius: 25px;
   }
 
   img{
     align-items: flex-start;
     height: 100px;
+    width: 100px;
     padding: 10px;
   }
 }
