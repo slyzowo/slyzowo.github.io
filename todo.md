@@ -2,7 +2,6 @@
 Add settings
 Add mobile support
 Add markup syntax
-Add "table of contents"
 
 # Calculator
 Add text boxes
