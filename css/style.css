@@ -59,6 +59,11 @@ body{
   text-align: center;
   border-radius: 0px 25px 25px 0px;
   img{ height: 50px; width:  50px; }
+  > a{
+    background-color: var(--transparent);
+    border: none;
+    :hover{ transform: scale(1.2); }
+  }
 }
 
 .tabs{
@@ -106,11 +111,10 @@ body{
 
 textarea{
   background-color: var(--dark-navigation);
-  margin-left: 15%;
-  margin-right: 30px;
-  height: 500px;
-  width: 500px;
-  padding: 10px;
+  margin: 100px 0px 40px 150px;
+  height: 600px;
+  width: 600px;
+  padding: 20px;
   border-radius: 25px;
   border: none;
   resize: none;
@@ -156,3 +160,25 @@ table, th, td {
 
 .deleted::marker{color: var(--red);}
 .deleted::selection{background-color: var(--red);}
+
+#counter-display{
+  font-size: 200px;
+}
+
+.button-clicker-btns{
+  height: 100px;
+  width: 150px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  border: none;
+}
+
+#decrease-btn, #increase-btn{background-color: var(--grey);}
+#decrease-btn:hover, #increase-btn:hover{background-color: var(--grey-hover);}
+#decrease-btn:active, #increase-btn:active{background-color: var(--grey-active);}
+
+
+#reset-btn{background-color: var(--red);}
+#reset-btn:hover{background-color: var(--red-hover);}
+#reset-btn:active{background-color: var(--red-active);}
+

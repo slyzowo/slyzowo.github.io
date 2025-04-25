@@ -7,32 +7,21 @@
   <title>Cipher</title>
 </head>
 <body>
-  <li class="navigation">
-    <ul><a href="#">                                   <img src="assets/images/logo-settings.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/">                 <img src="assets/images/logo-home.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/calculator">       <img src="assets/images/logo-calculator.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/cipher">           <img src="assets/images/logo-translate.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/fabric-mods">      <img src="assets/images/logo-fabric.png"></a></ul>
-    <ul><a href="https://slyzoo.net/glyphgraph">       <img src="assets/images/glyphgraph/light-blue-circle.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/learning">         <img src="assets/images/logo-terminal.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/project-magenta">  <img src="assets/images/logo-keyboard.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/reading">          <img src="assets/images/logo-book.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/time">             <img src="assets/images/logo-time.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/vulcan">           <img src="assets/images/logo-vulcan.png"></a></ul>
+  <div class="grid-container">
+    <div class="navigation">
+      <a href="https://slyzoo.net/"><img src="assets/images/logo-home.svg"></a>
+      <a href="https://slyzoo.net/cipher"><img src="assets/images/logo-translate.svg"></a>
+      <a href="https://slyzoo.net/fabric-mods"><img src="assets/images/logo-fabric.png"></a>
+      <a href="https://slyzoo.net/glyphgraph"><img src="assets/images/glyphgraph/light-blue-circle.svg"></a>
+      <a href="https://slyzoo.net/vulcan"><img src="assets/images/logo-vulcan.png"></a>
+    </div>
+    <div class="tabs">
+      <h1>Cipher Encoder & Decoder</h1>
+    </div>
+    <div class="main">
 
-  </li>
-<div class="main">
-<div class="flex-box-container">
-
-  <form class="small-flex-box">
-    <input type="checkbox">Encode</input>
-    <input type="checkbox">Decode</input>
-    <input type="submit"></input>
-  </form>
-  
-  <textarea id="input">text here</textarea>
-  <textarea id="output">cipher here</textarea>
-</div>
-</div>
+      <input type="text" id="cipher-input"></input>
+  </div>
+  <script src="/javascript/cipher.js"></script>
 </body>
 </html>
