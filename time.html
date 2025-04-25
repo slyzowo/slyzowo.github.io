@@ -4,42 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <title>stopwatch</title>
+  <title>Time</title>
 </head>
 <body>
-  <li class="navigation">
-    <ul><a href="#">                                   <img src="assets/images/logo-settings.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/">                 <img src="assets/images/logo-home.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/calculator">       <img src="assets/images/logo-calculator.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/cipher">           <img src="assets/images/logo-translate.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/fabric-mods">      <img src="assets/images/logo-fabric.png"></a></ul>
-    <ul><a href="https://slyzoo.net/glyphgraph">       <img src="assets/images/glyphgraph/light-blue-circle.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/learning">         <img src="assets/images/logo-terminal.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/project-magenta">  <img src="assets/images/logo-keyboard.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/reading">          <img src="assets/images/logo-book.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/time">             <img src="assets/images/logo-time.svg"></a></ul>
-    <ul><a href="https://slyzoo.net/vulcan">           <img src="assets/images/logo-vulcan.png"></a></ul>
-  </li>
-<div class="main">
-  <h1>Stopwatch</h1>
-  <div class="time-container">
-    <div id="stopwatch-display">00:00:00:00</div>
-    <div class="time-controls">
-      <button id="stopwatch-start" onclick="stopwatchStart()">Start</button>
-      <button id="stopwatch-pause" onclick="stopwatchPause()">Pause</button>
-      <button id="stopwatch-reset" onclick="stopwatchReset()">Reset</button>
+  <div class="grid-container">
+    <div class="navigation">
+      <a href="https://slyzoo.net/"><img src="assets/images/logo-home.svg"></a>
+      <a href="https://slyzoo.net/button-clicker"><img src="assets/images/logo-button-clicker.png"></a>
+      <a href="https://slyzoo.net/cipher"><img src="assets/images/logo-translate.svg"></a>
+      <a href="https://slyzoo.net/fabric-mods"><img src="assets/images/logo-fabric.png"></a>
+      <a href="https://slyzoo.net/glyphgraph"><img src="assets/images/glyphgraph/light-blue-circle.svg"></a>
+      <a href="https://slyzoo.net/vulcan"><img src="assets/images/logo-vulcan.png"></a>
     </div>
-  </div>
-  <h1>Timer</h1>
-  <div class="time-container">
-    <div id="timer-display">00:00:00:00</div>
-    <div class="time-controls">
-      <button id="timer-start" onclick="timerStart()">Start</button>
-      <button id="timer-pause" onclick="timerPause()">Pause</button>
-      <button id="timer-reset" onclick="timerReset()">Reset</button>
+    <div class="tabs">
+      <h1>Timer</h1>
+      <button class="timer-btns" id="timer-reset-btn">Reset</button>
+      <h1>Stopwatch</h1>
+      <button class="stopwatch-btns" id="increase-btn">Start</button>
+      <button class="stopwatch-btns" id="decrease-btn">Stop</button>
+      <button class="stopwatch-btns" id="stopwatch-reset-btn">Reset</button>
     </div>
+    <div class="main">
+  <label id="counter-display">0</label><br>
+  <script src="/javascript/btnClicker.js"></script> 
+
   </div>
-</div>
-<script src="javascript/time"></script>
 </body>
 </html>
