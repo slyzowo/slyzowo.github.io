@@ -9,6 +9,8 @@ Add buttons
 Add js
 
 # Cipher
+Add text boxes
+Add buttons
 Add js
 
 ciphers to add
@@ -33,8 +35,9 @@ Learn all the (programming) languages
 - c++
 - html
 - css
-- js
-- py
+- javascript
+- java
+- python
 
 Add all the (programming) languages
 
