@@ -67,7 +67,7 @@ body{
 }
 
 .tabs{
-  background-color: light-dark(var(--light-tab), var(--dark-tab));
+  background-color: light-dark(var(--light-navigation), var(--dark-navigation));
   padding: 20px;
   text-align: center;
   border-radius: 25px;
