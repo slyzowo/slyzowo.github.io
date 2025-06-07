@@ -2,26 +2,59 @@
   color-scheme: light dark; /* enables both light and dark mode */
 
   /* standardized theme colours*/
-  --dark-main:#121212;     --dark-navigation: #1f1f1f;  --dark-tab: #1a1a1a;   --dark-txt:#e9e9e9;
-  --light-main:#e9e9e9;    --light-navigation:#dddddd;  --light-tab: #f5f5f5;   --light-txt:#121212;
+--dark-main:#121212;
+--dark-navigation: #1f1f1f;
+--dark-tab: #1a1a1a;
+--dark-txt:#e9e9e9;
+
+--light-main:#e9e9e9;
+--light-navigation:#dddddd;
+--light-tab: #f5f5f5;
+--light-txt:#121212;
 
   --transparent:#00000000;
 
   /* standardized colours*/
-  --white       :#ffffff;       --white-hover:#cccccc;       --white-active:#999999;
-  --pink        :#ff87fb;        --pink-hover:#cc6cc9;        --pink-active:#995197;
-  --magenta     :#ff00ff;     --magenta-hover:#cc00cc;     --magenta-active:#990099;
-  --red         :#e33b3b;         --red-hover:#b62f3d;         --red-active:#88232e;
-  --orange      :#ffa940;      --orange-hover:#cc8733;      --orange-active:#996526;
-  --yellow      :#ffd969;      --yellow-hover:#ccae54;      --yellow-active:#99823f;
-  --lime        :#67ff5c;        --lime-hover:#52cc4a;        --lime-active:#3e9937;
-  --green       :#0cb300;       --green-hover:#0a8f00;       --green-active:#076b00;
-  --light-blue  :#5bcffa;  --light-blue-hover:#49a6c8;  --light-blue-active:#377c96;
-  --blue        :#3b5ae3;        --blue-hover:#2f48b6;        --blue-active:#233688;
-  --purple      :#7b3be3;      --purple-hover:#622fb6;      --purple-active:#4a2388;
-  --grey        :#888888;        --grey-hover:#6d6d6d;        --grey-active:#525252;
-  --dark-grey   :#4d4d4d;   --dark-grey-hover:#3e3e3e;   --dark-grey-active:#2e2e2e;
-  --black       :#141414;
+  --white:             #ffffff;
+  --white-hover:       #cccccc;
+  --white-active:      #999999;
+  --pink:              #ff87fb;
+  --pink-hover:        #cc6cc9;
+  --pink-active:       #995197;
+  --magenta:           #ff00ff;
+  --magenta-hover:     #cc00cc;
+  --magenta-active:    #990099;
+  --red:               #e33b3b;
+  --red-hover:         #b62f3d;
+  --red-active:        #88232e;
+  --orange:            #ffa940;
+  --orange-hover:      #cc8733;
+  --orange-active:     #996526;
+  --yellow:            #ffd969;
+  --yellow-hover:      #ccae54;
+  --yellow-active:     #99823f;
+  --lime:              #67ff5c;
+  --lime-hover:        #52cc4a;
+  --lime-active:       #3e9937;
+  --green:             #0cb300;
+  --green-hover:       #0a8f00;
+  --green-active:      #076b00;
+  --light-blue:        #5bcffa;
+  --light-blue-hover:  #49a6c8;
+  --light-blue-active: #377c96;
+  --blue:              #3b5ae3;
+  --blue-hover:        #2f48b6;
+  --blue-active:       #233688;
+  --purple:            #7b3be3;
+  --purple-hover:      #622fb6;
+  --purple-active:     #4a2388;
+  --grey:              #888888;
+  --grey-hover:        #6d6d6d;
+  --grey-active:       #525252;
+  --dark-grey:         #4d4d4d;
+  --dark-grey-hover:   #3e3e3e;
+  --dark-grey-active:  #2e2e2e;
+  --black:             #141414;
 
   ::selection{
     background-color: var(--light-blue);
@@ -43,28 +76,31 @@ body{
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 100px 300px auto;
+  grid-template-columns: 200px 300px auto;
   grid-template-areas: 'nav tab navigation';
 }
 
 .grid-container > div {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   overflow-x: scroll;
 }
 
 .navigation {
   background-color: light-dark(var(--light-navigation), var(--dark-navigation));
   padding: 20px;
-  text-align: center;
   border-radius: 0px 25px 25px 0px;
-  img{ height: 50px; width:  50px; }
-  > a{
-    background-color: var(--transparent);
-    border: none;
-    :hover{ transform: scale(1.2); }
-  }
 }
+
+
+
+img > a{
+  background-color: var(--transparent);
+  border: none;
+}
+img{ height: 50px; width:  50px; }
+img:hover{ transform: scale(1.2);}
+a:link{ text-decoration: none;}
 
 .tabs{
   background-color: light-dark(var(--light-navigation), var(--dark-navigation));
