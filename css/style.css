@@ -104,7 +104,7 @@ textarea{
   width: 100vw;
   display: grid;
   grid-template-columns: 200px 300px auto;
-  grid-template-areas: 'nav tab navigation';
+  grid-template-areas: 'navigation tab main';
 }
 
 .grid-container > div {
