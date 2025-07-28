@@ -17,7 +17,7 @@
 }
 
 ::selection{
-  background-color: red;
+  background-color: rgb(0, 217, 255);
   color: white;
 }
 
@@ -75,4 +75,9 @@ main{
   margin: 50px;
   background-color: var(--dark-navigation);
   padding: 20px;
+}
+
+#increase-btn{
+  background-color: rgb(0, 217, 255);
+  padding: 10px;
 }
