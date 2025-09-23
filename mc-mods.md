@@ -16,6 +16,16 @@ Hats
 - Spear
 - Staff
 
+# Additional Foods
+- Diamond Carrot
+- Iron Carrot
+- Diamond Apple
+- Iron Apple
+- Orange
+- Pear
+- Grape
+- Grapefruit
+
 # Additional Gems
 - Jade
 - Jasper
