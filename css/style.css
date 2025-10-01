@@ -22,7 +22,7 @@
 }
 
 :any-link{color: white;}
-::marker{color:  green;}
+::marker{color:  rgb(0, 217, 255);}
 
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -77,7 +77,24 @@ main{
   padding: 20px;
 }
 
-#increase-btn{
+#counter-display{
+font-size: 5rem;
+}
+
+#button-clicker-reset-btn{
+  background-color: red;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
+}
+
+#increase-btn {
   background-color: rgb(0, 217, 255);
   padding: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
 }
