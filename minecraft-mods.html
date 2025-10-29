@@ -3,50 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabric Mods</title>
+  <title>Minecraft Mods</title>
   <link rel="icon" type="image/x-icon" href="/assets/images/logo-fabric.png">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/desktop.css">
+  <link rel="stylesheet" media="screen and (max-width: 899px)" href="styles/mobile.css">
 </head>
 <body>
   <nav>
     <a href="https://slyzowo.net/"><img src="assets/images/logo-home.svg">Home</a><br>
     <a href="https://slyzowo.net/button-clicker"><img src="assets/images/logo-button-clicker.png">Button Clicker</a><br>
     <a href="https://slyzowo.net/cipher"><img src="assets/images/logo-translate.svg">Cipher</a><br>
-    <a href="https://slyzowo.net/minecraft-mods"><img src="assets/images/logo-fabric.png">Fabric Mods</a><br>
     <a href="https://slyzowo.net/glyphgraph"><img src="assets/images/glyphgraph/light-blue-circle.svg">Glyphgraph</a><br>
+    <a href="https://slyzowo.net/minecraft"><img src="assets/images/logo-fabric.png">Minecraft</a><br>
+    <a href="https://slyzowo.net/minecraft-mods"><img src="assets/images/logo-fabric.png">Minecraft Mods</a><br>
     <a href="https://slyzowo.net/reviews"><img src="assets/images/logo-book.svg">Reviews</a><br>
   </nav>
   <nav id="table-of-contents">
       <h1>Minecraft Mods</h1>
-      <br><a href=#MoreCosmetics><h3>More Cosmetics</h3></a>
-      <br><a href=#MoreEquipment><h3>More Equipment</h3></a>
-      <br><a href=#MoreGems><h3>More Gems</h3></a>
-      <br><a href=#MoreTechnology><h3>More Technology</h3></a>
-      <br><a href=#MoreMetals><h3>More Metals</h3></a>
+      <br><a href=#VanillaTools><h3>Vanilla Tools</h3></a>
+<!--
+      <br><a href=#AdditionalCosmetics><h3>Additional Cosmetics</h3></a>
+      <br><a href=#AdditionalEquipment><h3>Additional Vanilla Equipment</h3></a>
+      <br><a href=#Additionals><h3>Additionals</h3></a>
+      <br><a href=#AdditionalTech><h3>Additionals: Tech</h3></a>
+      <br><a href=#AdditionalVanillaStorage><h3>Additional Vanilla Storage</h3></a>
       <br><a href=#Heros><h3>Heros</h3></a>
-      <br><a href=#Villains><h3>Villains</h3></a>
       <br><a href=#StarWars><h3>Star Wars</h3></a>
+-->
   </nav>
   <main>
 
-    <div><img src="assets/images/minecraft/iron-spear.png"><h1 id="MoreEquipment">More Equipment</h1>
-      <li>Spear</li>
-      <li>Dagger</li>
-      <li>Sai</li>
-      <li>Staff</li>
-      <li>Sickle</li>
-      <li>Rapier</li>
+    <div class="box"><img src="assets/images/minecraft/iron-spear.png"><h1 id="VanillaTools">Vanilla Tools</h1>
+      <ul>
+        <li>Paxels</li>
+        <li>Hammer</li>
+        <li>Dagger</li>
+      </ul>
     </div>
-    <div><img src="assets/images/minecraft/ruby.png"><h1 id="MoreGems">More Gems</h1>
+
+<!--
+    <div class="box"><img src="assets/images/minecraft/iron-spear.png"><h1 id="AdditionalCosmetics">Vanilla Cosmetics</h1>
+      <ul>
+        <li>Crown</li>
+        <li>Flower Crown</li>
+        <li>Sprout Hat</li>
+      </ul>
+    </div>
+
+    <div class="box"><img src="assets/images/minecraft/iron-spear.png"><h1 id="AdditionalEquipment">Additional Vanilla Equipment</h1>
+      <ul>
+        <li>Club</li>
+        <li>Dagger</li>
+        <li>Hammer</li>
+        <li>Sai</li>
+        <li>Staff</li>
+        <li>Paxel</li>
+      </ul>
+    </div>
+    
+    <div class="box"><img src="assets/images/minecraft/ruby.png"><h1 id="Additionals">Additionals</h1>
+      <h3>Gems</h3>
+      <ul>
+      <li>Amber</li>
+      <li>Ametrine</li>
+      <li>Aquamarine</li>
+      <li>Cinnabar</li>
       <li>Jade</li>
+      <li>Jasper</li>
       <li>Ruby</li>
       <li>Rose Quartz</li>
       <li>Sapphire</li>
       <li>Topaz</li>
+      <li>Sulfer</li>
+    </ul>
+      <h3>Metals</h3>
+    </ul>
+      <li>Aluminium</li>
+      <li>Brass</li>
+      <li>Bronze</li>
+      <li>Lithium</li>
+      <li>Purple Gold</li>
+      <li>Rose Gold</li>
+      <li>Steel</li>
+      <li>Tin</li>
+      <li>Titanium</li>
+      <li>Tungsten</li>
+      <li>Zinc</li>
+    </ul>
+    <h3>Equipment</h3>
+    <ul>
+      <li>Club</li>
+      <li>Dagger</li>
+      <li>Hammer</li>
+      <li>Sai</li>
+      <li>Staff</li>
+      <li>Paxel</li>
+    </ul>
     </div>
 
-    <div><img src="assets/images/minecraft/missing-texture.png" height="150"><h1 id="MoreTechnology">More Technology</h1>
-
+    <div class="box"><img src="assets/images/minecraft/missing-texture.png" height="150"><h1 id="AdditionalTechnology">Additionals: Tech</h1>
       <h2>Tiers</h2>
       <ul>
         <li>Copper</li>
@@ -92,27 +147,107 @@
         <li>Chainsaw</li>
         <li>Jetpack</li>
       </ul>
+    </div>
 
-      <h2>Gates</h2>
+    <div class="box"><img src="assets/images/minecraft/missing-texture.png" height="150"><h1 id="AdditionalVanillaStorage">Additional Vanilla Storage</h1>
+      <h2>Tiers</h2>
       <ul>
-        <li>AND Gate</li>
-        <li>OR  Gate</li>
-        <li>NOT Gate</li>
-        <li>XOR Gate</li>
+        <li>Copper</li>
+        <li>Iron</li>
+        <li>Gold</li>
+        <li>Redstone</li>
+        <li>Diamond</li>
+        <li>Netherite</li>
+        <li>Shulker</li>
       </ul>
     </div>
-    <div><img src="assets/images/minecraft/purple-gold-ingot.png"><h1 id="MoreMetals">More Metals</h1>
-        <li>Aluminium</li>
-        <li>Brass</li>
-        <li>Bronze</li>
-        <li>Lithium</li>
-        <li>Purple Gold</li>
-        <li>Steel</li>
-        <li>Tin</li>
-        <li>Titanium</li>
-        <li>Zinc</li>
-      </div>
-      <div><img src="assets/images/minecraft/red-lightsaber.png"><h1 id="StarWars">Star Wars</h1>
+
+      <div class="box"><img src="assets/images/minecraft/red-lightsaber.png"><h1 id="Heros">Heros</h1>
+        <h3>Heros</h3>
+        <h4>DC</h4>
+        <ul>
+          <li>Batman</li>
+          <li>Robin</li>
+          <li>Batgirl</li>
+          <li>NightWing</li>
+          <li>Red Robin</li>
+          <li>Red Hood</li>
+          <li>Superman</li>
+          <li>Superboy</li>
+          <li>Wonder Woman</li>
+          <li>Aquaman</li>
+          <li>Hawk Man</li>
+          <li>Hawk Girl</li>
+          <li>Cyborg</li>
+          <li>Martian Man Hunter</li>
+          <li>Red Lantern</li>
+          <li>Orange Lantern</li>
+          <li>Yellow Lantern</li>
+          <li>Blue Lantern</li>
+          <li>Green Lantern</li>
+          <li>Purple Lantern</li>
+          <li>Black Lantern</li>
+          <li>White Lantern</li>
+          <li>Flash</li>
+          <li>Kid Flash</li>
+          <li>Green Arrow</li>
+          <li>Red Arrow</li>
+          <li>Atom</li>
+          <li>Plastic Man</li>
+          <li>Red Tornado</li>
+          <li>Blue Beetle</li>
+          <li>Fire Storm</li>
+        </ul>
+
+        <h4>Marvel</h4>
+        <ul>
+          <li>Ironman</li>
+          <li>Captain America</li>
+          <li>Hawkeye</li>
+          <li>Hulk</li>
+          <li>Black Widow</li>
+          <li>Thor</li>
+          <li>Vision</li>
+          <li>Spider-man</li>
+          <li>Deadpool</li>
+          <li>Gwenpool</li>
+          <li>Falcon</li>
+          <li>Wolverine</li>
+          <li>Cyclops</li>
+          <li>Storm</li>
+          <li>Black Panther</li>
+        </ul>
+
+        <h3>Villains</h3>
+        <h4>DC</h4>
+        <ul>
+          <li>Joker</li>
+          <li>Bane</li>
+          <li>Lex Luthor</li>
+          <li>Poison Ivy</li>
+          <li>Harley Quinn</li>
+          <li>Cat Woman</li>
+        </ul>
+        <h4>Marvel</h4>
+        <ul>
+          <li>Red Hulk</li>
+          <li>Black Cat</li>
+          <li>Green Goblin</li>
+          <li>Hobgoblin</li>
+          <li>Venom</li>
+          <li>Anti-Venom</li>
+          <li>Carnage</li>
+          <li>Toxin</li>
+          <li>Lasher</li>
+          <li>Scream</li>
+          <li>Riot</li>
+          <li>Phage</li>
+          <li>Agony</li>
+          <li>Hybrid</li>
+        </ul>
+    </div>
+
+      <div class="box"><img src="assets/images/minecraft/red-lightsaber.png"><h1 id="StarWars">Star Wars</h1>
         <h3>Kyber Crystals</h3>
         <ul>
           <li>Red Kyber</li>
@@ -134,8 +269,15 @@
           <li>Purple Lightsaber</li>
           <li>Darksaber Lightsaber</li>
         </ul>
+        <h3>Hilts</h3>
+        <ul>
+          <li>Anakin Hilt</li>
+          <li>Obi Wan Hilt</li>
+          <li>Luke Hilt</li>
+          <li>Qui Gon Hilt</li>
+        </ul>
     </div>
-
+-->
   </main>
 </body>
 </html>

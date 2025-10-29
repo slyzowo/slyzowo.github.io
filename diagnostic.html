@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Button Clicker</title>
-  <link rel="icon" type="image/x-icon" href="/assets/images/logo-button-clicker.png">
+  <title>Diagnostic Page</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo-home.svg">
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/desktop.css">
   <link rel="stylesheet" media="screen and (max-width: 899px)" href="styles/mobile.css">
 </head>
@@ -19,17 +19,23 @@
     <a href="https://slyzowo.net/reviews"><img src="assets/images/logo-book.svg">Reviews</a><br>
   </nav>
   <nav id="table-of-contents">
-    <h1>Welcome to slyzoo.net</h1>
-    <h1>Button Clicker</h1>
-    <button id="button-clicker-reset-btn">Reset</button>
+    <h1>Diagnostic Page</h1>
   </nav>
 
   <main>
-    <div class="main">
-      <label id="counter-display">0</label><br>
-      <button id="increase-btn">Click me!</button>
+    <div class="box">
+      <h2 id="browser_window"></h2>
+    </div>
+    <div class="box">
+      <h2 id="screen_size"></h2>
+    </div>
+    <div class="box">
+      <h2 id="available_screen"></h2>
+    </div>
+    <div class="box">
+      <h2 id="colours"></h2>
     </div>
   </main>
-<script src="/javascript/btnClicker.js"></script>
 </body>
+<script src="/javascript/diagnostic.js"></script>
 </html>
