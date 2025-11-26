@@ -132,6 +132,7 @@ textarea{
 }
 
 .box{
+  width: 70vw;
   border-radius: 10px 10px 10px 10px;
   margin: 50px;
   background-color: var(--navigation);
@@ -181,3 +182,58 @@ font-size: 5rem;
   padding: 5px;
   text-align: center;
 }
+
+  #caution{
+    width: 25%;
+    color: #ff9532;
+    padding: 2px 0px 2px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ff953217;
+  }
+
+  #important{
+    width: 25%;
+    color: #b283ff;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #b283ff17;
+  }
+
+  #note{
+    width: 25%;
+    color: #47a3ee;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #47a3ee17;
+  }
+
+  #tip{
+    width: 25%;
+    color: #33eb61;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #33eb6117;
+  }
+
+  #warning{
+    width: 25%;
+    color: #ff5353;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ff535317;
+  }
