@@ -184,57 +184,106 @@ font-size: 5rem;
   text-align: center;
 }
 
-  #caution{
-    width: 25%;
-    color: #ff9532;
-    padding: 2px 0px 2px 10px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #ff953217;
-  }
+#caution{
+  width: 25%;
+  color: #ff9532;
+  padding: 2px 0px 2px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ff953217;
+}
 
-  #important{
-    width: 25%;
-    color: #b283ff;
-    padding: 2px 0px 5px 10px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #b283ff17;
-  }
+#caution > svg{
+  float: left;
+  margin-top: 15px;
+  padding-right: 5px;
+  height: 30px;
+  width:  30px;
+}
 
-  #note{
-    width: 25%;
-    color: #47a3ee;
-    padding: 2px 0px 5px 10px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #47a3ee17;
-  }
+#important{
+  width: 25%;
+  color: #b283ff;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #b283ff17;
+}
 
-  #tip{
-    width: 25%;
-    color: #33eb61;
-    padding: 2px 0px 5px 10px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #33eb6117;
-  }
+#important > svg{
+  float: left;
+  margin-top: 15px;
+  padding-right: 5px;
+  height: 30px;
+  width:  30px;
+}
 
-  #warning{
-    width: 25%;
-    color: #ff5353;
-    padding: 2px 0px 5px 10px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #ff535317;
-  }
+#note{
+  width: 25%;
+  color: #47a3ee;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #47a3ee17;
+}
+
+#note > svg{
+  float: left;
+  margin-top: 15px;
+  padding-right: 5px;
+  height: 30px;
+  width:  30px;
+}
+
+#tip{
+  width: 25%;
+  color: #33eb61;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #33eb6117;
+}
+
+#tip > svg{
+  float: left;
+  margin-top: 15px;
+  padding-right: 5px;
+  height: 30px;
+  width:  30px;
+}
+
+#warning{
+  width: 25%;
+  color: #ff5353;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ff535317;
+}
+
+#warning > svg{
+  float: left;
+  margin-top: 15px;
+  padding-right: 5px;
+  height: 30px;
+  width:  30px;
+}
+
+#code-block{
+  font-family: monospace;
+  background-color: #131313;
+  padding-left: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #424242;
+}
