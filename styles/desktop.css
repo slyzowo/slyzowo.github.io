@@ -151,15 +151,15 @@ font-size: 5rem;
   width: 100px;
   border-radius: 25px;
   border: none;
+  &:hover{
+    background-color: #d13747;
+  }
+  
+  &:active{
+    background-color: #bb323f;
+  }
 }
 
-#button-clicker-reset-btn:hover{
-  background-color: #d13747;
-}
-
-#button-clicker-reset-btn:active{
-  background-color: #bb323f;
-}
 
 #increase-btn{
   background-color: var(--light-blue);
@@ -168,15 +168,17 @@ font-size: 5rem;
   width: 100px;
   border-radius: 25px;
   border: none;
+
+  &:hover{
+    background-color: #00bddf;
+  }
+
+  &:active{
+    background-color: #00afce;
+  }
 }
 
-#increase-btn:hover{
-  background-color: #00bddf;
-}
 
-#increase-btn:active{
-  background-color: #00afce;
-}
 
 .box > table, th, tr, td{
   border: 1px solid #7a7a7a;
@@ -193,15 +195,16 @@ font-size: 5rem;
   border-radius: 5px;
   margin: 5px;
   background-color: #ff953217;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
 }
 
-#caution > svg{
-  float: left;
-  margin-top: 15px;
-  padding-right: 5px;
-  height: 30px;
-  width:  30px;
-}
 
 #important{
   width: 25%;
@@ -212,15 +215,16 @@ font-size: 5rem;
   border-radius: 5px;
   margin: 5px;
   background-color: #b283ff17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
 }
 
-#important > svg{
-  float: left;
-  margin-top: 15px;
-  padding-right: 5px;
-  height: 30px;
-  width:  30px;
-}
 
 #note{
   width: 25%;
@@ -231,15 +235,16 @@ font-size: 5rem;
   border-radius: 5px;
   margin: 5px;
   background-color: #47a3ee17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
 }
 
-#note > svg{
-  float: left;
-  margin-top: 15px;
-  padding-right: 5px;
-  height: 30px;
-  width:  30px;
-}
 
 #tip{
   width: 25%;
@@ -250,15 +255,16 @@ font-size: 5rem;
   border-radius: 5px;
   margin: 5px;
   background-color: #33eb6117;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
 }
 
-#tip > svg{
-  float: left;
-  margin-top: 15px;
-  padding-right: 5px;
-  height: 30px;
-  width:  30px;
-}
 
 #warning{
   width: 25%;
@@ -269,15 +275,16 @@ font-size: 5rem;
   border-radius: 5px;
   margin: 5px;
   background-color: #ff535317;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
 }
 
-#warning > svg{
-  float: left;
-  margin-top: 15px;
-  padding-right: 5px;
-  height: 30px;
-  width:  30px;
-}
 
 #code-block{
   font-family: monospace;
