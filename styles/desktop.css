@@ -285,6 +285,25 @@ font-size: 5rem;
   }
 }
 
+#goth-mommy-alert{
+  width: 25%;
+  color: #7a7a7a;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #7a7a7a17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
 
 #code-block{
   font-family: monospace;
