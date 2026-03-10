@@ -80,40 +80,6 @@ body{
   color: var(--txt);
 }
 
-nav{ 
-  background-color: var(--navigation);
-  margin-left: 25%;
-  margin-right: 25%;
-  width: fit-content;
-  max-width: auto;
-  height: auto;
-  padding: 15px;
-  border-radius: 0px 0px 10px 10px;
-  position: fixed;
-
-  & > a{
-  margin-top: 10px;
-  display: inline-flex;
-  align-items: center;
-  padding-right: 12px;
-  gap: 4px;
-  }
-
-  & > a:hover{
-    transform: scale(1.2);
-    transition: transform 0.1s ease;
-  }
-
-  & > a:link{
-    text-decoration: none;
-  }
-
-  & > a > img{
-    height: 50px;
-    width: 50px;
-  }
-}
-
 main{
   margin: 100px 0px 0px 0px;
   margin-left: 25%;
@@ -138,7 +104,28 @@ textarea{
   border: 1px solid #7a7a7a;
   padding: 5px;
   text-align: center;
+
+  
   }
+  }
+ul{
+  /* position:relative;
+  overflow-x: auto; */
+    & > li:hover{
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
+    & > li{
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+  } /* This is probably a really dumb way to code this in. Too bad! */
+
+li{
+  position: sticky;
+  left:0px;
+  width: fit-content;
+  padding: 5px;
 }
 
 #table-of-contents{
