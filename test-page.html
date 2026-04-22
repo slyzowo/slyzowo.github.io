@@ -4,20 +4,286 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Page</title>
-  <link rel="icon" type="image/x-icon" href="/assets/images/logo-home.svg">
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/desktop.css">
-  <link rel="stylesheet" media="screen and (max-width: 899px)" href="styles/mobile.css">
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/navigation.css">
 </head>
+<style>
+@media(prefers-color-scheme: dark){
+  :root{
+    --background:         #121212;
+    --navigation:         #1f1f1f;
+    --table-of-contents:  #1a1a1a;
+    --txt:                #e9e9e9;
+    --transparent:        #00000000;
+    --basic-font:         Arial;
+    --white:              #ffffff;
+    --pink:               #ff87fb;
+    --red:                #e33b4c;
+    --orange:             #ffa940;
+    --yellow:             #ffd969;
+    --lime:               #67ff5c;
+    --green:              #0cb300;
+    --light-blue:         #00d9ff;
+    --blue:               #3b5ae3;
+    --purple:             #7b3be3;
+    --grey:               #888888;
+    --black:              #141414;
+  }
+
+  ::selection{
+    background-color: #00b8c586;
+    color: white;
+  }
+
+  :any-link{
+    color: white;
+  }
+
+  ::marker{
+  color:  #b8b8b8;
+  }
+}
+
+@media(prefers-color-scheme: light){
+  :root{
+    --background:         #dddddd;
+    --navigation:         #e9e9e9;
+    --table-of-contents:  #f5f5f5;
+    --txt:                #121212;
+    --transparent:        #00000000;
+    --basic-font:           Arial;
+    --white:              #ffffff;
+    --pink:               #ff87fb;
+    --red:                #e33b4c;
+    --orange:             #ffa940;
+    --yellow:             #ffd969;
+    --lime:               #67ff5c;
+    --green:              #0cb300;
+    --light-blue:         #00d9ff;
+    --blue:               #3b5ae3;
+    --purple:             #7b3be3;
+    --grey:               #888888;
+    --black:              #141414;
+  }
+
+  ::selection{
+    background-color: #00aac046;
+    color: black;
+  }
+
+  :any-link{
+    color: black;
+  }
+
+  ::marker{
+  color:  #b8b8b8;
+  }
+}
+
+  body{
+    font-family: var(--basic-font);
+    background-color: var(--background);
+    color: var(--txt);
+    margin: 0;
+  }
+
+  main{
+    margin: 25px 25vw 0vh 25vw;
+    padding: 1vw;
+    background-color: var(--navigation);
+    border-radius: 20px;
+  }
+
+  nav{
+    margin: 0vh 25vw 0vh 25vw;
+    padding: 1vw;
+    background-color: var(--navigation);
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+  }
+  nav > a{
+    padding-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  nav > a > img{
+    height: 50px;
+    width:  50px;
+    padding: 0px 10px 0px 0px;
+  }
+  #counter-display{
+    font-size: 5rem;
+  }
+
+#button-clicker-reset-btn{
+  background-color: var(--red);
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
+  &:hover{
+    background-color: #d13747;
+  }
+  
+  &:active{
+    background-color: #bb323f;
+  }
+}
+
+  #increase-btn{
+    background-color: var(--light-blue);
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+
+    &:hover{
+      background-color: #00bddf;
+    }
+
+    &:active{
+      background-color: #00afce;
+    }
+  }
+#caution{
+  width: 96%;
+  color: #ff9532;
+  padding: 2px 0px 2px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ff953217;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#important{
+  width: 96%;
+  color: #b283ff;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #b283ff17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#note{
+  width: 96%;
+  color: #47a3ee;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #47a3ee17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#tip{
+  width: 96%;
+  color: #33eb61;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #33eb6117;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#warning{
+  width: 96%;
+  color: #ff5353;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ff535317;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#goth-mommy-alert{
+  width: 96%;
+  color: #7a7a7a;
+  padding: 2px 0px 5px 10px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #7a7a7a17;
+
+  & > svg{
+    float: left;
+    margin-top: 15px;
+    padding-right: 5px;
+    height: 30px;
+    width:  30px;
+  }
+}
+
+#code-block{
+  font-family: monospace;
+  background-color: #131313;
+  padding-left: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #424242;
+}
+
+#comment{
+  font-family: monospace;
+  background-color: #131313;
+  padding: 5px;
+  border-left: 5px solid;
+  border-color: #5c5c5c;
+}
+</style>
 <body>
   <nav>
     <a href="https://slyzowo.net/"><img src="assets/images/logo/home.svg">Home</a>
     <a href="https://slyzowo.net/button-clicker"><img src="assets/images/logo/button-clicker.png">Button Clicker</a>
-    <a href="https://slyzowo.net/cipher"><img src="assets/images/logo/translate.svg">Cipher</a>
-    <a href="https://slyzowo.net/minecraft"><img src="assets/images/logo/minecraft.png">Minecraft</a>
-    <a href="https://slyzowo.net/minecraft-mods"><img src="assets/images/logo/neoforge.png">Minecraft Mods</a>
     <a href="https://slyzowo.net/reviews"><img src="assets/images/logo/book.svg">Reviews</a>
   </nav>
+  <br>
   <nav id="table-of-contents">
     <h1>Test Page</h1>
     <div class="table-of-contents">
@@ -28,7 +294,6 @@
       <h2 id="colours"></h2>
     </div>
   </nav>
-
   <main>
 
     <div class="box">
