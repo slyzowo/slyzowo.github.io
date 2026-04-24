@@ -4,114 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>slyzowo.net</title>
+  <link rel="stylesheet" href="styles/desktop.css">
 </head>
-<style>
-@media(prefers-color-scheme: dark){
-  :root{
-    --background:         #121212;
-    --navigation:         #1f1f1f;
-    --table-of-contents:  #1a1a1a;
-    --txt:                #e9e9e9;
-    --transparent:        #00000000;
-    --basic-font:         Arial;
-    --white:              #ffffff;
-    --pink:               #ff87fb;
-    --red:                #e33b4c;
-    --orange:             #ffa940;
-    --yellow:             #ffd969;
-    --lime:               #67ff5c;
-    --green:              #0cb300;
-    --light-blue:         #00d9ff;
-    --blue:               #3b5ae3;
-    --purple:             #7b3be3;
-    --grey:               #888888;
-    --black:              #141414;
-  }
-
-  ::selection{
-    background-color: #00b8c586;
-    color: white;
-  }
-
-  :any-link{
-    color: white;
-  }
-
-  ::marker{
-  color:  #b8b8b8;
-  }
-}
-
-@media(prefers-color-scheme: light){
-  :root{
-    --background:         #dddddd;
-    --navigation:         #e9e9e9;
-    --table-of-contents:  #f5f5f5;
-    --txt:                #121212;
-    --transparent:        #00000000;
-    --basic-font:           Arial;
-    --white:              #ffffff;
-    --pink:               #ff87fb;
-    --red:                #e33b4c;
-    --orange:             #ffa940;
-    --yellow:             #ffd969;
-    --lime:               #67ff5c;
-    --green:              #0cb300;
-    --light-blue:         #00d9ff;
-    --blue:               #3b5ae3;
-    --purple:             #7b3be3;
-    --grey:               #888888;
-    --black:              #141414;
-  }
-
-  ::selection{
-    background-color: #00aac046;
-    color: black;
-  }
-
-  :any-link{
-    color: black;
-  }
-
-  ::marker{
-  color:  #b8b8b8;
-  }
-}
-
-  body{
-    font-family: var(--basic-font);
-    background-color: var(--background);
-    color: var(--txt);
-    margin: 0;
-  }
-
-  main{
-    margin: 25px 25vw 0vh 25vw;
-    padding: 1vw;
-    background-color: var(--navigation);
-    border-radius: 20px;
-  }
-
-  nav{
-    margin: 0vh 25vw 0vh 25vw;
-    padding: 1vw;
-    background-color: var(--navigation);
-    border-radius: 0px 0px 10px 10px;
-    align-items: center;
-  }
-  nav > a{
-    padding-right: 12px;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  nav > a > img{
-    height: 50px;
-    width:  50px;
-    padding: 0px 10px 0px 0px;
-  }
-</style>
-
 <body>
   <nav>
     <a href="https://www.slyzowo.net/"><img src="assets/images/logo/home.svg">Home</a>
@@ -127,17 +21,27 @@
     <p>Another UI update.</p>
   </main>
   <main>
-    <h1>Recent Projects</h1>
-    <p>Slotto</p>
-    <p>Website</p>
-    <p>Decorations</p>
-
     <h1>All Projects</h1>
-    <p>Slotto, a "gambling" command line game</p>
-    <p>Decorations, a mod that adds chairs and tables to minecraft.</p>
-    <p>slyzowo.net</p>
-    <p>Is Even Or Odd, a library that tells you if a number is even or odd</p>
-    <p>Terminal Colours, a library that allows your prints to be beautiful</p>
+    <section>
+      <label for="file">Terminal Colours, a library that allows your prints to be beautiful</label>
+      <progress id="file" value="100" max="100"></progress>
+    </section>
+    <section>
+      <label for="file">Is Even Or Odd, a library that tells you if a number is even or odd</label>
+      <progress id="file" value="100" max="100"></progress>
+    </section>
+    <section>
+      <label for="file">slyzowo.net</label>
+      <progress id="file" value="75" max="100"></progress>
+    </section>
+    <section>
+      <label for="file">Slotto, a "gambling" command line game</label>
+      <progress id="file" value="50" max="100"></progress>
+    </section>
+    <section>
+      <label for="file">Decorations, a mod that adds chairs and tables to minecraft.</label>
+      <progress id="file" value="33" max="100"></progress>
+    </section>
   </main>
 </body>
 </html>

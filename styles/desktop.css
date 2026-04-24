@@ -21,7 +21,7 @@
   }
 
   ::selection{
-    background-color: #00c5ab;
+    background-color: #f2ff3986;
     color: white;
   }
 
@@ -57,7 +57,7 @@
   }
 
   ::selection{
-    background-color: #19ffe0;
+    background-color: #00aac046;
     color: black;
   }
 
@@ -70,271 +70,223 @@
   }
 }
 
-body{
-  font-family: var(--basic-font);
-  display: flex;
-  align-items: flex-start;
-  height: 100vh;
-  background-color: var(--background);
-  margin: 0;
-  color: var(--txt);
-}
-
-main{
-  margin: 100px 0px 0px 0px;
-  margin-left: 25%;
-}
-
-textarea{
-  background-color: var(--navigation);
-  resize: none;
-  height: 89vh;
-  padding: 10px;
-  word-wrap: normal;
-}
-
-.box{
-  width: 835px;
-  border-radius: 10px 10px 10px 10px;
-  margin-top: 20px;
-  background-color: var(--navigation);
-  padding: 20px;
-
-  & > table, th, tr, td{
-  border: 1px solid #7a7a7a;
-  padding: 5px;
-  text-align: center;
-
-  
-  }
-  }
-ul{
-  /* position:relative;
-  overflow-x: auto; */
-    & > li:hover{
-      transform: scale(1.2);
-      transition: transform 0.3s ease;
-    }
-    & > li{
-      transform: scale(1);
-      transition: transform 0.3s ease;
-    }
-  } /* This is probably a really dumb way to code this in. Too bad! */
-
-li{
-  position: sticky;
-  left:0px;
-  width: fit-content;
-  padding: 5px;
-}
-
-#table-of-contents{
-  margin-left: 0;
-}
-
-#counter-display{
-font-size: 5rem;
-}
-
-#button-clicker-reset-btn{
-  background-color: var(--red);
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  border-radius: 25px;
-  border: none;
-  &:hover{
-    background-color: #d13747;
-  }
-  
-  &:active{
-    background-color: #bb323f;
-  }
-}
-
-#increase-btn{
-  background-color: var(--light-blue);
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  border-radius: 25px;
-  border: none;
-
-  &:hover{
-    background-color: #00bddf;
+  body{
+    font-family: var(--basic-font);
+    background-color: var(--background);
+    color: var(--txt);
+    margin: 0;
   }
 
-  &:active{
-    background-color: #00afce;
+  main{
+    margin: 25px 25vw 0vh 25vw;
+    padding: 1vw;
+    background-color: var(--navigation);
+    border-radius: 20px;
   }
-}
 
-#caution{
-  width: 96%;
-  color: #ff9532;
-  padding: 2px 0px 2px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #ff953217;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
+  main > section > label{
+    display: flex;
+    flex-direction: row;
   }
-}
 
-#important{
-  width: 96%;
-  color: #b283ff;
-  padding: 2px 0px 5px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #b283ff17;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
+  nav{
+    margin: 1vh 25vw 0vh 25vw;
+    padding: 1vw;
+    background-color: var(--navigation);
+    border-radius: 10px;
+    align-items: center;
   }
-}
 
-#note{
-  width: 96%;
-  color: #47a3ee;
-  padding: 2px 0px 5px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #47a3ee17;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
-  }
-}
-
-#tip{
-  width: 96%;
-  color: #33eb61;
-  padding: 2px 0px 5px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #33eb6117;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
-  }
-}
-
-#warning{
-  width: 96%;
-  color: #ff5353;
-  padding: 2px 0px 5px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #ff535317;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
-  }
-}
-
-#goth-mommy-alert{
-  width: 96%;
-  color: #7a7a7a;
-  padding: 2px 0px 5px 10px;
-  border-left: 5px solid;
-  border-right: 5px solid;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #7a7a7a17;
-
-  & > svg{
-    float: left;
-    margin-top: 15px;
-    padding-right: 5px;
-    height: 30px;
-    width:  30px;
-  }
-}
-
-#code-block{
-  font-family: monospace;
-  background-color: #131313;
-  padding-left: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: #424242;
-}
-
-#comment{
-  font-family: monospace;
-  background-color: #131313;
-  padding: 5px;
-  border-left: 5px solid;
-  border-color: #5c5c5c;
-}
-
-nav{ 
-  background-color: var(--navigation);
-  margin-left: 25%;
-  margin-right: 25%;
-  width: fit-content;
-  max-width: auto;
-  height: auto;
-  padding: 15px;
-  /* border-radius: 0px 0px 10px 10px; does this actually do anything? */
-  position: fixed;
-
-  & > a{
-    margin-top: 10px;
+  nav > a{
+    padding-right: 12px;
     display: inline-flex;
     align-items: center;
-    padding-right: 12px;
-    gap: 4px;
-  }
-
-  & > a:hover{
-    transform: scale(1.2);
-    transition: transform 0.1s ease;
-  }
-
-  & > a{
-    transform: scale(1);
-    transition: transform 0.1s ease;
-  }
-
-  & > a:link{
     text-decoration: none;
   }
 
-  & > a > img{
+  nav > a > img{
     height: 50px;
-    width: 50px;
+    width:  50px;
+    padding: 0px 10px 0px 0px;
   }
-}
+
+  section{
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    margin-top: 5px;
+  }
+
+  #counter-display{
+    font-size: 5rem;
+  }
+
+  #button-clicker-reset-btn{
+    background-color: var(--red);
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    &:hover{
+      background-color: #d13747;
+    }
+
+    &:active{
+      background-color: #bb323f;
+    }
+  }
+
+  #increase-btn{
+    background-color: var(--light-blue);
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+
+    &:hover{
+      background-color: #00bddf;
+    }
+
+    &:active{
+      background-color: #00afce;
+    }
+  }
+
+  #caution{
+    width: 96%;
+    color: #ff9532;
+    padding: 2px 0px 2px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ff953217;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #important{
+    width: 96%;
+    color: #b283ff;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #b283ff17;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #note{
+    width: 96%;
+    color: #47a3ee;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #47a3ee17;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #tip{
+    width: 96%;
+    color: #33eb61;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #33eb6117;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #warning{
+    width: 96%;
+    color: #ff5353;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ff535317;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #goth-mommy-alert{
+    width: 96%;
+    color: #7a7a7a;
+    padding: 2px 0px 5px 10px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #7a7a7a17;
+
+    & > svg{
+      float: left;
+      margin-top: 15px;
+      padding-right: 5px;
+      height: 30px;
+      width:  30px;
+    }
+  }
+
+  #code-block{
+    font-family: monospace;
+    background-color: #131313;
+    padding-left: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #424242;
+  }
+
+  #comment{
+    font-family: monospace;
+    background-color: #131313;
+    padding: 5px;
+    border-left: 5px solid;
+    border-color: #5c5c5c;
+  }
+
+  #file{
+    width: 500px;
+    height: 20px;
+  }
