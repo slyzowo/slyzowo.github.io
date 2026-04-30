@@ -287,6 +287,20 @@
   }
 
   #file{
-    width: 500px;
+    width: fit-content;
     height: 20px;
   }
+
+@media screen and (width: 414px) {
+  main{
+    margin: 5px 5vw 0vh 5vw;
+    padding: 5vw;
+  }
+
+  .backflip-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
