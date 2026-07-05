@@ -1,3 +1,6 @@
+/* Stating the Obvious for future me */
+
+/* Dark Mode */
 @media(prefers-color-scheme: dark){
   :root{
     --background:         #121212;
@@ -19,21 +22,22 @@
     --grey:               #888888;
     --black:              #141414;
   }
-
+  
   ::selection{
     background-color: #f2ff3986;
     color: white;
   }
-
+  
   :any-link{
     color: white;
   }
-
+  
   ::marker{
-  color:  #b8b8b8;
+    color:  #b8b8b8;
   }
 }
 
+/* Light Mode */
 @media(prefers-color-scheme: light){
   :root{
     --background:         #dddddd;
@@ -82,6 +86,7 @@
     padding: 1vw;
     background-color: var(--navigation);
     border-radius: 20px;
+    word-wrap: break-word;
   }
 
   main > section > label{
@@ -117,6 +122,24 @@
     background-color: #3a3a3a;
     margin-top: 5px;
   }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(180, 180, 180, 0.425);
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+    
+    .container div {
+      background-color: #f1f1f144;
+      width: fit-content;
+      height: 20px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 15px;
+    }
 
   #counter-display{
     font-size: 5rem;
