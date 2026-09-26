@@ -1,0 +1,289 @@
+:root {
+	
+	/* Standard Colours */
+	--text-colour: #ffffff;
+	--background-colour: #ffffff;
+
+	--white:              #ffffff;
+	--pink:               #ff87fb;
+	--red:                #e33b4c;
+	--orange:             #ffa940;
+	--yellow:             #ffd969;
+	--lime:               #67ff5c;
+	--green:              #0cb300;
+	--light-blue:         #00d9ff;
+	--blue:               #3b5ae3;
+	--purple:             #7b3be3;
+	--grey:               #888888;
+	--black:              #141414;
+
+	/* Fonts */
+	--text-font: arial;
+	--code-font: monospace;
+
+}
+
+
+body {
+	font-family: var(--text-font);
+	background-color: #505050;
+}
+
+/* Navigation Bar */
+
+nav {
+	border-radius: 20px;
+	padding: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	background: linear-gradient(#bebebe, #929292);
+}
+
+nav a {
+	color: var(--text-colour);
+	text-decoration: none;
+	border-right: 3px solid rgb(197, 197, 197);
+	padding-right: 10px;
+	padding-left: 10px;
+	text-shadow: 0px -1px #807e7e;
+	transition: 0.2s ease;
+}
+
+nav a:hover {
+	color: #51dcff;
+	text-shadow: 0px -1px #4097a7;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+nav a:active {
+	color: #3f9793;
+	text-shadow: 0px -1px #215155;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+nav a:last-child {
+	border-right: none;
+}
+
+/* Main Content */
+
+h1 {
+	border-bottom: 3px solid rgb(143, 143, 143);
+	transition: 0.2s ease;
+}
+
+h1:hover {
+	color: #51dcff;
+	text-shadow: 0px -1px #4097a7;
+	cursor: default;
+	transition: 0.2s ease;
+}
+
+p,
+a {
+	padding-left: 30px;
+}
+
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container .bubble {
+	width: 50%;
+}
+
+.bubble {
+	color: var(--text-colour);
+	background: linear-gradient(#bebebe, #929292);
+	border-radius: 20px;
+	margin: 50px 50px 50px 50px;
+	padding: 25px;
+}
+
+
+/* Contact Form */
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 36%;
+	display: block;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+input {
+	font-size: 2rem;
+	border-radius: 5px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+input[name=last_name] {
+	margin-right: 0px;
+	float: right;
+}
+
+input[type=reset],
+input[type=submit] {
+	margin-top: 30px;
+}
+
+
+input[type=reset] {
+	float: left;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	float: right;
+	margin-right: 0px;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+}:root{
+
+/* Standard Colours */
+	--text-colour: #ffffff;
+	--background-colour: #ffffff;
+
+/* Fonts */
+	--text-font: arial;
+	--code-font: monospace;
+
+}
+
+body{
+	font-family: var(--text-font);
+	background-color: #505050;
+}
+
+/* Navigation Bar */
+
+nav{
+	border-radius: 20px;
+	padding: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	background: linear-gradient( #bebebe, #929292);
+}
+
+nav a{
+	color: var(--text-colour);
+	text-decoration: none;
+	border-right: 3px solid rgb(197, 197, 197);
+	padding-right: 10px;
+	padding-left: 10px;
+	text-shadow: 0px -1px #807e7e;
+	transition: 0.2s ease;
+}
+
+nav a:hover{
+	color: #51dcff;
+	text-shadow: 0px -1px #4097a7;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+nav a:active{
+	color: #3f9793;
+	text-shadow: 0px -1px #215155;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+
+nav a:last-child{
+	border-right: none;
+}
+
+/* Main Content */
+
+h1{
+	border-bottom: 3px solid rgb(143, 143, 143);
+	transition: 0.2s ease;
+}
+
+h1:hover{
+	color: #51dcff;
+	text-shadow: 0px -1px #4097a7;
+	cursor: default;
+	transition: 0.2s ease;
+}
+
+p, a{
+	padding-left: 30px;
+}
+
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+.container .bubble{
+	width: 50%;
+}
+
+.bubble{
+	color: var(--text-colour);
+	background: linear-gradient(#bebebe, #929292);
+	border-radius: 20px;
+	margin: 50px 50px 50px 50px;
+	padding: 25px;
+}
+
+
+/* Contact Form */
+
+form{
+	margin-left: auto;
+	margin-right: auto;
+	width: 36%;
+	display: block;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+input{
+	font-size: 2rem;
+	border-radius: 5px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+input[name=last_name]{
+	margin-right: 0px;
+	float: right;
+}
+
+input[type=reset], input[type=submit]{
+	margin-top: 30px;
+}
+
+
+input[type=reset]{
+	float: left;
+	border-radius: 5px;
+}
+
+input[type=submit]{
+	float: right;
+	margin-right: 0px;
+	border-radius: 5px;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+}
