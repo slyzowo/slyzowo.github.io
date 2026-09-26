@@ -1,2 +1,0 @@
-# slyzowo.github.io
-Website!
